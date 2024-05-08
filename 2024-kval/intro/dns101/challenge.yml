@@ -14,7 +14,7 @@ flag_format_prefix: SSM{
 flags: plugga_dns_ctlog_certs_och_annat
 
 
-score: 10
+
 
 challenge_id: 50fd62ed-8d7a-4e2c-9732-5c3d88fa4d42
 spec: 0.0.1

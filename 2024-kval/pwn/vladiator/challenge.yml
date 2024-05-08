@@ -19,7 +19,7 @@ downloadable_files:
   - container/run.py
   - container/Dockerfile
 
-score: 500
+
 
 challenge_id: 87701c78-ed17-478c-8b12-8cd5946975d0
 spec: 0.0.1

@@ -20,7 +20,7 @@ downloadable_files:
 
 custom:
   build_script: build.sh
-score: 500
+
 
 challenge_id: 9ce9a7b5-8d09-4b1b-87e5-d475fea26d2b
 spec: 0.0.1

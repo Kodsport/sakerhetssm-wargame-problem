@@ -25,7 +25,7 @@ downloadable_files:
 #   image: container
 #   internal_port: 1337
 
-score: 450
+
 
 challenge_id: 18fbc860-d17f-4a52-a0c2-b13c71af4cb2
 spec: 0.0.1

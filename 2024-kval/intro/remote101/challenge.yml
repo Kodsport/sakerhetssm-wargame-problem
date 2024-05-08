@@ -19,7 +19,7 @@ service:
   internal_port: 50000
 
 
-score: 10
+
 
 challenge_id: 4fb2ec1d-0409-40ff-bf79-4c48efc2ae21
 spec: 0.0.1
