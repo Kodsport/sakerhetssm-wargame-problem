@@ -13,8 +13,6 @@ downloadable_files:
   - enc_flag
   - md10.py
 
-custom:
-  order: 24
 score: 300
 
 challenge_id: fcb48a71-bdc1-4156-9d52-fe336b7b49b1

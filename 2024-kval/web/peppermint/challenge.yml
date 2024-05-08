@@ -13,8 +13,6 @@ predefined_services:
   - type: website
     url: "http://tickets.2112213.xyz"
 
-custom:
-  order: 15
 score: 350
 
 challenge_id: 11bd221f-5fee-4e93-9d6f-e344165615da

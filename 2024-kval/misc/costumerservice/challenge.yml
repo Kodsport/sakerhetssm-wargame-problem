@@ -28,8 +28,6 @@ downloadable_files:
 #   image: container
 #   internal_port: 1337
 
-custom:
-  order: 63
 score: 100
 
 challenge_id: 3ef6d875-461a-48ca-9d07-6e50f98f0031

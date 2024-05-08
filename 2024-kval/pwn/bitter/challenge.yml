@@ -23,7 +23,6 @@ downloadable_files:
 
 custom:
   build_script: build.sh
-  order: 43
 score: 300
 
 challenge_id: 74272d0f-9f89-4421-899e-682cf628f6df

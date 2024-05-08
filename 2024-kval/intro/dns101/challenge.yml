@@ -13,8 +13,6 @@ categories:
 flag_format_prefix: SSM{
 flags: plugga_dns_ctlog_certs_och_annat
 
-custom:
-  order: 6
 
 score: 10
 

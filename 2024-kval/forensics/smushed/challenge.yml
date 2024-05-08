@@ -16,8 +16,6 @@ downloadable_files:
   - part4
   - part5
 
-custom:
-  order: 51
 score: 200
 
 challenge_id: c0edc1d1-7c6a-4a0a-a34b-8ffce8743a05

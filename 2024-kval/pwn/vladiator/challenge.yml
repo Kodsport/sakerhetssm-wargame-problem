@@ -19,8 +19,6 @@ downloadable_files:
   - container/run.py
   - container/Dockerfile
 
-custom:
-  order: 45
 score: 500
 
 challenge_id: 87701c78-ed17-478c-8b12-8cd5946975d0

@@ -21,6 +21,4 @@ downloadable_files:
   - container/av.py
   - container/av
 
-custom:
-  order: 44
 score: 450

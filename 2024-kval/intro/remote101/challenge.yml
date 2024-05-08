@@ -18,8 +18,6 @@ service:
   image: container
   internal_port: 50000
 
-custom:
-  order: 4
 
 score: 10
 

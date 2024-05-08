@@ -18,8 +18,6 @@ service:
 downloadable_files:
   - container/service.py
 
-custom:
-  order: 65
 score: 250
 
 challenge_id: 7fc004ff-4cf7-42dd-a877-73407874c6f3

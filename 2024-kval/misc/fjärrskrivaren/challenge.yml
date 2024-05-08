@@ -18,8 +18,6 @@ downloadable_files:
   - paper_strip.jpg
   - typewriter.jpg
 
-custom:
-  order: 64
 score: 150
 
 challenge_id: b9693ee2-7424-4681-a04c-ca157a1771e0

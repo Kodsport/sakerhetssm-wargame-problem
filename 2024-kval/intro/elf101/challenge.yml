@@ -24,8 +24,6 @@ flags: elf_on_the_shelf
 downloadable_files:
   - elf
 
-custom:
-  order: 6
 
 score: 10
 

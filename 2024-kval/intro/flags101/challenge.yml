@@ -16,8 +16,6 @@ categories:
 flag_format_prefix: SSM{
 flags: detta_är_en_riktigt_bra_flagga
 
-custom:
-  order: 1
 
 score: 5
 
