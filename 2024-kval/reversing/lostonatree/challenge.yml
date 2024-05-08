@@ -1,0 +1,33 @@
+title: Lost On a Tree
+description: The squirrel Chungus loves two things, big numbers, graph theory, and stealing flags. In fact, Chungus has just stolen the flag and got real whimsey on its way back to its nest. Chungus has somehow visited all branches of the ancient eXORcised tree, and dropped pieces of the flag while traversing the tree. 
+authors:
+  - Harry Zhang
+categories:
+  - reversing
+  - forensics
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: th!5_sh0u1d_h4v3_b3en_in_PO
+
+downloadable_files:
+   - squirrel.py
+   - tree.txt
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+custom:
+  order: 35
+score: 450
+
+challenge_id: 18fbc860-d17f-4a52-a0c2-b13c71af4cb2
+spec: 0.0.1

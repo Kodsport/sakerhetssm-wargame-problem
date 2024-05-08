@@ -1,0 +1,21 @@
+title: Mint'nt
+description: Movitz has gone crazy and set up a ticket management system... We need your help to hack into his email and stop him! Can you find the SMTP password?
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: todo_kom_på_en_bra_flagga
+
+predefined_services:
+  - type: website
+    url: "http://tickets.2112213.xyz"
+
+custom:
+  order: 15
+score: 350
+
+challenge_id: 11bd221f-5fee-4e93-9d6f-e344165615da
+spec: 0.0.1

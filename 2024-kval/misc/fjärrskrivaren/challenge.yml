@@ -1,0 +1,26 @@
+title: Strange typewriter
+description: When Säkerhets-SM and FRO held a CTF training camp at ledningsregementet in Enköping, we got to try writing on a strange typewriter! Are you able to decode what we wrote?
+authors:
+  - Movitz Sunar
+  - Mateusz Drwal
+categories:
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: null
+flags:
+  - type: text
+    flag: SSM(GAMMAL-SKRIVMASKIN)
+  - type: text
+    flag: SSM{GAMMAL-SKRIVMASKIN}
+
+downloadable_files:
+  - paper_strip.jpg
+  - typewriter.jpg
+
+custom:
+  order: 64
+score: 150
+
+challenge_id: b9693ee2-7424-4681-a04c-ca157a1771e0
+spec: 0.0.1

@@ -1,0 +1,25 @@
+title: Frasse's Bakery
+description: Frasse's bakery is absolutely tremendous, believe me. It's the best bakery you've ever seen, really. But let me tell you, folks, there's a threat looming over it. A bigly threat. We can't let anything bad happen to it, folks. We need to protect Frasse's bakery at all costs, because it's the greatest bakery in the history of bakeries. And believe me, we're going to make sure it stays that way, right?
+authors:
+  - ghagl
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: fr4sse_g00d_c4ke_b4ke_y3s_c0vf3fe_c4ke_c0m1ng_s00n
+
+service:
+  type: website
+  image: container
+  internal_port: 3000
+
+custom:
+  build_script: build.sh
+
+custom:
+  order: 13
+score: 150
+
+challenge_id: fde145cce1777f0b428cb236363fdcc1
+spec: 0.0.1

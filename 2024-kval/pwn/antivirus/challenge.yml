@@ -1,0 +1,26 @@
+title: Antivirus - FRA
+description: Besegra antiviruset, hämta flaggan! Bifogat hittar du koden som körs på servern samt antivirusbinären. Flaggan ligger i filen /flag på servern.
+authors:
+  - FRA
+categories:
+  - pwn
+  - reversing
+
+flag_format_prefix: SSM{
+flags: n1c3_y0u_byp4ssed_t3h_4nt1_v1rus!!
+
+challenge_id: 025839e3-1b0d-4d25-9ac4-e73daf7c8a2d
+spec: 0.0.1
+
+service:
+  type: website
+  image: container
+  internal_port: 1337
+
+downloadable_files:
+  - container/av.py
+  - container/av
+
+custom:
+  order: 44
+score: 450

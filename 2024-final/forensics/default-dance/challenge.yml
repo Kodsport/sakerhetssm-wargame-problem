@@ -1,0 +1,22 @@
+title: Default dance — FRA
+description: "While doing the default dance, my Notepad happened to crash. Please help me recover the contents of what was written there :(\n 
+Flag format: <code>SSM{[a-z0-9]+}</code>"
+authors:
+  - FRA
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: i_love_utf16le
+
+downloadable_files:
+  - https://drive.google.com/file/d/1Arwn_zdlMvKOWdZ1DxZk29vv9d7eXP6-/view?usp=sharing
+
+challenge_id: 2fcdbccb-32d7-4dbf-852e-a8b2bdeead1d
+spec: 0.0.1
+
+score: 150
+custom:
+ order: 55
+ 

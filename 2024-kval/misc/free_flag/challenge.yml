@@ -1,0 +1,20 @@
+title: Free flag
+description: Solving challs all day long has gotten overrated. I'll just give you the flag this time.
+authors:
+  - Laith Abbawi
+categories:
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 70ld_y0u_17_w45_fr33
+
+downloadable_files:
+  - chall.txt
+
+custom:
+  order: 62
+score: 100
+
+challenge_id: c8801152-dd1a-4546-8db8-804eea03c7f7
+spec: 0.0.1

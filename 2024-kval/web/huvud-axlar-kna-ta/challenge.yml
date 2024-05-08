@@ -1,0 +1,23 @@
+title: Head, shoulders, knees and toes
+description: Inspect element is no longer enough, now you have search further!
+authors:
+  - Movitz Sunar
+categories:
+  - web
+  - easy
+
+flag_format_prefix: SSM{
+flags: header_shoulderer_kneer_t0e3r
+
+
+service:
+  type: website
+  image: container
+  internal_port: 8080
+
+custom:
+  order: 12
+score: 100
+
+challenge_id: 17fbc9ab-53e4-4531-b217-1e1c8469451e
+spec: 0.0.1

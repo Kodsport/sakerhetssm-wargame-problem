@@ -1,0 +1,19 @@
+title: Snakepit
+description: Let's go on an adventure to find some hidden treasures
+authors:
+  - zetatwo
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: th4t_bel0ngs_1n_a_mus3um
+
+downloadable_files:
+  - challenge.py
+
+custom:
+  order: 33
+score: 200
+
+challenge_id: 507cb499-f897-4139-852e-becf85abe630
+spec: 0.0.1

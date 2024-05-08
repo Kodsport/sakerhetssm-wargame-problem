@@ -1,0 +1,20 @@
+title: Natverksknugen - FRA
+description: This time around, we learned our lesson! Do not let your private keys be freely downloadable.
+authors:
+  - FRA
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: my_d0ubl3_3ncryp710n_w45n7_3n0u6h
+
+downloadable_files:
+    - chall.pcapng
+
+challenge_id: 0e0e2a19-9642-401c-8d2d-5e5109f0d720
+spec: 0.0.1
+
+custom:
+  order: 52
+score: 200

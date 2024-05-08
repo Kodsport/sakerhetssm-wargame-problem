@@ -1,0 +1,26 @@
+title: Hellman & Diffie
+description: Have you seen the new clothing store that just opened? H&D, Hellman & Diffie, is taking over every street and making a ton of profit. However, I also heard they are discussing top secret info about their business. Let's listen in and maybe we can also create our own successful clothing brand!
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: m4yb3_th3y_5h0uld_5t1ck_t0_crypt0...
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+challenge_id: b542733a-836d-4f09-a0c3-8ae8120a175f
+spec: 0.0.1
+
+score: 500
+custom:
+  order: 33

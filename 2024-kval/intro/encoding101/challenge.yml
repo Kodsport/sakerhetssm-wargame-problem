@@ -1,0 +1,27 @@
+title: Encoding 101
+description: |
+  Data can be written and re-written in many different ways. This is similar to how you can write numbers using different bases in mathematics. In the same way you can convert data between different formats. These formats are typically called "encodings". There are many online tools to convert between different encodings.
+
+  A popular example of such a format is hexadecimal. As an example, the string <code>Hello World!</code> can be re-written using hexadecimal to get <code>48656c6c6f20576f726c6421</code>.
+
+  Here is a lista of a few different encodings: <a href="https://en.wikipedia.org/wiki/Binary-to-text_encoding">https://en.wikipedia.org/wiki/Binary-to-text_encoding</a>
+  Now, try to decode this data and you might eventually find a flag.
+
+  <code>55314e4e6533526f4d334a6c587a467a587a4e325a573566596a527a5a5638344e563933645852666433563066513d3d</code>
+
+authors:
+  - Säkerhets-SM
+categories:
+  - introduction
+  - easy
+
+flag_format_prefix: SSM{
+flags: th3re_1s_3ven_b4se_85_wut_wut
+
+custom:
+  order: 3
+
+score: 10
+
+challenge_id: 497ba6bb-d86c-4ba6-91a0-1558c96823a7
+spec: 0.0.1

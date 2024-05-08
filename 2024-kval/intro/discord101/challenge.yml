@@ -1,0 +1,24 @@
+title: Discord 101
+description: |
+  Kodsport has a Discord server for communications with its members and Säkerhets-SM is of course represented there as well!
+
+  Join the <a href="https://discord.gg/W77q5ps">Discord servern</a> and see if you can find the flag hidden there.
+
+  On the Discord server you can also contact the authors of all challenges and ask questions.
+
+authors:
+  - Säkerhets-SM
+categories:
+  - introduction
+  - easy
+
+flag_format_prefix: SSM{
+flags: n1_får_gärn4_k1ka_på_pr0golymp_0ckså!
+
+custom:
+  order: 2
+
+score: 5
+
+challenge_id: 6e2ba89f-3a4b-4351-a837-1bae75e28aa1
+spec: 0.0.1

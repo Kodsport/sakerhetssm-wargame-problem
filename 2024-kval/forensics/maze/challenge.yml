@@ -1,0 +1,30 @@
+title: Lost
+description: I think i went astray in this usb drive i found...
+authors:
+  - Mateusz Drwal
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: V3RY_F47_CH411_GHVJF8MWPW
+
+downloadable_files:
+  - filesystem
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+custom:
+  order: 54
+score: 400
+
+challenge_id: a764f538-c8fe-48fb-b487-ffe8f24dddd6
+spec: 0.0.1

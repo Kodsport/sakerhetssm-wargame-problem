@@ -1,0 +1,20 @@
+title: Eclipse
+description: You took a wrong turn and suddenly you find yourself lost in a place where you can't see anything. Can you make it out?
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+# Solution password: BBIEBBAAA
+flag_format_prefix: SSM{
+flags: return_from_total_darkness
+
+downloadable_files:
+  - eclipse
+
+challenge_id: 335e6c55-894f-433b-94c5-1899d2a63a2d
+spec: 0.0.1
+
+score: 300
+custom:
+  order: 23

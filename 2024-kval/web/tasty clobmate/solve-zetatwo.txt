@@ -1,0 +1,6 @@
+1. submit a drink, save drink id A
+2. create new drink with description: <a id="id"></a><a id="id" name="bottleId" target="[drink id A here]"></a> and save drink URL B
+3. go to /admin
+4. send link id B
+5. visit drink A
+6. flag

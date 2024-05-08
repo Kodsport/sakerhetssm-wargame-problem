@@ -1,0 +1,6 @@
+# Challenge
+g++ -static -O2 av.cpp -o container/av
+
+# Solutions
+g++ -static -Os solution_fra.cpp
+clang++ -O0 -static -o solution_zetatwo.cpp

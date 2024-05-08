@@ -1,0 +1,19 @@
+title: Size Matters
+description: I promise it gets bigger, you just need to unzip me first!
+authors:
+  - daydun
+categories:
+  - misc
+
+flag_format_prefix: SSM{
+flags: p3t4by7e_n3tw0rk_6r4ph1c5
+
+downloadable_files:
+  - image.zip
+
+challenge_id: a422fda9-911e-4a2b-ba42-dae5292e56a0
+spec: 0.0.1
+
+score: 400
+custom:
+  order: 62

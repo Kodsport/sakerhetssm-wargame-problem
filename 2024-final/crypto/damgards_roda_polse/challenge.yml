@@ -1,0 +1,26 @@
+title: Pølse by Damgård
+description: I heard that the Aarhus startup Pølse by Damgård has been attracting a lot of customers lately with his secret mustard recipe and a small sprinkle of salt and pepper. They also give a small sample to every new customer! Let's check it out!!!
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: my_p0l53_15_n0t_53cur35t_but_v3ry_t45ty!!
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+challenge_id: 4b3d7bbc-2a7f-4aff-a900-c42f371eebbc
+spec: 0.0.1
+
+score: 500
+custom:
+  order: 31

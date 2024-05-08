@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= name %>
+    </title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>
+            <%= name %>
+            
+        </h1>
+        <% if(approved){ %>
+            <h1><%= approved %></h1>
+          <% } %>
+        <div class="custom-bottle">
+            <img src="/102.png" class="bottle">
+            <div class="content">
+                <p class="name">
+                    <%= name %>
+                </p>
+                <p class="description">
+                    <%- description %>
+                </p>
+                <p class="flavor">
+                    <%= flavor %>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/scripts.js"></script>
+</html>

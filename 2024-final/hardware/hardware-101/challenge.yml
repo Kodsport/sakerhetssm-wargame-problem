@@ -1,0 +1,45 @@
+title: Hardware 101
+description: |
+  Come to the organizers and get your hardware challenge! Flag will be handed out after receiving the hardware. The downloads for all hardware challenges are also here.
+
+  <code>logic_analyzer.pdf</code> contains information about the logic analyzer
+  <code>challenge.elf</code> contains a redacted version of the firmware running on the hardware challenge.
+  <code>logicanalyzer.py</code> is a Python API for communicating with the logic analyzer.
+  <code>ChallengeBoard.brd</code> is a board-file for the hardware challenge. Open it with openboardview.
+  <code>ChallengeBoard_Schematic(-Button).pdf</code> is a schematic of the hardware challenge.
+  <code>rp2040-datasheet.pdf</code> is the datasheet for the microcontroller running on the challenge board and is also accessible online.
+  <code>display-datasheet.pdf</code> is a datasheet for the display used on the challenge board.
+  <code>eeprom-datasheet.pdf</code> is a datasheet for the EEPROM (read-only memory) on the challenge board.
+authors:
+  - Oskar Tornevall
+categories:
+  - hardware
+  - introduction
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: hardware_is_my_passion
+
+downloadable_files:
+  - logic_analyzer.pdf
+  - challenge.elf
+  - logicanalyzer.py
+  - ChallengeBoard.brd
+  - ChallengeBoard_Schematic.pdf
+  - ChallengeBoard_Schematic-Button.pdf
+  - rp2040-datasheet.pdf
+  - display-datasheet.pdf
+  - eeprom-datasheet.pdf
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 1fae198e-0c5c-4707-b998-3a2cdd4d1a1b
+spec: 0.0.1

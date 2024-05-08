@@ -1,0 +1,15 @@
+services:
+  victim:
+    build: victim
+    network_mode: service:dumper
+    depends_on:
+      - c2
+      - dumper
+  
+  c2:
+    build: c2
+
+  dumper:
+    build: dumper
+    volumes:
+      - ./challenge:/data

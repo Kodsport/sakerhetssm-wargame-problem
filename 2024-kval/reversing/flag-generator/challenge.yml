@@ -1,0 +1,20 @@
+title: Flag Generator
+description: We bought this program in some budget website. They claimed it would generate a flag if you run it but it seems awfully slow. Can you fix it?
+authors:
+  - zetatwo
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: g0tt4_go_r33333l_f4zt!
+
+downloadable_files:
+  - flag-generator
+
+custom:
+  order: 34
+score: 350
+
+challenge_id: 08e2db4d-c33a-4e6a-a7ba-726da52a0f9b
+spec: 0.0.1

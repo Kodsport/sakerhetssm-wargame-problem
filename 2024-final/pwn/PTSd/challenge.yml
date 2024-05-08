@@ -1,0 +1,27 @@
+title: PTSd
+description: Post och Telestyrelsen regularly deals with inputs and outputs, I'm sick and tired of their foolishness. THIS is how it's done.
+authors:
+  - nnewram
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: y0ur_0u7pu7_15_b310ng_70_u5
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - PTSd.c
+  - container/PTSd
+
+custom:
+  build_script: build.sh
+  order: 43
+score: 500
+
+challenge_id: 9ce9a7b5-8d09-4b1b-87e5-d475fea26d2b
+spec: 0.0.1

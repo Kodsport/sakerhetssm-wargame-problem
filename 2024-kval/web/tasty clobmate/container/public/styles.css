@@ -1,0 +1,105 @@
+body {
+    font-family: Inconsolata, monospace;
+    color: #fff;
+    padding: 0;
+    background-color: #ffe500;
+    -webkit-animation: bgchange 20s infinite;
+    animation: bgchange 20s infinite;
+    text-align: center;
+    background-image: url(/6P1s4BXGUQoIo.webp);
+    text-shadow: 2px 2px 1px #d9261c;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container {
+    padding: 60px 15px;
+}
+
+@-webkit-keyframes bgchange {
+    0% {
+        background-color: #d9261c;
+    }
+
+    50% {
+        background-color: #ffe500;
+    }
+
+    100% {
+        background-color: #1a3882;
+    }
+}
+
+.custom-bottle {
+    display: inline-block;
+    padding-top: 400px;
+}
+
+.bottle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    text-shadow: none;
+    color: #193781;
+    transform: translate(-50%, 0%);
+    padding-top: 130px;
+    width: 150px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+}
+.description {
+    height: 50px;
+    margin: auto;
+    width: 130px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    font-size: 9px;
+}
+.flavor {
+    margin: auto;
+    font-weight: 800;
+    width: 100px;
+    overflow: hidden;
+}
+

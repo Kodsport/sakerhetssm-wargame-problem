@@ -1,0 +1,30 @@
+title: An ARM and a leg
+description: We truly have no idea what in the world is going on with this one. Good luck!
+authors:
+  - Oskar Tornevall
+categories:
+  - hardware
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: insert_smw_r3fer3nce_h3r3
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 7dd1169c-4f57-4f58-a304-a330ebc88a76
+spec: 0.0.1
+
+score: 500
+custom:
+  order: 4

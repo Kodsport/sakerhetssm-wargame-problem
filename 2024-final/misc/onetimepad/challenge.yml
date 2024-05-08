@@ -1,0 +1,21 @@
+title: One time pad?
+description: I might have misunderstood what a one time pad is, anyway my message was so long I had to reuse my key on every row.
+authors:
+  - Leopold Hermansson
+categories:
+  - misc
+  - crypto
+
+flag_format_prefix: SSM{
+flags:
+  - flag: Next_time_I_should_probably_ask_ChatGPT_instead_of_guessing
+
+downloadable_files:
+ - enc.png
+
+challenge_id: be473217-4d1b-409a-9486-fd91d0332737
+spec: 0.0.1
+
+score: 300
+custom:
+  order: 61

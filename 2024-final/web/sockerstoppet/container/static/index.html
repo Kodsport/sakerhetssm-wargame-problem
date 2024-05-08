@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>SockerStoppet</title>
+    <script src='/static/qrcode.min.js'></script>
+
+    <style>
+
+header {
+  background-color: #ffefd5; /* Creamy color */
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #ffdab9; /* Lighter border color */
+}
+
+header h1 {
+  font-size: 48px;
+  color: #8b4513; /* Chocolate brown color */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Adding some letter spacing */
+  margin-bottom: 10px; /* Adding some space below the heading */
+}
+
+header p {
+  font-size: 20px;
+  color: #8b4513;
+  font-style: italic; /* Italicize the text */
+}
+
+/* Styling the navigation */
+nav {
+  background-color: #ffefd5;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 2px solid #ffdab9;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8b4513;
+  font-size: 18px;
+  font-weight: bold; /* Making the navigation links bold */
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>SockerStoppet</h1>
+        <p>Din beställningsportal för chefsgrädden</p>
+      </header>
+      
+    <div id="unauthed">
+
+        <input type="text" name="" id="ssn">
+        <button onclick="loggain()">Log in</button>
+
+    </div>
+
+    <div>
+        <p id="namex">Du är inte inloggad</p>
+
+    </div>
+
+    <div id="authed" style="display: none;">
+
+        <h3>Chefsgrädde-approval department</h3>
+        <button onclick="logout()">Log out</button>
+
+        <img src="/static/arrows.gif">
+        <br>
+        <button style="margin-left: 15vh;" onclick="pledge()">Sign the pledge</button>
+
+        <br>
+        <br>
+
+        <p id="flagg"></p>
+
+    </div>
+    
+    <div id="qrcode"></div>
+
+    <script>
+        function logout() {
+            fetch('/bankid/logout', {
+                credentials: "include",
+                method: 'POST'
+            }).then(x => {
+                fetchMe()
+            })
+        }
+        
+        function fetchMe() {
+            fetch('/@me', {
+                credentials: "include"
+            }).then(r => r.json()).then(r => {
+                authed.style = "display: block;"
+                unauthed.style = "display: none;"
+                namex.innerText = `Inloggad som ${r.Name}`
+            }).catch(r => {
+                authed.style = "display: none;"
+                unauthed.style = "display: block;"
+                namex.innerText = "Du är inte inloggad"
+            })
+        }
+        fetchMe()
+
+        function loggain() {
+            fetch("/bankid/order", {
+                method: 'POST',
+                credentials: "include",
+                body: JSON.stringify({
+                    ssn: ssn.value
+                })
+            })
+            .then(r => {
+                if (r.status != 200) {
+                    alert("nah")
+                    return
+                }
+
+                return r.json()
+            })
+            .then(r => {
+                var qr = new QRCode(document.getElementById("qrcode"), "");
+
+                qr.makeCode(r.qr_code)
+
+                let id = setInterval(()=>{
+                    
+                    fetch("/bankid/collect", {
+                        method: 'POST',
+                        credentials: 'include',
+                        body: JSON.stringify({
+                            order_ref: r.order_ref
+                        })
+                    }).then(r => r.json()).then(r => {
+                        switch (r.status) {
+                            case "pending":
+                                qr.clear()
+                                qr.makeCode(r.qr_code)
+                                break;
+                            default:
+                                clearInterval(id)
+                                qrcode.innerHTML = ""
+                                console.log(r.status)
+                                fetchMe()
+                                break;
+                        }
+                    })
+                },1000)
+                
+            })
+        }
+
+        function pledge() {
+            fetch("/bankid/order", {
+                method: 'POST',
+                credentials: "include",
+            })
+            .then(r => {
+                if (r.status != 200) {
+                    alert("nah")
+                    return
+                }
+
+                return r.json()
+            })
+            .then(r => {
+
+                
+                var qr = new QRCode(document.getElementById("qrcode"), "");
+                
+                qr.clear()
+                qr.makeCode(r.qr_code)
+
+                let id = setInterval(()=>{
+                    
+                    fetch("/bankid/collect_chefsgrädde_eula", {
+                        method: 'POST',
+                        credentials: 'include',
+                        body: JSON.stringify({
+                            order_ref: r.order_ref
+                        })
+                    }).then(r => r.json()).then(r => {
+                        switch (r.status) {
+                            case "pending":
+                                qr.clear()
+                                qr.makeCode(r.qr_code)
+                                break;
+                            default:
+                                clearInterval(id)
+                                qr.clear()
+                                console.log(r.status)
+                                fetchMe()
+                                break;
+                        }
+                    })
+                },1000)
+                
+            })
+        }
+
+
+        function getFlag() {
+            fetch("/flag", {
+                credentials: 'include'
+            }).then(r => r.json())
+            .then(r => {
+                if (r.flag) {
+                    flagg.innerText = r.flag
+                }
+            })
+        }
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+title: Stack Buffer Overflow 101
+description: Introduction to stack buffer overflows. 
+authors:
+  - nnewram
+categories:
+  - pwn
+  - easy
+
+flag_format_prefix: SSM{
+flags: 4nd_n0w_y0ur_pwn_c4r33r_h45_b3gun
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - Stack Buffer Overflow 101.c
+  - Stack Buffer Overflow 101
+
+custom:
+  build_script: build.sh
+  order: 41
+score: 150
+
+challenge_id: b8f4990d-85ce-4cc0-813c-dc938e4be0d0
+spec: 0.0.1

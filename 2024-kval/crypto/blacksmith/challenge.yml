@@ -1,0 +1,26 @@
+title: BlackSmith
+description: Welcome to our store! Please tell us what you want to forge
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: f0rg1ng_f0r_th3_w1n
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+custom:
+  order: 25
+score: 350
+
+challenge_id: e05ec9e7-b4ad-483b-93dd-95ff907c3dc8
+spec: 0.0.1

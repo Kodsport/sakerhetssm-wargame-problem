@@ -1,0 +1,21 @@
+title: md10
+description: I heard md5 was insecure so I thought I would give md10 a try :)
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: d0nt_3v3n_try_t0_@z%2?@5_gu3ss_y0u_l1ttl3...
+
+downloadable_files:
+  - enc_flag
+  - md10.py
+
+custom:
+  order: 24
+score: 300
+
+challenge_id: fcb48a71-bdc1-4156-9d52-fe336b7b49b1
+spec: 0.0.1

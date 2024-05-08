@@ -1,0 +1,26 @@
+title: "XYZ: Part 2"
+description: > 
+  Good job on finding that thing in the disk image.
+  We have been locked out of one of our other servers and we suspect
+  they were compsomised by the same attacker. Can you try to regain access to it.
+
+  Note: The service can be found in "XYZ: Part 2"
+
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: m4yb3_0ne_0f_MaNy
+
+# Service is in xyz1
+
+challenge_id: 883985ba-bb73-4987-9845-c2d42cfcb115
+spec: 0.0.1
+
+score: 450
+custom:
+  order: 24

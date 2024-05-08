@@ -1,0 +1,26 @@
+title: Ragnar's Runestones
+description: Have you heard?! There is this new person in town called Ragnar who carves beautiful runestones for you. Unfortunately, some people have been jealous of his success since he has a massive vault full of penningar boasting his wealth. Due to this, they started tampering with the runestone requests customers were sending in, giving him a bad reputation. To solve this problem Ragnar invented a new system. Just send in the encrypted private key he gives out together with your encrypted message. If the runestone then doesn't come out as wished for, it is the customers fault. Ragnar is so confident in this system he even puts his encrypted vault password at display. Let's just get a runestone...
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: r3m3mb3r_b04st1ng_1s_n0t_g00d_k1ds
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+challenge_id: 840c2b88-8fcc-477b-8ede-2750ac5bc61e
+spec: 0.0.1
+
+score: 500
+custom:
+  order: 32

@@ -1,0 +1,61 @@
+categories:
+  - forensics
+  - crypto
+  - pwn
+  - reversing
+  - web
+  - misc
+  - introduction
+  - osint
+  - boot2root
+  - easy
+  - onsite
+  - hardware
+
+authors:
+  - Mateusz Drwal
+  - Fredrik Ekholm
+  - Axel Nilsson
+  - Leopold Hermansson
+  - Aron Bergman
+  - mkg
+  - ZetaTwo
+  - zzz
+  - asta
+  - thpeter
+  - Jonathan Lööv
+  - toblu
+  - nnewram
+  - Movitz Sunar
+  - Loke Gustafsson
+  - Rasmus Hulthe
+  - Oskar Tornevall
+  - Andreas Lönn
+  - Laith Abbawi
+  - Adrian Wireklint
+  - Säkerhets-SM
+  - FRA
+  - Cparta Cyber Defense
+  - Orange Cyberdefense
+  - Sentor
+  - Kristoffer Blasiak
+  - Simon Skogsberg
+  - Joshua Andersson
+  - 4d11
+  - ntomsic
+  - chopingu
+  - ghagl
+  - Harry Zhang
+  - Michal Dzialak
+  - daydun
+
+flag_format_prefixes:
+  - SSM{
+
+
+custom:
+  container_registry: registry.sakerhetssm.se:5000/
+  platform_url: https://sakerhetssm.se
+  platform_api_key: # comittas inte
+  bucket: ssm-2024
+  secret: 58f2fa03b4517990c54029389ad5495d

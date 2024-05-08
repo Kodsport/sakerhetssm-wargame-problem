@@ -1,0 +1,22 @@
+title: DNS 101
+description: |
+  DNS is like the phone book of the internet and is, among other things, used to translate domain names to IP addresses.
+  
+  Tools like nslookup, dig and Resolve-DNS can be used to query DNS resources. What are the TXT records of "sakerhetssm.se"?
+
+authors:
+  - Säkerhets-SM
+categories:
+  - introduction
+  - easy
+
+flag_format_prefix: SSM{
+flags: plugga_dns_ctlog_certs_och_annat
+
+custom:
+  order: 6
+
+score: 10
+
+challenge_id: 50fd62ed-8d7a-4e2c-9732-5c3d88fa4d42
+spec: 0.0.1

@@ -1,0 +1,36 @@
+title: "XYZ: Part 1"
+description: > 
+  Several of our servers have been acting 
+  a bit strangely recently. We suspect something bad has happened to it.
+  We managed to create a disk image of one of them.
+  Can you take a look and see if you can find anything suspicious.
+
+  Note: The service is only relevant for "XYZ: Part 2"
+
+authors:
+  - ZetaTwo
+categories:
+  - forensics
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: b4s3d_0n_a_TrU3_sT0ry
+
+# xyz.tar.gz (DO NOT REBUILD OR OVERWRITE THIS FILE - WILL LEAK FLAG!)
+# TODO: before archive, ping ZetaTwo
+downloadable_files:
+  - https://drive.google.com/file/d/1qfwPtbfSZKY8AGuRtyeQfi5KyNe3Wkgb/view?usp=drive_link
+
+# service for part 2
+service:
+  type: tcp
+  image: challenge
+  internal_port: 22
+
+challenge_id: a8f3c493-9d73-4543-89ca-46604ab795d8
+spec: 0.0.1
+
+score: 250
+custom:
+  order: 22

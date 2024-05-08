@@ -1,0 +1,30 @@
+title: Cracking de Code
+description: We found another code on the device, but this one seems... unpredictable
+authors:
+  - Oskar Tornevall
+categories:
+  - hardware
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: d3_bru1jn_my_bel0ved
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: c7ce00b8-9240-4243-b337-32fd45d5db14
+spec: 0.0.1
+
+score: 350
+custom:
+  order: 3

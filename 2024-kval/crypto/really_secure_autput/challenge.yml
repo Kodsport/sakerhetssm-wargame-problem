@@ -1,0 +1,21 @@
+title: Really Secure Autput
+description: Try to crack this one ;)
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: pr1m35_4r3_v3ry_53n51t1v3
+
+downloadable_files:
+  - really_secure_autput.py
+  - autput
+
+custom:
+  order: 22
+score: 250
+
+challenge_id: 89ee9beb-62d3-4f76-b112-8ea24af59d8d
+spec: 0.0.1

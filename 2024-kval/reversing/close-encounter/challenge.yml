@@ -1,0 +1,27 @@
+title: Close Encounter of the C Kind
+description: I found some 70s aliens in my netcat, help me get rid of them? I've also got a copy of their mothership's mainframe!
+authors:
+  - 4d11
+categories:
+  - reversing
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: strings_go_brrRRRRRR
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service
+
+custom:
+  order: 31
+score: 150
+
+challenge_id: e9c77626-4f0b-4f0d-b71e-9d2b369e701d
+spec: 0.0.1

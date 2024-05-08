@@ -1,0 +1,29 @@
+221B Baker Street
+London
+February 22, 1882
+
+My Dear Watson,
+
+I trust this letter finds you in the best of health. As I continue my investigation into the curious case of Mr. Neville St. Clair, I find myself in need of your assistance once more. The details of this case are unfolding in a most peculiar manner, and I am certain your keen observations will prove invaluable in unraveling its complexities.
+
+The events surrounding Mr. St. Clair's disappearance are nothing short of baffling. A man of fine reputation and seemingly unblemished character vanishing without a trace is a mystery that warrants our immediate attention. There are peculiarities in this case that resonate with our past encounters, hinting at a deeper, more sinister undercurrent.
+
+Now, onto more pressing matters. In order to proceed with our inquiries, I require you to join me at the address below:
+
+57A Wimpole Street, Marylebone, London
+
+This particular location has become a focal point in our investigation. It is here that we may find the elusive clues that have thus far evaded us. However, gaining entry will not be a straightforward affair. London has its secrets, as you well know, and this address is no exception.
+
+Upon your arrival, kindly present the following password to gain access to the premises and our ongoing investigation:
+
+SSM{ELEMENTARY_MY_DEAR_CIPHER}
+
+Please ensure utmost discretion in this matter, as the circumstances surrounding this case are delicate and require the utmost secrecy. Your discretion has always been a hallmark of our partnership, and I have no doubt it will serve us well once more.
+
+I eagerly anticipate our reunion and the intellectual camaraderie that always accompanies our joint endeavors. The game is afoot, my dear Watson, and I am certain that with your assistance, we shall once again emerge victorious.
+
+Until then, I remain
+
+Yours faithfully,
+
+Sherlock Holmes

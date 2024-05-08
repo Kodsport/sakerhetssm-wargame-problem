@@ -1,0 +1,20 @@
+title: Crossed out password
+description: Here is the flag, good luck!
+authors:
+  - Rasmus Hulthe
+categories:
+  - forensics
+
+flag_format_prefix: SSM{
+flags: h0w_d1d_y0u_uncr055_7h15_p4s5w0rd:p
+
+downloadable_files:
+  - flag.png
+
+
+challenge_id: f01670d0-7b21-4ea4-b0d8-5bd69b30fd16
+spec: 0.0.1
+
+score: 300
+custom:
+  order: 52

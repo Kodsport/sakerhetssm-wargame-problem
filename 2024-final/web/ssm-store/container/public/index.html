@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malmö Meatballs</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+  <header>
+    <h1>Malmö Meatballs</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our products</h2>
+    <section class="products">
+      <div class="product">
+        <img src="/golden.png">
+        <h3>The golden meatball</h3>
+        <p>Den gyllene köttbullen is a highly sought after luxury! Might even contain a flag...</p>
+        <p>10 000 kr</p>
+        <form action="/buy-flag" method="post">
+          <input type="submit" value="Köp" />
+        </form>
+      </div>
+      <div class="product">
+        <img src="/kottbulle.jpg">
+        <h3>OK meatball</h3>
+        <p>A classical köttbulle.</p>
+        <p>25 kr</p>
+        <form action="/buy-ball" method="post">
+          <input disabled="disabled" type="submit" value="Köp" />
+        </form>
+      </div>
+      <div class="product">
+        <img src="/kofte.jpg">
+
+        <h3>Köfte</h3>
+        <p>A turkish meatball. The battle between köfte and köttbulle might never settle, but here you get to choose.</p>
+        <p>25 kr</p>
+        <form action="/buy-ball" method="post">
+          <input disabled="disabled" type="submit" value="Köp" />
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 1986 Malmö Meatballs. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+title: Slowpass
+description: My boss told me that my password checking function was so fast that it felt insecure, so I refactored to add delays. I don't think I introduced any vulnerabilities.
+authors:
+  - 4d11
+categories:
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: h4sh_y0ur_p455word5
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+custom:
+  order: 65
+score: 250
+
+challenge_id: 7fc004ff-4cf7-42dd-a877-73407874c6f3
+spec: 0.0.1

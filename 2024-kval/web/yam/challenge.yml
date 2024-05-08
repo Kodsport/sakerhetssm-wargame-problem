@@ -1,0 +1,25 @@
+title: Yam store
+description: Business is booming, time to make a website for my yam store! I'm new at this, but i think this is how you are supposed to do it...
+authors:
+  - Mateusz Drwal
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: l3457_cur53d_f0rm_p4r53r
+
+service:
+  type: website
+  image: container
+  internal_port: 1337
+
+downloadable_files:
+  - container/server.py
+
+custom:
+  order: 14
+score: 300
+
+challenge_id: 0279f6bc-1e4c-4e08-8ebe-07b099f70d90
+spec: 0.0.1

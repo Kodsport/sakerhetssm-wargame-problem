@@ -1,0 +1,26 @@
+title: Malmö Meatballs
+description: There is a large meatball-provider in Malmö that just launched a web shop! They sell a very expensive köttbulle that we need to steal... 
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: spoopy_signatures
+
+service:
+  type: website
+  image: .
+  internal_port: 3001
+
+
+downloadable_files:
+  - container/index.js
+
+challenge_id: 05019946-00f6-4a42-ab1a-da4c76675fa0
+spec: 0.0.1
+
+score: 300
+custom:
+  order: 13

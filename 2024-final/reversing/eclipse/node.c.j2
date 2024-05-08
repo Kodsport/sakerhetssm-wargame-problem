@@ -1,0 +1,39 @@
+#include <stdint.h>
+#include <stddef.h>
+#include <stdio.h>
+
+#include "nodes/node{{ node_id }}.h"
+#include "traversal.h"
+
+{% for edge in edges %}
+#include "nodes/node{{ edge }}.h"
+{% endfor %}
+
+static volatile const uint64_t node_{{ node_id }}_key = {{ '0x%016X' % node_key }};
+static volatile const size_t node_{{ node_id }}_len = SIZE_MAX;
+
+int node_{{ node_id }}_pre(char *path, void *prev, size_t prevlen, uint64_t prevkey) {
+    if(prev != NULL) {
+        crypt_node(prev, prevlen, prevkey);
+    }
+    crypt_node(&node_{{ node_id }}, node_{{ node_id }}_len, node_{{ node_id }}_key);
+    return node_{{ node_id }}(path);
+}
+
+int node_{{ node_id }}(char *path) {
+    //printf("Node: %d\n", {{ node_id }});
+    checkpoint(node_{{ node_id }}_key);
+
+    switch(path[0]) {
+        default:
+        case 0:
+            return finish(&node_{{ node_id }}, node_{{ node_id }}_len, node_{{ node_id }}_key);
+        break;
+        {% for edge in edges %}
+        case ('A'+{{loop.index0}}):
+            return node_{{ edge }}_pre(&path[1], &node_{{ node_id }}, node_{{ node_id }}_len, node_{{ node_id }}_key);
+            break;
+        {% endfor %}
+    }
+    return 0;
+}

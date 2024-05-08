@@ -1,0 +1,23 @@
+title: rsAI
+description: Artificial intelligence seems to be the solution to every problem nowadays, so I have now created a perfectly secure encryption scheme that uses the wonders of AI and RSA. E = mc^2 + AI !!!
+authors:
+  - chopingu
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: AI_1s_n0t_1t..p00r_31nst31n
+
+downloadable_files:
+  - ai_biases
+  - ai_weights
+  - modulus
+  - enc_flag
+  - rsAI.py
+
+custom:
+  order: 26
+score: 400
+
+challenge_id: 2423fbca-9fff-48f7-a8c5-9b8942b96ff1
+spec: 0.0.1

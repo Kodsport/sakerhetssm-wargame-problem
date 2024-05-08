@@ -1,0 +1,30 @@
+title: Ferdinand's Code
+description: The device keeps asking us about some "code", but we forgot what it is! Can you recover it?
+authors:
+  - Oskar Tornevall
+categories:
+  - hardware
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: i2c_1s_s3cur3
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 495eca8b-1985-441b-b77f-27222aa32abf
+spec: 0.0.1
+
+score: 150
+custom:
+  order: 1

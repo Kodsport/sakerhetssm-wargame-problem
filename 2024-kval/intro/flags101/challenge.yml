@@ -1,0 +1,25 @@
+title: Flags 101
+description: |
+  When solving CTF challenges, you are looking for "flags". Every challenge has a flag which represents the solution to the problem. If you manage to get the flag, you have solved the challenge and can submit it to this website to prove that you have indeed solved the challenge. This will award you points for your team. In different challenges you will have to do things such as decrypt messages, analyze binaries or find security issues in websites to get the flags.
+
+  Flags look like arbitrary strings of text but often follow the format <code>SSM{...}</code>. This is called the "flag format". Some flags do not follow this format, i.e. they don't start with <code>SSM{</code>, but in those cases it is clearly stated in the challenge description.
+
+  Below is the flag for this challenge. Enter it into the text field below and press enter. This is the way you submit the flag and solve the challenge!
+  <code>SSM{detta_är_en_riktigt_bra_flagga}</code>
+
+authors:
+  - Säkerhets-SM
+categories:
+  - introduction
+  - easy
+
+flag_format_prefix: SSM{
+flags: detta_är_en_riktigt_bra_flagga
+
+custom:
+  order: 1
+
+score: 5
+
+challenge_id: 491058c2-b449-47a4-9158-6c8c3da08bdf
+spec: 0.0.1

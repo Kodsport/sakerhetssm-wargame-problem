@@ -1,0 +1,7 @@
+Prerequisites:
+- Two clients
+- One client shall have vsftpd installed and enabled, as well as server.py running, with the files in the correct path, as well as the correct IP being set
+
+Recreation:
+Start Wireshark and record the second client logging into and downloading everything from the FTP server.
+Connect the second client into the service and get the flag output.

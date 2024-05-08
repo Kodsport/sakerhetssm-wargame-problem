@@ -1,0 +1,27 @@
+title: Vladiator
+description: Break the chinese ELF validator (provided binary ELFSign is this code https://github.com/Yvan-xy/ELFSign). I give signed binary, libc.
+authors:
+  - nnewram
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: vlad_4ppr0v35
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/ELFSign
+  - container/run.py
+  - container/Dockerfile
+
+custom:
+  order: 45
+score: 500
+
+challenge_id: 87701c78-ed17-478c-8b12-8cd5946975d0
+spec: 0.0.1

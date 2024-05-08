@@ -1,0 +1,29 @@
+title: SockerStoppet
+description: >
+  Only people who sign the chefsgrädde-pledge get to order it! Fikamyndigheten can't let dirty bureaucrats just get ahold of the prima-ballarina grädde.
+  <br>
+  There will be two phones avaliable on-site for BankID signing in the dev environment. Do not attempt to install on your own phone because it is a hassle (existing bankid will be removed, requires reinstall). The phones (two cracked huaweies) and BankID password is <code>000001</code>. Please share the phones, you have source, so constant authing is not necessary. The SSNs are either 192403031137 or 192403031335.
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: mmm_grädde_so_good_yum_yum
+
+service:
+  type: website
+  image: .
+  internal_port: 8000
+
+
+downloadable_files:
+  - container.zip
+
+challenge_id: 15a65ef4-a004-4c75-948f-4f92e120302a
+spec: 0.0.1
+
+score: 300
+custom:
+  order: 12

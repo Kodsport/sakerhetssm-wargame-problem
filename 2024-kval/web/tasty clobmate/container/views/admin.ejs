@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adminbot</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/6253f6ca.club_mate.png" width="280">
+        <h1>Admin!</h1>
+        <h2>Send your drink ID for approval</h2>
+        <form action="/admin" method="post">
+            <label for="drinkid">ID:</label><br>
+            <input type="text" id="drinkid" name="drinkid"><br>
+            <input type="submit" value="Send!">
+        </form>
+        <% if(result){ %>
+            <h3><%= result %></h3>
+          <% } %>
+    </div>
+</body>
+
+</html>

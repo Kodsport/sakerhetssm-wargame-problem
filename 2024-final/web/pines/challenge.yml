@@ -1,0 +1,25 @@
+title: Skógræktin
+description: Skógræktin have made attempts to upgrade the legacy pine counting system. The new system is in a transitional phase, but Iceland still need to count their pines. Please help us exploit their website, so that we can replace all the pine trees with birch!
+authors:
+  - ntomsic
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: php_leg4cy_p1n3s_c0unt3d
+
+downloadable_files:
+   - container/index.js
+
+service:
+   type: website
+   image: container
+   internal_port: 3000
+
+challenge_id: ed917fed-e23d-4bde-9ff6-4a5718de428c
+spec: 0.0.1
+
+score: 250
+custom:
+  order: 11

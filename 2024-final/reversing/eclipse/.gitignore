@@ -1,0 +1,6 @@
+nodes/
+*.elf
+graph.dot
+graph.dot.svg
+flag.h
+flag.c

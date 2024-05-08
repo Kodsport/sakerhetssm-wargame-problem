@@ -1,0 +1,24 @@
+title: Smushed zip
+description: I had to scrape this zip file off the asphalt after someone ran it over, unfortunately i couldn't get it off in one piece.
+authors:
+  - Mateusz Drwal
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: y0u_un5mu5h3d_17
+
+downloadable_files:
+  - part1
+  - part2
+  - part3
+  - part4
+  - part5
+
+custom:
+  order: 51
+score: 200
+
+challenge_id: c0edc1d1-7c6a-4a0a-a34b-8ffce8743a05
+spec: 0.0.1

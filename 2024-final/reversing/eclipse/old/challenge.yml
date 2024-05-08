@@ -1,0 +1,26 @@
+title: Default title
+description: Default description
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: d3f4ul7_fl46
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 9940f61b-bb39-4ac4-83e3-dc15f9fb9dbf
+spec: 0.0.1

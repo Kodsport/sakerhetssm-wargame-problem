@@ -1,0 +1,27 @@
+title: EaSSdb
+description: We at Easy access Safe and Secure Databases pride ourselves in the simplicity of our protocol. Using a duplex communication channel with optimized binary lifted machine code we can efficiently filter the database in real-time on-prem using synergetic technical sharing principles of computation.
+authors:
+  - nnewram
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: b1n4ry_pr070c01_b1n4ry_c0d3
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/challenge
+  - EaSSdb.c
+
+custom:
+  order: 42
+  build_script: build.sh
+score: 250
+
+challenge_id: 0f6a396b-6f83-44ec-b01c-3367db53a900
+spec: 0.0.1

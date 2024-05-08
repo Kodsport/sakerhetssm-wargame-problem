@@ -1,0 +1,26 @@
+title: encropter
+description: I wrote my very own encroption service in Python, check it out! Python is amazing!
+authors:
+  - 4d11
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: "11098151313205477752"
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+custom:
+  order: 23
+score: 250
+
+challenge_id: 516ddada-15da-4cdc-b529-bde26b9b75e0
+spec: 0.0.1

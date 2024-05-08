@@ -1,0 +1,33 @@
+title: "A Study in #FF2400"
+description: My weird roommate sent me a letter, but it's all gibberish. Could you help me decipher it?
+authors:
+  - 4d11
+categories:
+  - crypto
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags:
+  - flag: ELEMENTARY_MY_DEAR_CIPHER
+  - flag: elementary_my_dear_cipher
+
+downloadable_files:
+  - ciphertext.txt
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80d
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+custom:
+  order: 21
+score: 150
+
+challenge_id: ff8a72f5-11b8-411c-9223-95da6d989471
+spec: 0.0.1
