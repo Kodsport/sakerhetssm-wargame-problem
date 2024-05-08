@@ -55,7 +55,7 @@ flag_format_prefixes:
 
 custom:
   container_registry: registry.sakerhetssm.se:5000/
-  platform_url: https://sakerhetssm.se
-  platform_api_key: # comittas inte
-  bucket: ssm-2024
-  secret: 58f2fa03b4517990c54029389ad5495d
+  platform_url: https://sakerhetssm.se/
+  platform_api_key: ctfimp_bb23b16d037d4af5994794fde78c18ca_4d33b260b1a4c231
+  bucket: ssm-wargame-prod
+  secret: ssm-wargame-secret-aoisdjaoisjd!! 

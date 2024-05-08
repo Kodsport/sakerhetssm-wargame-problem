@@ -19,3 +19,7 @@ service:
 
 challenge_id: 17fbc9ab-53e4-4531-b217-1e1c8469451e
 spec: 0.0.1
+
+human_metadata:
+  event_name: SSM 2024 Kval
+

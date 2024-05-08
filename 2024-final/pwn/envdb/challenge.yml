@@ -24,3 +24,7 @@ custom:
 
 challenge_id: 2bc2481f-3a41-40a5-a2d7-c2df451c7f75
 spec: 0.0.1
+
+human_metadata:
+  event_name: SSM 2024 Final
+

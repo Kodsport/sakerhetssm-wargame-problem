@@ -32,3 +32,6 @@ downloadable_files:
 
 challenge_id: 3ef6d875-461a-48ca-9d07-6e50f98f0031
 spec: 0.0.1
+
+human_metadata:
+  event_name: SSM 2024 Kval
