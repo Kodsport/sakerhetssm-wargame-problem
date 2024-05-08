@@ -17,8 +17,6 @@ service:
 custom:
   build_script: build.sh
 
-custom:
-  order: 13
 score: 150
 
 challenge_id: fde145cce1777f0b428cb236363fdcc1

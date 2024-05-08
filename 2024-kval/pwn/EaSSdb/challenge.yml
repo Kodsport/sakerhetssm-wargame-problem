@@ -19,7 +19,6 @@ downloadable_files:
   - EaSSdb.c
 
 custom:
-  order: 42
   build_script: build.sh
 score: 250
 
