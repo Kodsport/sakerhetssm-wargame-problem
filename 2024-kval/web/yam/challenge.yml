@@ -17,7 +17,7 @@ service:
 downloadable_files:
   - container/server.py
 
-
+score: 300
 
 challenge_id: 0279f6bc-1e4c-4e08-8ebe-07b099f70d90
 spec: 0.0.1

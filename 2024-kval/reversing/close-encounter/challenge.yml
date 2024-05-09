@@ -19,7 +19,7 @@ service:
 downloadable_files:
   - container/service
 
-
+score: 150
 
 challenge_id: e9c77626-4f0b-4f0d-b71e-9d2b369e701d
 spec: 0.0.1

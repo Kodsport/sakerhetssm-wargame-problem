@@ -12,7 +12,7 @@ flags: us1n6_i2c_1s_v3ry_fun
 downloadable_files:
   - trace.sr
 
-
+score: 250
 
 challenge_id: 8731bc89-7dec-49e4-90ea-54b91c92b1d1
 spec: 0.0.1

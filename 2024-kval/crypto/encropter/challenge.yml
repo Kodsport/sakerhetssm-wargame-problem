@@ -18,7 +18,7 @@ service:
 downloadable_files:
   - container/service.py
 
-
+score: 250
 
 challenge_id: 516ddada-15da-4cdc-b529-bde26b9b75e0
 spec: 0.0.1

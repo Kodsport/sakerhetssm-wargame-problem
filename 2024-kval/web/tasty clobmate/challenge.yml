@@ -17,7 +17,7 @@ service:
   image: container
   internal_port: 3000
 
-
+score: 400
 
 challenge_id: bed48e7d-42aa-4831-844e-8142dccd619f
 spec: 0.0.1

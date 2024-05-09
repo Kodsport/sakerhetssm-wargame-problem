@@ -17,7 +17,7 @@ service:
 custom:
   build_script: build.sh
 
-
+score: 150
 
 challenge_id: fde145cce1777f0b428cb236363fdcc1
 spec: 0.0.1
