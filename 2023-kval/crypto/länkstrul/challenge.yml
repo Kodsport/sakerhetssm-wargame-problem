@@ -30,3 +30,6 @@ score: 100 # ändra inte, vi har sagt att den här är värd 100 poäng på hems
 
 challenge_id: 3f3100fe-7193-4e1b-9564-7334af64d115
 spec: 0.0.1
+
+human_metadata:
+  event_name: SSM 2023 Kval

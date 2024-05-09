@@ -15,5 +15,5 @@ challenge_id: 2ab60a69-b578-4feb-9e96-c630a6a1c227
 spec: 0.0.1
 
 score: 200
-custom:
-  order: 42
+human_metadata:
+  event_name: SSM 2022 Final

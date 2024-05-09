@@ -34,3 +34,5 @@ challenge_id: 1337dead-c001-4141-4242-726b19a4e1e6
 spec: 0.0.1
 
 score: 350
+human_metadata:
+  event_name: SSM 2022 Final

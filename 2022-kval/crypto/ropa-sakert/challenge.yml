@@ -22,3 +22,5 @@ spec: 0.0.1
 challenge_id: 1b2a8bf8-2436-3bbd-4e3d-525df7d132d5
 
 score: 300
+human_metadata:
+  event_name: SSM 2022 Kval

@@ -17,4 +17,5 @@ score: 350
 challenge_id: 814ab2c8-5fca-4687-adc8-e80b1a0e8852
 spec: 0.0.1
 
-score: 250
+human_metadata:
+  event_name: SSM 2023 Final

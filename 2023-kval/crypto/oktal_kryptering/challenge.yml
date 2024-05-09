@@ -16,3 +16,6 @@ score: 200
 
 challenge_id: 2006a689-9b74-4ed1-b65a-2889776731ef
 spec: 0.0.1
+
+human_metadata:
+  event_name: SSM 2023 Kval

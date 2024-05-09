@@ -27,12 +27,10 @@ downloadable_files:
 custom:
   build_script: build.sh
 
-# custom:
-#   order: 41
-# score: 100
-
 spec: 0.0.1
 
 challenge_id: 89034ae2-a4ab-491d-bca4-28952b919cd0
 
 score: 100
+human_metadata:
+  event_name: SSM 2023 Final
