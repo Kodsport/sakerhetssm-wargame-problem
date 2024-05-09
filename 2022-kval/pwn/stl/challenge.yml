@@ -3,7 +3,7 @@ description: |
   <a href="https://en.wikipedia.org/wiki/STL_(file_format)">STL</a> är ett format som kommer i två smaker - ASCII och binärt.
   Vi har skrivit ihop ett litet verktyg för att konvertera från ena till andra. Hoppas det inte har några säkerhetsfel i sig!
 authors:
-  - Jonathan Lööv
+  - Xenia Lööv
 categories:
   - pwn
 

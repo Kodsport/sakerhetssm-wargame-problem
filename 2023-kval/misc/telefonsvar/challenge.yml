@@ -5,13 +5,12 @@ description: |
   OBS: Vi har sett att vissa ljudrelaterade problem kan uppstå i klienten, så vi bifogar två stycken. De ska ha identisk funktionalitet, men använder olika audiobibliotek. Funkar inte den ena testa den andra, eller testa på en annan dator.
 authors:
   - Mateusz Drwal
-  - Jonathan Lööv
+  - Xenia Lööv
   - Oskar Tornevall
   - Aron Bergman
   - Simon Skogsberg
 categories:
   - misc
-  - lätt
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{

@@ -23,7 +23,7 @@ authors:
   - zzz
   - asta
   - thpeter
-  - Jonathan Lööv
+  - Xenia Lööv
   - toblu
   - nnewram
   - Movitz Sunar
@@ -34,9 +34,6 @@ authors:
   - Laith Abbawi
   - Adrian Wireklint
   - Säkerhets-SM
-  - FRA
-  - Cparta Cyber Defense
-  - Orange Cyberdefense
   - Sentor
   - Kristoffer Blasiak
   - Simon Skogsberg
@@ -47,7 +44,14 @@ authors:
   - ghagl
   - Harry Zhang
   - Michal Dzialak
-  - daydun
+  - DayDun
+
+  - FRA
+  - Cparta Cyber Defense
+  - Orange Cyberdefense
+  - FOI
+  - MSAB
+  - Venor
 
 flag_format_prefixes:
   - SSM{

@@ -5,7 +5,6 @@ authors:
   - Mateusz Drwal
 categories:
   - pwn
-  - lätt
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{

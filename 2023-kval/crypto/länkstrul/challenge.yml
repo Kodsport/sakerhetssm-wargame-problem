@@ -10,11 +10,10 @@ description: |
 authors:
   - Aron Bergman
   - Mateusz Drwal
-  - Jonathan Lööv
+  - Xenia Lööv
   - Oskar Tornevall
 categories:
   - crypto
-  - lätt
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: null

@@ -27,6 +27,6 @@ downloadable_files:
 
 challenge_id: 4d71cbb1-ea6a-4247-9716-58209ba0ef6b
 spec: 0.0.1
-
+custom:
   build_script: build.sh
 score: 350
