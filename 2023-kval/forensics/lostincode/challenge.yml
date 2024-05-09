@@ -1,0 +1,36 @@
+title: Lost In Code — Orange Cyberdefense
+description: |
+  There is a flag somewhere within the file named "flag".
+
+  The flag is enclosed within typical CTF brackets: CTF{...}
+
+  Your task is to find the flag.
+
+  Good luck!
+
+authors:
+  - Orange Cyberdefense
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: CTF{
+flags: ^3nc0d1ngh3ll^
+
+downloadable_files:
+  - flag
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+score: 250
+
+challenge_id: f5023bce-b7c6-4031-879c-c593ee33bdcd
+spec: 0.0.1

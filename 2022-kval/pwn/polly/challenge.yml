@@ -1,0 +1,24 @@
+title: Polly
+description: Jag har hittat en papegoja som upprepar allt jag säger.
+authors:
+  - mkg
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: polly_gillar_kakor
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - papegoja
+  - papegoja.c
+
+challenge_id: 98ae9144-e729-4f77-9d97-45ebdc30a2db
+spec: 0.0.1
+
+score: 200

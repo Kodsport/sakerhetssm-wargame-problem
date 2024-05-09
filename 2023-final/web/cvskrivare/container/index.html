@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>CV-skrivare™</title>
+    <style>
+        body {
+            background-color: rgb(197, 193, 193);
+        }
+        .content {
+            background-color: white;
+            margin: 0 auto;
+            max-width: 2048px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .info {
+            grid-column: 1 / span 2;
+            justify-self: center;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .info img {
+            height: 125px;
+        }
+        .info h1 {
+            margin-bottom: 0;
+        }
+        .info p {
+            margin-top: 0;
+        }
+        strong, textarea {
+            display: block;
+        }
+        textarea {
+            width: 95%;
+            height: 300px;
+        }
+        #theframe {
+            width: 99%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+       <div class="info">
+            <img src="/gif">
+            <div>
+            <h1>CV-skrivare™</h1>
+            <p>Det enda sättet man borde skriva sitt CV på 2023!</p>
+            </div>
+            <img src="/gif">
+       </div> 
+       <div class="writing">
+            <h2>Skriv här</h2>
+            <form>
+                <label>Förnamn: <input type="text" name="firstname" value="Thomas A."></label><br>
+                <label>Efternamn: <input type="text" name="lastname" value="Anderson"></label><br>
+                <label>Email: <input type="text" name="email" value="neo@neoshorna.matrix"></label><br>
+                <strong>Innehåll:</strong>
+                <textarea name="cv"># Utbildning
+- Hackerlinjen på (Sydvästra) Coola Gymnasiet
+  - Hackade saker
+- Cyberhögstadiet™
+  - Hackade saker
+- Skippade några årskurser
+- Cyberdagiset™
+  - Hackade saker
+
+# Hobbyer
+- Cykla trehjuling
+- Långa promenader i skogen</textarea>
+                <input value="~Skapa PDF~" type="submit">
+            </form>
+       </div>
+       <div class="output">
+        <h2>Ditt CV</h2>
+        <iframe id="theframe"></iframe>
+       </div>
+    </div>    
+    <script>
+        document.getElementsByTagName("form")[0].addEventListener("submit", function(e){
+            e.preventDefault()
+            let firstname = document.getElementsByName("firstname")[0].value
+            let lastname = document.getElementsByName("lastname")[0].value
+            let email = document.getElementsByName("email")[0].value
+            let cv = document.getElementsByName("cv")[0].value
+            let url = (
+                "/document?firstname=" + encodeURIComponent(firstname) +
+                "&lastname=" + encodeURIComponent(lastname) +
+                "&email=" + encodeURIComponent(email) +
+                "&cv=" + encodeURIComponent(cv)
+            );
+            document.getElementById("theframe").src = url
+        })
+    </script>
+</body>
+
+</html>

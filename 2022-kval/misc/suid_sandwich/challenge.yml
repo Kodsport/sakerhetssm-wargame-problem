@@ -1,0 +1,25 @@
+title: Suid sandwitch
+description: I put setuid in your setgid in your setuid in your setgid
+authors:
+  - Mateusz Drwal
+categories:
+  - misc
+  - boot2root
+
+flag_format_prefix: SSM{
+flags: d37_4r_kr4n6l167_477_f4_5u1d_477_funk4_1_n5j41l_f0r50k_1n73_60r4_d37
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+custom:
+  build_script: build.sh
+  order: 62
+
+challenge_id: 328d9c03-77b2-4b29-97fd-4f0dc670858e
+spec: 0.0.1
+
+score: 250

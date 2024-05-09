@@ -1,0 +1,41 @@
+title: Finallistsimulator
+description: |
+  Här kan du testa på hur det kommer att kännas att vara en Säkerhets-SM 2023 finalist! Den kanske funkar på samma sätt som en telefonsvarsautomat?
+
+  OBS: Vi har sett att vissa ljudrelaterade problem kan uppstå i klienten, så vi bifogar två stycken. De ska ha identisk funktionalitet, men använder olika audiobibliotek. Funkar inte den ena testa den andra, eller testa på en annan dator.
+authors:
+  - Mateusz Drwal
+  - Jonathan Lööv
+  - Oskar Tornevall
+  - Aron Bergman
+  - Simon Skogsberg
+categories:
+  - misc
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: ses_i_goteborg
+
+downloadable_files:
+  - client.py
+  - client2.py
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+custom_service_types:
+  - type: voice
+    display: python client.py {host} {port}
+
+service:
+  type: voice
+  image: .
+  internal_port: 1337
+
+score: 250
+
+challenge_id: e1c538c0-80d8-440d-a06d-507b3ea24663
+spec: 0.0.1

@@ -1,0 +1,20 @@
+title: Krävande Uppgift
+description: Om du loggar in som admin får du en flagga! Observera att du måste gissa lite, men du behöver inte göra mer än ett tusental förfrågningar till webbservern.
+authors:
+  - toblu
+categories:
+  - web
+  - misc
+
+flag_format_prefix: SSM{
+flags: myck37_und3rl164_kr4v
+
+service:
+  type: website
+  image: container
+  internal_port: 1337
+
+challenge_id: 1dfaf794-c0d6-40ad-a63f-57a11b629b04
+spec: 0.0.1
+
+score: 350

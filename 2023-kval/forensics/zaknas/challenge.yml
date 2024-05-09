@@ -1,0 +1,28 @@
+title: Zaknas
+description: Jag zippade ihop några bilder jag tagit, men när jag öppnar zippen så verkar en bild zaknas. Jag kan svära på att bilden fortfarande finns där inne...
+authors:
+  - Jonathan Lööv
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: zn34ky_zn34ky_b1nw4lk_l34ky
+
+downloadable_files:
+  - zaknas.zip
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+score: 150
+
+challenge_id: 75ce229e-2cd4-4130-9eaa-07fdd47c1fcb
+spec: 0.0.1

@@ -1,0 +1,36 @@
+title: Ropa bara
+description: |
+  Ibland behöver man bara ropa.
+
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: AAAAAAAAaaaaaAAaaaaaaaaaaaaaaaaaaaAAAAAAAAAAAAAAAAaaaaaaaAaAAaAaaaaaaaaaaaAAAAAAAAAAAAAAAaaaaAAAAaaAaAaaaAAAAAaaahhhhhhhhh
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/Dockerfile
+  - container/libc-2.27.so
+  - container/ropabara
+  - ropabara.c
+
+custom:
+  build_script: build.sh
+
+challenge_id: 7250cacf-adac-4d89-ad07-68b6837b9ca4
+spec: 0.0.1
+
+score: 350

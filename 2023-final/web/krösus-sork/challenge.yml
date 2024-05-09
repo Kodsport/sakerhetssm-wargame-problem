@@ -1,0 +1,15 @@
+title: Krösus Sork
+description: Denna flagga får du genom att få full poäng på utmaningen "Fixar-Frasse".
+authors:
+  - ZetaTwo
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: man_saljer_den_till_dumbommar_och_sa_blir_man_rik_he_he
+
+challenge_id: 371a2fb0-f709-4c3b-a290-983e7222ee80
+spec: 0.0.1
+
+score: 150

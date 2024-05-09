@@ -1,0 +1,19 @@
+title: Usch vad det stinker
+description: |
+  Usch vad det stinker!
+  Ja, det luktar python!
+authors:
+  - Andreas Lönn
+categories:
+  - forensics
+
+flag_format_prefix: SSM{
+flags: HJ4LP_S0K35
+
+downloadable_files:
+  - chall
+
+score: 350
+
+challenge_id: 3441152b-d376-41f5-a304-88d5ad04b3cd
+spec: 0.0.1

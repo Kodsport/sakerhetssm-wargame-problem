@@ -1,0 +1,32 @@
+title: Chunked Flag Transfer
+description: |
+  Hur mycket SSM kan du?
+  (Denna hemsida fungerar dåligt i vissa browsers, om ingenting visas så testa att använda Firefox)
+authors:
+  - Jonathan Lööv
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: ch3ck_0ut_c0r4l_sh03s_coOk1e_cl1cker
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 50433
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: f0b40bd1-ae73-4de2-9534-38a5a7868350
+spec: 0.0.1
+
+score: 450

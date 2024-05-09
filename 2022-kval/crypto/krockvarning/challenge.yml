@@ -1,0 +1,24 @@
+title: Krockvarning
+description: Krockar är inge bra! Undvik dom!
+authors:
+  - mkg
+categories:
+  - crypto
+# Tack DD2395 för uppgiften!
+
+flag_format_prefix: SSM{
+flags: luckily_real_hash_functions_are_more_collision_proof
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+challenge_id: 918a3e52-410f-45be-bc07-e6a878c44167
+spec: 0.0.1
+
+score: 200

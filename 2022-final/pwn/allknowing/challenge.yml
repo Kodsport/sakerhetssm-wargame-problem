@@ -1,0 +1,30 @@
+title: Omniscient
+description: |
+  I<br>Know<br>EVERYTHIIIIIIIING!!!!!!
+
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 4nd_n0w_y0u_d0_t0
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/service
+
+challenge_id: 570f6967-b62a-4502-9241-57687551094e
+spec: 0.0.1
+
+score: 400

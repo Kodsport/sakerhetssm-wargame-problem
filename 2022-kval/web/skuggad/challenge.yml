@@ -1,0 +1,22 @@
+title: Skuggad
+description: Testa vår nya anteckningstjänst! Perfekt för att lagra flaggor... (Du får utföra brute force mot listNotes)
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: skuggade_vars_farliga_vars
+
+service:
+  type: website
+  image: container
+  internal_port: 8080
+
+# challenge_id:
+spec: 0.0.1
+
+challenge_id: 307c9be7-757d-46bd-92c7-ae24841a27ab
+
+score: 450

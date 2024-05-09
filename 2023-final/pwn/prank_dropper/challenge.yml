@@ -1,0 +1,38 @@
+title: Prank dropper
+description: |
+  Den här uppgiften innehåller faktiskt inga pranks den här gången, jag lovar
+authors:
+  - Mateusz Drwal
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: buff3r_0v3rfl0w_101_4g41n?
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - main.c
+  - container/service
+
+custom:
+  build_script: build.sh
+
+# custom:
+#   order: 41
+# score: 100
+
+spec: 0.0.1
+
+challenge_id: 89034ae2-a4ab-491d-bca4-28952b919cd0
+
+score: 100

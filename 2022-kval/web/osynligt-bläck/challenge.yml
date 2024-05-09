@@ -1,0 +1,21 @@
+title: Osynligt bläck
+description: Flaggan finns på sidan, men du behöver kolla närmare än vanligt för att se den.
+authors:
+  - toblu
+categories:
+  - web
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: kanske_inte_helt_osynlig
+
+service:
+  type: website
+  image: container
+  internal_port: 1337
+
+challenge_id: af0d9ea3-5146-4b65-bfbe-a14391b24c08
+spec: 0.0.1
+
+score: 50

@@ -1,0 +1,18 @@
+title: Trivial GCD
+description: Lätt. Eller?
+authors:
+  - Loke Gustafsson
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: s0me7imes_0rdo_sqrt_i5_a11_y0u_n33d
+
+downloadable_files:
+  - chall.py
+  - data.txt
+
+challenge_id: 270e2fe3-99c3-4aa9-812d-2206dc09dcc8
+spec: 0.0.1
+
+score: 500

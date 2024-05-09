@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixarfrasse</title>
+    <style>
+        #wrapper {
+            width: 960px;
+            margin: 10px auto;
+        }
+        .flashes li {
+            display: block;
+            border: 2px solid red;
+            padding: 5px;
+            background-color: lightcoral;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          <ul class="flashes">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+      {% endwith %}
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>

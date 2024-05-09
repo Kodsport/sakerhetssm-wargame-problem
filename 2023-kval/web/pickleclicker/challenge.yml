@@ -1,0 +1,23 @@
+title: Pickle Clicker
+description: Click to your hearts content, but dont forget to save
+authors:
+  - Rasmus Hulthe
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: y0u_ju57_607_p1ckl3d
+
+service:
+  type: website
+  image: .
+  internal_port: 1337
+
+# downloadable_files:
+#   - container/server.py
+
+score: 350
+
+challenge_id: 004b0ea7-0f08-4b90-9c9b-8e7f02b2ccaf
+spec: 0.0.1

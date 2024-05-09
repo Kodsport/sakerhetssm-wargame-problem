@@ -1,0 +1,19 @@
+title: Patience
+description: Vi var helt säkra på att vi skulle hitta en flagga på platsen så vi skyndade dit men det enda vi fann var den här bilden.
+authors:
+  - ZetaTwo
+categories:
+  - forensics
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: glory-fav0urs-th3-patient
+
+downloadable_files:
+  - patience.gif
+
+challenge_id: 2942821a-76b8-4156-925d-e03f53510b94
+spec: 0.0.1
+
+score: 75

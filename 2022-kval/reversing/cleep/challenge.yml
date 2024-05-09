@@ -1,0 +1,23 @@
+title: Cleep - Cparta
+description: Titta vad katten har släpat in! Ett helt färskt scriptingspråk... usch
+authors:
+  - Cparta
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 1_sl33p_g00d_47_n1gh7_kn0w1ng_th1s_m0ns7r0s17y_3x1s7s
+
+downloadable_files:
+  - build/cleep
+
+service:
+  type: tcp
+  image: container
+  internal_port: 50000
+
+challenge_id: b23a8d9a-e0cd-4885-943b-c3595061e5f9
+spec: 0.0.1
+
+score: 500

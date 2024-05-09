@@ -1,0 +1,22 @@
+title: Assembly School
+description: Dags att lära sig assembly!
+authors:
+  - mkg
+categories:
+  - pwn
+  - reversing
+  - lätt
+
+flag_format_prefix: SSM{
+flags: Who_3ven_needs_a_d3c0mpiler_wh3n_you_know_4ssembly!
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+challenge_id: 10c3e7b9-cc03-4967-9243-12f051c1d6cd
+spec: 0.0.1
+
+score: 100

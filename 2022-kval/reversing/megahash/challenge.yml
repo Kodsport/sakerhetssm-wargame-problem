@@ -1,0 +1,19 @@
+title: Megahash
+description: Vi har lyckats få åtkomst till en hemlig admin-panel men den är skyddad av ett lösenord. Kan du knäcka lösenordet åt oss?
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: th3_MEGAHASH_m3ga_c00l
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+
+challenge_id: d3d8eb96-8e9f-492b-b282-926be74fb95c
+spec: 0.0.1
+
+score: 400

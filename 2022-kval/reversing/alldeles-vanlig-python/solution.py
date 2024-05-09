@@ -1,0 +1,10 @@
+import zlib
+import base64
+import dis
+import marshal
+
+data = marshal.loads(zlib.decompress(base64.b64decode(b'eJxdkM1OwkAQx3e3lE8/UEzQGJPVAwkXH8AYQ6IHvHAh8UAwtXSWUoFStgtRAid8FC8+h2/RN+AVPDlTjSHuZH6Z/87OR9Zj/45Ab6DHNQQw4G+swxQHMRT6Qgmw1pwzxZS1ZhRBps3qtse3OljoZ+i31MUgDFtiHzSshgzYkEXLQR4KGBeRWSjBDmYoV4Bd5B7sY77sn67FHXusdcWKr8SSG74UcFDFyUNLN4yAQ9oBt2BtNiVdSXdCVT9qbVo4e9MkzAkDQpcQEp4JY0KHMCX0CRHBJ/QIT4QXgo2YlRD3oVFSf74bc57qphqZX123EmsRRInlDXRiRzoIDV5lY4ORn3A34b0PpqtY9FXyXd1zfXUZvXpJyajYOD/P6DPjIn0lb/Iyz6PpE1RJ3nHGbhA6zkI+uFr6E5ATbyDjoQ7mMgilCmV/5Pq+eyVb9cxfTeiOlePoCkk7CKOZSRfYwnH68no8gdlI3aTzs4h8jmZ/A1+IfPQ=')))
+
+dis.dis(data)
+
+# read disassembly and win

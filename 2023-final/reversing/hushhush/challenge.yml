@@ -1,0 +1,30 @@
+title: HushHush
+description: Kan du låsa upp den hemliga funktionaliteten i den här appen?
+authors:
+  - Kristoffer Blasiak
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: sssbbbbbbcccc
+
+downloadable_files:
+  - app-debug.apk
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+score: 300
+
+challenge_id: b39e6de0-666b-4960-a570-cbcbb6f7e917
+spec: 0.0.1
+
+score: 150

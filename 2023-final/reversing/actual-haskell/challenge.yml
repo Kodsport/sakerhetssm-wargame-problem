@@ -1,0 +1,19 @@
+title: Faktiskt Haskell!
+description: Ånej, vi tappade bort vårat krypteringsträd! Kan du hjälpa oss att få tillbaka det?
+authors:
+  - Oskar Tornevall
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: detta_ar_haskell_pa_riktigt_lmao
+
+downloadable_files:
+  - challenge-new.hs
+  - encrypted.txt
+
+challenge_id: 0b240902-a9fd-4079-822d-dfc0ac0111a9
+spec: 0.0.1
+
+score: 500

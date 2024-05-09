@@ -1,0 +1,28 @@
+title: Coltrane Hash
+description: Råkade glömma mitt admin-lösenord, kan du hjälpa mig hitta hemligheterna bakom det kontot?
+authors:
+  - Jonathan Lööv
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: gi4nt_st3p5_https://www.youtube.com/watch?v=2bQuay163xc
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 1337
+
+# downloadable_files:
+#   - container/server.py
+
+challenge_id: 56cca88d-7bfb-4bc6-b681-d4aa4940810f
+spec: 0.0.1
+
+score: 200

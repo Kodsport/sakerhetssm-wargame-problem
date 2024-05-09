@@ -1,0 +1,93 @@
+title: Brumm
+description: |
+  Jonathan och Mateusz spelade in en rolig ljudfil tillsammans men har helt glömt bort när den spelades in. Kan du hjälpa dem hitta när det gjordes?
+
+  Hint: Ljudfilen spelades in någon gång i januari 2022. Data går att ladda ner <a href="https://data.fingrid.fi/en/dataset/frequency-historical-data">här</a>.
+authors:
+  - Mateusz Drwal
+  - Jonathan Lööv
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags:
+  - flag: "1641328169"
+  - flag: "1641328170"
+  - flag: "1641328171"
+  - flag: "1641328172"
+  - flag: "1641328173"
+  - flag: "1641328174"
+  - flag: "1641328175"
+  - flag: "1641328176"
+  - flag: "1641328177"
+  - flag: "1641328178"
+  - flag: "1641328179"
+  - flag: "1641328180"
+  - flag: "1641328181"
+  - flag: "1641328182"
+  - flag: "1641328183"
+  - flag: "1641328184"
+  - flag: "1641328185"
+  - flag: "1641328186"
+  - flag: "1641328187"
+  - flag: "1641328188"
+  - flag: "1641328189"
+  - flag: "1641328190"
+  - flag: "1641328191"
+  - flag: "1641328192"
+  - flag: "1641328193"
+  - flag: "1641328194"
+  - flag: "1641328195"
+  - flag: "1641328196"
+  - flag: "1641328197"
+  - flag: "1641328198"
+  - flag: "1641328199"
+  - flag: "1641328200"
+  - flag: "1641328201"
+  - flag: "1641328202"
+  - flag: "1641328203"
+  - flag: "1641328204"
+  - flag: "1641328205"
+  - flag: "1641328206"
+  - flag: "1641328207"
+  - flag: "1641328208"
+  - flag: "1641328209"
+  - flag: "1641328210"
+  - flag: "1641328211"
+  - flag: "1641328212"
+  - flag: "1641328213"
+  - flag: "1641328214"
+  - flag: "1641328215"
+  - flag: "1641328216"
+  - flag: "1641328217"
+  - flag: "1641328218"
+  - flag: "1641328219"
+  - flag: "1641328220"
+  - flag: "1641328221"
+  - flag: "1641328222"
+  - flag: "1641328223"
+  - flag: "1641328224"
+  - flag: "1641328225"
+  - flag: "1641328226"
+  - flag: "1641328227"
+  - flag: "1641328228"
+  - flag: "1641328229"
+
+downloadable_files:
+  - brumm.wav
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: b7a62cc3-ee3e-4fad-8c57-76a54ef0dc37
+spec: 0.0.1
+
+score: 500

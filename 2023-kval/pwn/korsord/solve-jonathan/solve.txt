@@ -1,0 +1,16 @@
+c_char
+value
+amd64
+sh
+write
+mmap
+map
+asm
+cast
+pwn
+all
+arch
+from_address
+iif
+48
+ctypes

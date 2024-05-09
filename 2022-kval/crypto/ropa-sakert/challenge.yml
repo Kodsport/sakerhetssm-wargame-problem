@@ -1,0 +1,24 @@
+title: Ropa Säkert till Alice
+description: "Alice vill att du skickar ett hemligt meddelande till henne. Hon har gett dig källkoden till hennes dekrypteringsserver, men glömt att berätta hur du ska kryptera meddelandet. Vad ska du nu ta dig till?"
+
+authors:
+  - Fredrik Ekholm
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: pr1v4t3_k3y_crypt0gr4phy_1s_34sy
+
+downloadable_files:
+  - container/server.py
+
+service:
+  type: tcp
+  image: container
+  internal_port: 50000
+
+spec: 0.0.1
+
+challenge_id: 1b2a8bf8-2436-3bbd-4e3d-525df7d132d5
+
+score: 300

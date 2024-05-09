@@ -1,0 +1,24 @@
+title: CV-skrivare™️
+description: Word är förlegat, använd CV-skrivare™️!
+authors:
+  - mkg
+categories:
+  - web
+
+flag_format_prefix: SSM{
+flags: who_thought_that_generating_pdfs_on_the_server_was_a_good_idea?
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 8443
+
+challenge_id: 99fc51a2-67d0-4a6e-941f-3d1ea13f7d46
+spec: 0.0.1
+
+score: 300

@@ -1,0 +1,24 @@
+title: Megahash2
+description: De verkar ha uppgraderat säkerheten på inloggningen denna gång. Kan du hjälpa oss att få tag i lösenordet igen?
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: th3_MEGAHASH_m3ga_c00l
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 443
+
+challenge_id: 5a88edab-6497-4166-b8a3-6318b92e1545
+spec: 0.0.1
+
+score: 500

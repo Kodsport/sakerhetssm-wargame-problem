@@ -1,0 +1,2 @@
+adb shell
+am start -n com.example.hushhush/.SecretActivity -e secret sssbbbbbbcccc

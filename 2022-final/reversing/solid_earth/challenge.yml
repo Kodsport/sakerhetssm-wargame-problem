@@ -1,0 +1,17 @@
+title: Solid Earth
+description: Can you reach level 5000?
+authors:
+  - nnewram
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: PR0C3551NG_P0W3R
+
+downloadable_files:
+  - dist/solid_earth.tar.xz
+
+challenge_id: f3333151-600d-492b-b282-1234574fb95c
+spec: 0.0.1
+
+score: 200

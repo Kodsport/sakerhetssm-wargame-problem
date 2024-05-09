@@ -1,0 +1,23 @@
+title: Blocky Social
+description: Gå med i det nyaste heta sociala mediat!
+authors:
+  - mkg
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: other_fun_modes_include:_ECB_and_CBC
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service.py
+
+challenge_id: 4085a9f1-e44b-4109-8429-2a7a3361da41
+spec: 0.0.1
+
+score: 400

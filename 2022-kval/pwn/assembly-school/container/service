@@ -1,0 +1,229 @@
+#!/usr/bin/env python3
+import sys, tempfile, os.path, subprocess
+
+def compile_level(dir_name, lvl, input_asm):
+    code = asm_template % (lvl["template"] % input_asm)
+    filename = os.path.join(dir_name, "code.s")
+    with open(filename, "w") as f:
+        f.write(code)
+
+    xfile = os.path.join(dir_name, "xxx")
+    if subprocess.call(["as", filename, "-o", xfile]) != 0:
+        return False
+    return subprocess.call(["ld", xfile, "-o", os.path.join(dir_name, "a.out")]) == 0
+
+def run_level(i, lvl):
+    print("Level %d/%d: %s" % (i+1, len(levels), lvl["title"]))
+    print(lvl["prompt"])
+    input_asm = ""
+    x = input("> ")
+    while x != "STOP":
+        input_asm += x + "\n"
+        x = input("> ")
+    with tempfile.TemporaryDirectory() as dir_name:
+        if not compile_level(dir_name, lvl, input_asm):
+            print("Could not compile provided assembly!")
+            return False
+        
+        try:
+            ret_code = subprocess.call(
+                [os.path.join(dir_name, "./a.out")],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                timeout=5
+            )
+        except subprocess.TimeoutExpired:
+            print("Your solution took too long to run!")
+            return False
+    if ret_code == 57:
+        print("Correct!")
+        print()
+        return True
+    elif ret_code == 255:
+        print("Something is wrong, contact ADMIN!")
+    else:
+        print("Incorrect!")
+        print()
+        return False
+
+def banner():
+    print(".s5SSSs.  .s5SSSs.  .s5SSSs.  .s5SSSs.  .s5ssSs.  .s5SSSs.  .s        .s5 s.  ")
+    print("      SS.       SS.       SS.       SS.    SS SS.       SS.               SS. ")
+    print("sS    S%S sS    `:; sS    `:; sS    `:; sS SS S%S sS    S%S sS        ssS SSS ")
+    print("SS    S%S SS        SS        SS        SS :; S%S SS    S%S SS        SSS SSS ")
+    print("SSSs. S%S `:;;;;.   `:;;;;.   SSSs.     SS    S%S SS .sSSS  SS         SSSSS  ")
+    print("SS    S%S       ;;.       ;;. SS        SS    S%S SS    S%S SS          SSS   ")
+    print("SS    `:;       `:;       `:; SS        SS    `:; SS    `:; SS          `:;   ")
+    print("SS    ;,. .,;   ;,. .,;   ;,. SS    ;,. SS    ;,. SS    ;,. SS    ;,.   ;,.   ")
+    print(":;    ;:' `:;;;;;:' `:;;;;;:' `:;;;;;:' :;    ;:' `:;;;;;:' `:;;;;;:'   ;:'   ")
+    print("                                                                              ")
+    print("            .s5SSSs.  .s5SSSs.  .s    s.  .s5SSSs.  .s5SSSs.  .s              ")
+    print("                  SS.       SS.       SS.       SS.       SS.                 ")
+    print("            sS    `:; sS    `:; sS    S%S sS    S%S sS    S%S sS              ")
+    print("            SS        SS        SS    S%S SS    S%S SS    S%S SS              ")
+    print("            `:;;;;.   SS        SSSs. S%S SS    S%S SS    S%S SS              ")
+    print("                  ;;. SS        SS    S%S SS    S%S SS    S%S SS              ")
+    print("                  `:; SS        SS    `:; SS    `:; SS    `:; SS              ")
+    print("            .,;   ;,. SS    ;,. SS    ;,. SS    ;,. SS    ;,. SS    ;,.       ")
+    print("            `:;;;;;:' `:;;;;;:' :;    ;:' `:;;;;;:' `:;;;;;:' `:;;;;;:'       ")
+
+levels = [
+    {
+        "title": "Assignment",
+        "prompt": "Write assembly such that: rax = rbx and rcx = rdx ",
+        "template": """
+            mov rbx, 200
+            mov rdx, 123
+
+            %s
+
+            mov rdi, 57
+            xor rsi, rsi
+            mov rbx, 200
+            cmp rbx, rax
+            cmovne rdi, rsi
+            mov rbx, 123
+            cmp rbx, rcx
+            cmovne rdi, rsi
+        """,
+    },
+    {
+        "title": "Arithmetic",
+        "prompt": "Write assembly such that: rax = rbx + rcx - rdx NOTE: rax is not guaranteed to be 0.",
+        "template": """
+            mov rbx, 200
+            mov rcx, 2234
+            mov rdx, 123
+            mov rax, 789
+
+            %s
+
+            xor rdi, rdi
+            mov rdx, 57
+            mov rbx, 2311
+            cmp rax, rbx
+            cmove rdi, rdx
+        """,
+    },
+    {
+        "title": "Bitwise operations",
+        "prompt": "Write assembly such that: rax = (((rbx << 2) ^ rcx) & rdx)",
+        "template": """
+            mov rbx, 200
+            mov rcx, 2234
+            mov rdx, 123
+            mov rax, 789
+
+            %s
+
+            xor rdi, rdi
+            mov rdx, 57
+            mov rbx, 26
+            cmp rax, rbx
+            cmove rdi, rdx
+        """,
+    },
+    {
+        "title": "Conditionals",
+        "prompt": "Write assembly such that:\nif(rbx is even) {\n\trax = 77\n} else {\n\trax = 88\n}",
+        "template": """
+            mov r10, 0
+            mov r11, 88
+            mov rdi, 57
+loop:
+            xor rbx, rbx
+            add rbx, r11
+            add rbx, r10
+
+            %s
+
+            xor rcx, rcx
+            cmp r10, 0
+            jnz odd
+even:
+            mov rbx, 77
+            cmp rbx, rax
+            cmovne rdi, rcx
+            add r10, 1
+            jmp loop
+odd:
+            mov rbx, 88
+            cmp rbx, rax
+            cmovne rdi, rcx
+        """,
+    },
+    {
+        "title": "The Stack",
+        "prompt": "Let <top> be the current top element on the stack.\nWrite assembly such that: rax = <top> and the new <top> is 55",
+        "template": """
+            mov rdx, 321
+            push rdx
+            xor rdx, rdx
+
+            %s
+
+            mov rdi, 57
+            xor rdx, rdx
+            mov rbx, 321
+            cmp rbx, rax
+            cmovne rdi, rdx
+            pop rax
+            mov rbx, 55
+            cmp rbx, rax
+            cmovne rdi, rdx
+        """,
+    },
+]
+flag = "SSM{Who_3ven_needs_a_d3c0mpiler_wh3n_you_know_4ssembly!}"
+asm_template = """
+.global _start
+_start:
+.global __start
+__start:
+.intel_syntax noprefix
+    mov rax, 317
+    xor rdi, rdi
+    xor rsi, rsi
+    xor rdx, rdx
+    syscall
+    cmp rax, 0
+    jnz badexit
+
+    %s
+
+    mov rax, 60
+    syscall
+badexit:
+    mov rdi, -1
+    mov rax, 60
+    syscall
+"""
+
+def main():
+    banner()
+    print()
+    print("Welcome to Assembly School where you will learn about x86-64 assembly! (intel syntax)")
+    print("You will be given a couple of questions where you are supposed to input")
+    print("the correct assembly to solve the puzzle.")
+    print("Example level:")
+    print()
+    print("Level 0: Assignment")
+    print("Give me assembly so that: rax = 77 and rbx = 88")
+    print("> mov rax, 77            <-- This is your input")
+    print("> mov rbx, 88            <-/ ")
+    print("> STOP                   <-- Make sure to write STOP on the last line")
+    print("Good job, time for next level!")
+    print()
+    print("When you have completed all levels, you get the flag! Good luck!")
+    print("Here we go:")
+    print()
+
+    for (i, level) in enumerate(levels):
+        if not run_level(i, level):
+            sys.exit(0)
+    
+    print("Good job!")
+    print(flag)
+
+if __name__ == "__main__":
+    main()

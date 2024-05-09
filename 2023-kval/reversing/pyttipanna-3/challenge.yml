@@ -1,0 +1,29 @@
+title: Pyttipanna 3
+description: Att sortera tillbaka en flagga är ännu svårare när man inte känner till den!
+authors:
+  - Jonathan Lööv
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: n3xt-t1m3-u5e-f15her-yat35!
+
+downloadable_files:
+  - shuffle.py
+  - given.txt
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+score: 200
+
+challenge_id: a8540826-7799-46ab-94ed-ee345cdacebd
+spec: 0.0.1

@@ -1,0 +1,28 @@
+title: Gissa talet
+description: Har du vad som krävs för att gissa datorns tal?
+authors:
+  - Jonathan Lööv
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: g1ss4r_m3r_aen_bar4_3tt_tal
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/service
+
+challenge_id: 5ac28bbd-56c0-4917-9bbf-063bc06c20bf
+spec: 0.0.1
+
+score: 200

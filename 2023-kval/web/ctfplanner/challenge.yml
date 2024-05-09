@@ -1,0 +1,24 @@
+title: CTF planner
+description: |
+  du vet när ens homies ska ut för att CTF:a, men pga strukturella problem i homie organisationen så lyckas man inte CTF:a i full potential, troligen
+  
+  sådana problem kan lösas med detta verktyg
+  för att organisera
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: du_bör_organisera_dina_homies_annars_homiar_organisationen_dig
+
+service:
+  type: website
+  image: .
+  internal_port: 8080
+
+score: 400
+
+challenge_id: 315aea81-aaa3-4483-adfc-c111624a046c
+spec: 0.0.1

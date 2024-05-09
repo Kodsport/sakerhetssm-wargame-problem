@@ -1,0 +1,31 @@
+title: JWTInfo
+description: |
+  Jag är så himla trött på hur bra JWT.io funkar, så jag bestämde mig för att gör en egen tjänst som jag kan snacka med över netcat.
+  Det är helt otroligt, det är faktiskt nästan så att den fungerar!
+
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: jw7_1s_pr377y_s1mp13_r3211y
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/JWTInfo
+  - JWTInfo.c
+
+# custom:
+#   build_script: build.sh
+
+score: 250
+
+challenge_id: 3cd785c2-20c3-4c0b-a41c-d19a784a8ace
+spec: 0.0.1

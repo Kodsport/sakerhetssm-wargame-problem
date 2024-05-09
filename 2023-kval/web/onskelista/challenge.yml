@@ -1,0 +1,20 @@
+title: Önskelista
+description: Det sägs att admin lagarar flaggan i sin önskelista.
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 0n5k31ist4_c0n741n5_k0b41tn37z
+
+service:
+  type: website
+  image: .
+  internal_port: 8080
+
+score: 500
+
+challenge_id: e10de716-ab7a-4db0-98b8-477384706e5f
+spec: 0.0.1

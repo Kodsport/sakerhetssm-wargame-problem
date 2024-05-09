@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: .
+    ports:
+    - 50000:1337
+version: '3'

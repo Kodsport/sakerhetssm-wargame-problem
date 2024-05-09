@@ -1,0 +1,26 @@
+title: XML Validator
+description: |
+  Vi har skapat en tjänst för att enkelt validera XML-filer. Den är fortfarande i beta-stadiet så du kan få testa den helt gratis så länge.
+  PS. Flaggan ligger i /flag.txt
+authors:
+  - ZetaTwo
+categories:
+  - web
+
+flag_format_prefix: SSM{
+flags: xXx_xtra_xml_xxe_xXx
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 443
+
+challenge_id: 96cc8367-5220-4838-8d57-d4064eb71ae1
+spec: 0.0.1
+
+score: 350

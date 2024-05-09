@@ -1,0 +1,28 @@
+title: Signal
+description: |
+  I keep catching the wrong signals, how does this stuff work anyway?
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: sys_r7_s1gr37rn_1s_v3ry_us3fu11
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/signal
+
+custom:
+  build_script: build.sh
+
+score: 450
+
+challenge_id: 345b158c-cf60-45ed-8ab4-50e6e32979b9
+spec: 0.0.1

@@ -1,0 +1,21 @@
+title: Franz Jäger
+description: |
+  Efter att ha knäckt så många Franz Jäger skåp i sina dagar har Sickan nu tagit pension. Dock har han behållt ett skåp där han förvarar alla planer som inte hände. Ditt uppdrag är att komma in i skåpet och sno planerna!
+
+  Sickans favoritverktyg för att bryta sig in i kassaskåp är <del>stetoskopet</del> Ghidra.
+authors:
+  - mkg
+categories:
+  - reversing
+  - lätt
+
+flag_format_prefix: SSM{
+flags: J4g_h4r_3n_plan!_V1_beh0v3r_3n_plansk155_over_arl4nda......
+
+downloadable_files:
+  - franz-jager
+
+challenge_id: 1e0ad6b7-2737-4d06-843a-2fcf7389f6e8
+spec: 0.0.1
+
+score: 100

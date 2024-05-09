@@ -1,0 +1,25 @@
+title: Pick your fighter
+description: Din fighter kommer aldrig att vara värdig flaggan, det är matematiskt omöjligt.
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: j4g_g1llar_s3n4pss1ll
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: .
+  internal_port: 8443
+
+challenge_id: bda5947f-c26c-43ce-844d-662e5ae09042
+spec: 0.0.1
+
+score: 400

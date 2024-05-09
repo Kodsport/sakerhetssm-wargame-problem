@@ -1,0 +1,19 @@
+title: Tangerande Arom
+description: Snälla hjälp, jag har glömt flaggan! Som tur är spelar jag in all USB-trafik, just för sådana här situationer...
+
+authors:
+  - Movitz Sunar
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: tur_a77_j4g_1n73_k0r_ps2
+
+downloadable_files:
+  - usb.pcapng
+
+score: 150
+
+challenge_id: 54a5d955-e1df-46e7-8cce-1d28f51a3145
+spec: 0.0.1

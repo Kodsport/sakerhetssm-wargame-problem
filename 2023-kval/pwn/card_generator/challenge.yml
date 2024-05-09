@@ -1,0 +1,31 @@
+title: Julkortsgenerator
+description: |
+  Gör dina julkort här! Generatorn <i>ska</i> vara säker by default, men du får ändra på en byte i den innan den körs!
+
+  Flaggan ligger i <code>/flag.txt</code>.
+authors:
+  - Mateusz Drwal
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: m1n1m4l15715k_p47chn1n6
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service
+
+custom:
+  build_script: build.sh
+
+score: 350
+
+spec: 0.0.1
+
+challenge_id: ea5ac6b8-4550-42fa-adf7-3a794db11568

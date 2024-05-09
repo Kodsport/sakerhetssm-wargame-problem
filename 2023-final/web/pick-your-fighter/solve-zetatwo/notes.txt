@@ -1,0 +1,27 @@
+read games/df63edda-436a-4645-a914-3e0cffef8603/: is a directory
+
+
+http://localhost:8080/images/%2f%2f%2f%2f%2f%2fetc%2fpasswd
+
+http://localhost:8080/export?id=df63edda-436a-4645-a914-3e0cffef8603
+
+
+http://localhost:8080/export?id=////////////////////////////////////
+
+
+http://localhost:8080/export?id=df63edda436a4645a9143e0cffef8603/asda
+
+
+
+/start
+/export
+/resume
+/customImage
+/setKv
+
+
+http://localhost:8080/images/df63edda-436a-4645-a914-3e0cffef8603/config.json
+
+http://localhost:8080/images/10827960-3a0e-40a2-b6b4-a2ba49f3fcd2/config.json
+
+10827960-3a0e-40a2-b6b4-a2ba49f3fcd2

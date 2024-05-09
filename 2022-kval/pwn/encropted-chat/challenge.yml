@@ -1,0 +1,34 @@
+title: Encropted Chat - MSAB
+description: |
+  Polisen har precis lyckats installera en bakdörr på en telefon tillhörande det kriminella gänget Bröderna Brott. Bakdörren är mycket begränsad och består enbart av en ssh server installerad som en vanlig app på telefonen. Den har inte rättigheter till någon intressant data, men med lite finess kan man nog utnyttja lite sårbarheter på telefonen för att få ut något.
+
+  Kan du hjälpa oss och knäcka dig in i telefonen för att få ut deras hemliga krypterade data?
+
+  Anslut till telefonen med <code>ssh u0_a82@20.91.248.143 -p 2222</code>.
+
+
+  Det ser ut som att gänget har deras egna hembryggda system för att hålla deras krypterade chatt uppdaterad. Kan du reverse engineera <code>/data/local/system/encropted_chat_update</code> och se om du hittar några säkerhetsbrister?
+
+  För frågor, kontakta <code>DayDun#2309</code> eller <code>n00byedge#2651</code> på Discord.
+
+custom_service_types:
+  - type: ssh
+    display: ssh {user}@{host} -p {port}
+predefined_services:
+  - type: ssh
+    user: u0_a82
+    host: 20.91.248.143
+    port: "2222"
+
+authors:
+  - MSAB
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: h4ck1ng_ph0n3s_f0r_4_l1v1ng
+
+challenge_id: 001b0fa2-3bab-41fa-bc33-d54291199bc2
+spec: 0.0.1
+
+score: 500

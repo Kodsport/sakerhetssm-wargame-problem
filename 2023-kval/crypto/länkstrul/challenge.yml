@@ -1,0 +1,33 @@
+title: Länkstrul
+description: |
+  Oj, nu har några länkar snurra till sig, kan du fixa den <span style="color: #d48600">orangea</span> delen av länken?
+  
+  https://sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">rmxffs</span>
+  https://sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">gtqqz</span>
+  https://sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">fqzsshr</span>
+  
+  Ange den rätta sökvägen som flagga.
+authors:
+  - Aron Bergman
+  - Mateusz Drwal
+  - Jonathan Lööv
+  - Oskar Tornevall
+categories:
+  - crypto
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: null
+flags:
+  - flag: "hurra"
+  - flag: "grattis"
+  - flag: "snyggt"
+  - flag: "SSM{hurra}"
+  - flag: "SSM{grattis}"
+  - flag: "SSM{snyggt}"
+
+score: 100 # ändra inte, vi har sagt att den här är värd 100 poäng på hemsidan
+
+
+challenge_id: 3f3100fe-7193-4e1b-9564-7334af64d115
+spec: 0.0.1

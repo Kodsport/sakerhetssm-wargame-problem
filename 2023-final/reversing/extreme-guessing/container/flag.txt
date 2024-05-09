@@ -1,0 +1,1 @@
+SSM{∀x. NaN_är_varken_större_än_eller_mindre_än_x}

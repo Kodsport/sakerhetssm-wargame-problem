@@ -1,0 +1,24 @@
+title: Securest Hashing Algorithm
+description: XOR is cryptographically secure and nonlinear.... I think?
+authors:
+  - Oskar Tornevall
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: g410iS_f13ld_m4s73R_r4C3
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/server.py
+
+score: 500
+
+challenge_id: cdad462f-cc7b-4307-a656-07fa6b7adb50
+spec: 0.0.1

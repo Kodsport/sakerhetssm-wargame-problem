@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>CTF Planner</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>CTF Planning Tool</h1>
+        <p>Det finns för många CTF:er nu för tiden, så vi måste börja planera. Vi har några CTF:er vi redan har bestämt
+            att delta i, men du får gärna föreslå andra.</p>
+
+        <h2>Bestämda CTF:er</h2>
+        <div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {{range $ctf := .Global}}
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="data:image/png;base64,{{$ctf.Thumbnail}}" width="100%">
+
+                        <div class="card-body">
+                            <h5><a href="{{$ctf.URL}}">{{$ctf.Title}}</a></h5>
+                            <p class="card-text">{{$ctf.Description}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+
+
+        {{if .Suggestions}}
+        <h2>Dina förslag</h2>
+        <div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {{range $ctf := .Suggestions}}
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img src="data:image/png;base64,{{$ctf.Thumbnail}}" width="100%">
+
+                        <div class="card-body">
+                            <h5><a href="{{$ctf.URL}}">{{$ctf.Title}}</a></h5>
+                            <p class="card-text">{{$ctf.Description}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{end}}
+            </div>
+        </div>
+        {{end}}
+
+
+        <div>
+            <h1>Föreslå</h1>
+            <form action="/suggest" method="post">
+
+                <div class="mb-3">
+                    <input class="form-control" type="text" name="url" id="url" placeholder="https://...">
+                </div>
+                <button class="btn btn-primary" type="submit">Föreslå</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="/source"></a>
+
+</body>
+
+</html>

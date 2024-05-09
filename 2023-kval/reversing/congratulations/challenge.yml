@@ -1,0 +1,23 @@
+title: Congratulations
+description: Wow! Kolla! Helt sjukt ju! Du har vunnit ett pris!
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: w0w_v1lken_overraskning!
+
+
+service:
+   type: website
+   image: .
+   internal_port: 80
+
+score: 150
+
+spec: 0.0.1
+
+challenge_id: 0cb5e79d-0a48-4c18-9188-cfab7cd06253

@@ -1,0 +1,21 @@
+title: Svinstian - Affischproblemet
+description: Nu är det någon som varit och kladdat på svinstian, men vad är det egentligen de har skrivit?
+authors:
+  - ZetaTwo
+  - Aron Bergman
+categories:
+  - crypto
+  - lätt
+
+flag_format_prefix: SSM{
+flags:
+  - flag: SOMPÄRLORTILLSVIN
+  - flag: sompärlortillsvin
+
+downloadable_files:
+  - svinstian.png
+
+challenge_id: 4c6dcaf4-9734-4cd7-a981-807f6737ab6a
+spec: 0.0.1
+
+score: 100

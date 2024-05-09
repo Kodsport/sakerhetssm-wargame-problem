@@ -1,0 +1,29 @@
+title: Fixar-Frasse
+description: Krösus sork har beordrat Fixar-Frasse att laga hans nya hemsida men han behöver lite hjälp. Ladda ner koden, patcha buggarna utan att förstöra någon funktionalitet och ladda upp den för att få flaggor. Om du lagar hälften av buggarna utan att ta sönder något får du en flagga. Om du lagar alla buggar får du en till flagga.
+authors:
+  - ZetaTwo
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: du_fixar_jag_betalar_med_flagga
+
+downloadable_files:
+  - src/vuln/index.php
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: .
+  internal_port: 5000
+  privileged: true
+
+challenge_id: f544bc9d-78d0-438f-a796-a1b87ef9a627
+spec: 0.0.1
+
+score: 150

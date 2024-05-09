@@ -1,0 +1,21 @@
+title: Øberinspektøren
+description: Tänk inte ens tanken, respekt till upphovsrätten av flaggor är av största vikt.
+authors:
+  - Movitz Sunar
+categories:
+  - web
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: cyb3rp0l1s3n_lär_st0mma_d1g
+
+service:
+  type: website
+  image: .
+  internal_port: 80
+
+score: 50
+
+challenge_id: 2b12d290-9863-4ed2-bf08-9cab911d6a69
+spec: 0.0.1

@@ -1,0 +1,27 @@
+mov rax, rbx
+mov rcx, rdx
+STOP
+
+xor rax, rax
+add rax, rbx
+add rax, rcx
+sub rax, rdx
+STOP
+
+shl rbx, 2
+xor rax, rax
+add rax, rbx
+xor rax, rcx
+and rax, rdx
+STOP
+
+mov rax, 88
+test rbx, 1
+jnz skippy
+mov rax, 77
+skippy:
+STOP
+
+pop rax
+push 55
+STOP

@@ -1,0 +1,37 @@
+title: Campus - Road Trip
+description: |
+  Jonathan tog en promenad på campus med en flagga i fickan. Men ack o ve, när han kom fram inser han att flaggan inte längre ligger däri.
+  Som tur är utlöstes hans gamla pålitliga flaggborttappningsdetektor och en bild togs på var ställe flaggan hamnade på. Kan du hjälpa honom och gå och hitta flaggorna han tappade?
+
+  OBS: För den här uppgiften kommer ni behöva gå ut och gå! Ta gärna med en telefon med GPS så ni inte går vilse. Att göra uppgiften inte allt för sent på kvällen är att rekommendera.
+
+authors:
+  - Jonathan Lööv
+  - Mateusz Drwal
+categories:
+  - on-site
+  - osint
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: nu_k4n_du_d1tt--fr4mtida-campus!
+
+downloadable_files:
+  - pictures/vårt_helgon.jpg
+  - pictures/inte_centralstationen.jpg
+  - pictures/vår_frälsare.jpg
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 82e0cf54-0e6c-4a79-96ce-308c65359d7f
+spec: 0.0.1
+
+score: 313

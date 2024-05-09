@@ -1,0 +1,177 @@
+#!/usr/bin/env python3
+
+from threading import Thread
+import logging
+import os
+import socket
+import time
+
+logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
+log = logging.getLogger()
+
+target = "deadcafebabe1337f337beef41414141"
+flag = "SSM{1_sl33p_g00d_47_n1gh7_kn0w1ng_th1s_m0ns7r0s17y_3x1s7s}"
+port = 50000
+
+log.info("Target: %s", target)
+log.info("Flag: %s", flag)
+
+importfrom = """
+import javax.swing.*;
+import java.awt.*;
+
+$ip = "";
+$port = 50000;
+
+sub importfrom {
+        try {
+                $handle = connect($ip, $port);
+
+                println($handle, $1);
+                $file = "";
+
+                while (true) {
+                        $line = readln($handle);
+
+                        if ("E" . "ND" isin $line) {
+                                break;
+                        }
+
+                        $file .= $line . "
+";
+                }
+
+                $stager = openf(">/tmp/$1");
+                print($stager, $file);
+                if (size(@_) > 1) {
+                        print($stager, $2);
+                }
+                closef($stager);
+                closef($handle);
+
+                $loader = [new ScriptLoader];
+                $script = [$loader loadScript: "/tmp/$1"];
+                [$script runScript];
+
+                $delete = openf(">/tmp/$1");
+                print($delete, "");
+                closef($delete);
+                closef($handle);
+                $has_open_server_handle = 0;
+        }
+        catch $exception {
+                print("exception");
+        }
+}
+"""
+
+files = {
+"validate.sl": importfrom + """
+sub getline {
+    $handle = connect($ip, $port);
+    println($handle, $1);
+    $line = readln($handle);
+    closef($handle);
+    return $line;
+}
+
+sub get_flag {
+    return expr(getline("flag_$1"));
+}
+
+sub hexcmp {
+    $ex = getline($1);
+    $res = expr($ex);
+    return $res;
+}
+
+sub azip {
+	@y = @();
+
+	foreach $a => $b ($1) {
+		add(@y, @($b, $2[$a]), 0);
+	}
+
+	return @y;
+}
+
+sub ssgen {
+	return azip(copy(split('', $1)), reverse(copy(split('', $2))));
+}
+
+sub check_parts {
+	foreach $a => $b (ssgen($1, $2)) {
+		if (!($b[0] eq $b[1])) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+sub validate {
+    if (check_parts($1, $2)) {
+        if (hexcmp($2 . $1)) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+sub get_id {
+    $idh = openf("/etc/machine-id");
+    @id = readAll($idh);
+    closef($idh);
+    return @id[0];
+}
+
+""",
+    f"flag_{target + target[::-1]}": f"""'{flag}'"""
+}
+
+def is_hexchar(o):
+    return o in (*range(ord('a'), ord('f') + 1), *range(ord('0'), ord('9') + 1))
+
+def sep(s, n):
+    return [s[i:i+n] for i in range(0, len(s), n)]
+
+def hexdiff(ans, target):
+    return [x == y for x, y in zip(sep(ans, 2), sep(target, 2))]
+
+def make_sleep(difflist):
+    return f"""{" + ".join("1" if x else "0" for x in difflist)} == 16"""
+
+def parse_request(request):
+    if len(request) % 2 == 0 and all(is_hexchar(ord(x)) for x in request) and request == request[::-1]:
+       return make_sleep(hexdiff(request, target))
+    if request not in files:
+        return "Yeah right, try again~\nEND\n"
+
+    return files[request] + "\nEND\n"
+
+def accept_client(client, addr):
+	request = client.recv(1024).decode().strip()
+	log.info("client %s, requested %s", addr, request)
+	response = parse_request(request)
+	log.info("client %s, response %s...", addr, response[:len(flag)])
+	client.send(response.encode())
+	client.close()
+
+def start_server(port):
+	sock = socket.socket()
+	sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+	sock.bind(("0.0.0.0", port))
+	sock.listen()
+
+	while True:
+		client, addr = sock.accept()
+		log.info("accepted client: %s", addr)
+		t = Thread(target=accept_client, args=(client, addr))
+		t.start()
+
+	sock.close()
+
+log.info("Starting server at port %d", port)
+
+start_server(port)

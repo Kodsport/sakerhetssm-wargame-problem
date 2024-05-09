@@ -1,0 +1,47 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+body {
+    background-image: url("pickle_background.jpg");
+    background-repeat: repeat;
+}
+
+button {
+    background-color: Transparent;
+    border: none;
+}
+
+p {
+    color: yellow;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.container {  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "info building_info_1 building_1"
+    "pickle building_info_2 building_2"
+    ". building_info_3 building_3";
+}
+
+.building_1 { grid-area: building_1; }
+
+.building_2 { grid-area: building_2; }
+
+.building_3 { grid-area: building_3; }
+
+.building_info_1 { grid-area: building_info_1; }
+
+.building_info_2 { grid-area: building_info_2; }
+
+.building_info_3 { grid-area: building_info_3; }
+
+.pickle { grid-area: pickle; }
+
+.info { grid-area: info; }

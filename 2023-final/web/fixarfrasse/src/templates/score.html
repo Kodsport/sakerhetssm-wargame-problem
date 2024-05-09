@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Results</h1>
+<ul>
+  <li>Functionality tests passed: {{ score_functionality }}/{{ max_functionality }}</li>
+  <li>Vulnerability tests passed: {{ score_vulnerabilities }}/{{ max_vulnerabilities }}</li>
+</ul>
+{% if flag1 %}
+<p>
+    Flag (Fixar-Frasse): {{ flag1 }}
+</p>
+{% endif %}
+{% if flag2 %}
+<p>
+    Flag (Krösus Sork): {{ flag2 }}
+</p>
+{% endif %}
+{% endblock %}

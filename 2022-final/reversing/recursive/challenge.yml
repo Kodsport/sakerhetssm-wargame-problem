@@ -1,0 +1,19 @@
+title: Rekursiv
+description: Vi har hittat ett lurigt program som kan berätta om en flagga är korrekt eller inte men du kommer behöva gräva djupt för att förstå dess hemligheter.
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: D0wn_th3_ro4d_1_go!
+
+downloadable_files:
+  - recursive
+
+challenge_id: 2ab60a69-b578-4feb-9e96-c630a6a1c227
+spec: 0.0.1
+
+score: 200
+custom:
+  order: 42

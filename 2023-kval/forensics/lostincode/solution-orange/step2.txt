@@ -1,0 +1,30 @@
+You will get this text from step1.sh:
+
+"""
+I XORed my flag (1431350f09561d176701421a300d40183b3b0e) but then I lost the key somewhere on the beach.
+
+N24.551536 W81.770852
+
+Can you help me find it?
+"""
+
+Google these coordinates:
+
+N24.551536 W81.770852
+
+and you will find that the location is:
+
+Key West
+
+Decode "1431350f09561d176701421a300d40183b3b0e" using the XOR cipher and "West" as the key.
+
+Cyberchef Receipe:
+
+"""
+From_Hex('Auto')
+XOR({'option':'Latin1','string':'West'},'Standard',false)
+"""
+
+And finally the flag is:
+
+CTF{^3nc0d1ngh3ll^}

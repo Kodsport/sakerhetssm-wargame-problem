@@ -1,0 +1,18 @@
+title: Typ Haskell?
+description: Värden? Vem behöver ens värden...
+authors:
+  - Oskar Tornevall
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: typ35_4r3_0v3rp0w3red
+
+downloadable_files:
+  - gen_flag.py
+  - challenge.hs
+
+score: 500
+
+challenge_id: 03866d34-f886-4111-871d-0b1d4c4b8680
+spec: 0.0.1

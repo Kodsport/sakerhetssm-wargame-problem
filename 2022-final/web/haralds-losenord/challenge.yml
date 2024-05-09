@@ -1,0 +1,28 @@
+title: Haralds lösenord
+description: En viss hare vid namn Harald antecknade sitt lösenord på en bit papper som han tyvärr tappade bort. Därför vädjar han till dig. Kan du klura ut det som stod på pappret?
+authors:
+  - Edythator
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 1_l0v3_c4770tz_plz_g1b_m3
+
+custom_service_types:
+  - type: https
+    display: https://{host}:{port}
+    hyperlink: true
+
+service:
+  type: https
+  image: container
+  internal_port: 443
+
+# downloadable_files:
+#   - container/index.php
+
+challenge_id: ed7b9a31-3b69-4765-a2e8-f765edf6f59e
+spec: 0.0.1
+
+score: 200

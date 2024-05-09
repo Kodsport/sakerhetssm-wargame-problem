@@ -1,0 +1,24 @@
+title: Condolences
+description: Den här challen verkar lite bekant...
+authors:
+  - ZetaTwo
+  - Jonathan Lööv
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: 1tt-r3ktigt_f1nt=pr15!
+
+
+service:
+   type: website
+   image: .
+   internal_port: 80
+
+
+spec: 0.0.1
+
+challenge_id: 0cb5e79d-0a48-4c18-9188-cfab7cd06253
+
+score: 100

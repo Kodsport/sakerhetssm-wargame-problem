@@ -1,0 +1,18 @@
+title: Frejas försvunna flagga
+description: Frejas Wordkunskaper ligger inte på topp vilket har lett till att hon tappat bort sin flagga. Kan du hjälpa henne återhämta den?
+authors:
+  - Edythator
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: my_5w337_4nd_pr3c10u5_fl46
+
+downloadable_files:
+  - mitt_jatteviktiga_dokument.pdf
+
+challenge_id: aa834275-7f18-4398-a393-284d55be0f75
+spec: 0.0.1
+
+score: 100

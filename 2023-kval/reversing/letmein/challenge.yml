@@ -1,0 +1,29 @@
+title: LETMEIN!!!
+description: |
+  LET ME IIIIIIIIIIIIIINNNNNNNNNNNNNNNNNNNNNNNN
+authors:
+  - nnewram
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: th3y_f1n411y_137_m3_1n
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  external_port: 1337
+  privileged: true
+
+downloadable_files:
+  - letmein
+
+# custom:
+#   build_script: build.sh
+
+score: 350
+
+challenge_id: 845aac86-6c22-40e3-8d47-c0537247c888
+spec: 0.0.1

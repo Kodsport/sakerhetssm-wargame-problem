@@ -1,0 +1,18 @@
+title: Oktal kryptering
+description: Tjossan AB behöver ett kryptosystem för sin nya produkt Helskivskryptering™️. Därför har de kontaktat Anstalten®️ som är Sveriges främsta kryptokonstruktörer! Efter mycket hårt slit och många liter Club Mate har Anstalten®️ byggt Oktal kryptering. Tjossan AB litar såklart på Anstalten®️, men bara för att vara extra säker har de bett dig granska kryptot en sista gång.
+authors:
+  - mkg
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: helskivskryptering_goes_brrr
+
+downloadable_files:
+  - out.txt
+  - encrypt.py
+
+score: 200
+
+challenge_id: 2006a689-9b74-4ed1-b65a-2889776731ef
+spec: 0.0.1

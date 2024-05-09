@@ -1,0 +1,15 @@
+För att hitta vart Math.random() går, hittar vi först
+  src/builtins/math.tq:439: MathRandom(...)
+    Denna kollar om en MATH_RANDOM_INDEX_INDEX är 0, i så fall refillar cachet med RefillMathRandom, sen tar den talet från cachet där MATH_RANDOM_INDEX_INDEX pekar och minskar indexet med 1
+  RefillMathRandom hittas inte i github search, men definieras i src/codegen/code-stub-assembler.cc:16024
+    Denna forwardar till refill_math_random
+  src/codegen/external-reference.cc:971 definierar refill_math_random till MathRandom::RefillCache
+  src/numbers/math-random.cc:35 definierar denna
+    Här initieras state om det behövs till "random" värden
+    Annars körs base::base::RandomNumberGenerator::XorShift128 på state för var element i cachen
+    Cachen har storlek kCacheSize
+      i header-filen definieras denna till 64
+    Varje int som genereras av xorshift128 körs genom base::RandomNumberGenerator::ToDouble för att bli en double
+      Denna definieras i src/base/utils/random-number-generator.h:111
+  src/base/utils/random-number-generator.h:119 definierar till sist XorShift128
+

@@ -1,0 +1,28 @@
+title: Nätverkskungen — FRA
+description: Jag lyckades få till mig ett par filer, men jag har ingen aning vad de är :(. Vad ska jag göra nu?
+authors:
+  - FRA
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: k3dj0r_4r_f4rl1g4
+
+downloadable_files:
+  - chall.pcapng
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+score: 400
+
+challenge_id: 89b6a065-e5ee-48f8-baa6-973610baaf21
+spec: 0.0.1

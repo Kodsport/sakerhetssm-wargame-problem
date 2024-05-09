@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Logga in</h1>
+    <form method="post">
+        <label for="username">Användarnamn:</label><br>
+        <input type="text" name="username"><br><br>
+        <label for="password">Lösenord:</label><br>
+        <input type="password" name="password"><br><br>
+        {% for message in get_flashed_messages() -%}
+        <div class="alert">{{ message }}</div>
+        {% endfor %}
+        <input type="submit" value="Logga in">
+    </form>
+{% endblock %}

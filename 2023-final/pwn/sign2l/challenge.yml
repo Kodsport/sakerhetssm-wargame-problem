@@ -1,0 +1,32 @@
+title: Sign2l
+description: |
+  <img src="https://media.discordapp.net/attachments/707509250586574871/1089743412007292939/image.png">
+  You're welcome!
+
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: sh0w_m3_y0ur_s01u710n_2nd_g37_2_pr1c3!
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/sign2l
+
+challenge_id: 4d71cbb1-ea6a-4247-9716-58209ba0ef6b
+spec: 0.0.1
+
+  build_script: build.sh
+score: 350

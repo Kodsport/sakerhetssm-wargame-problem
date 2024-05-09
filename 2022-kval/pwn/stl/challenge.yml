@@ -1,0 +1,26 @@
+title: STL Converter
+description: |
+  <a href="https://en.wikipedia.org/wiki/STL_(file_format)">STL</a> är ett format som kommer i två smaker - ASCII och binärt.
+  Vi har skrivit ihop ett litet verktyg för att konvertera från ena till andra. Hoppas det inte har några säkerhetsfel i sig!
+authors:
+  - Jonathan Lööv
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: att-1nte-v4lidera-0ffsets-STLler-t1ll-pr0b1em
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - container/service
+
+challenge_id: d261faf0-e25f-44bf-baa4-aa3ea1c8775e
+spec: 0.0.1
+
+score: 250

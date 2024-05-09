@@ -1,0 +1,19 @@
+title: Våffelhuset - FOI
+description: Välkomna till våffelhuset! Lyckas du göra det efterfrågade antalet våfflor innan tävlingen är över?
+authors:
+  - FOI
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: ska_det_kanske_vara_lite_hjortronsylt_till_vafflan?
+
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+
+challenge_id: 9269bcb6-f2d0-461f-8fb4-bb4548681057
+spec: 0.0.1
+
+score: 350

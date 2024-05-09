@@ -1,0 +1,28 @@
+title: NSAES
+description: NSA:s S-box verkar vara mer av en sus-box...
+authors:
+  - Jonathan Lööv
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: évar1st3<3
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/aes.c
+
+challenge_id: 7223631a-b1b4-47ba-ba74-1f85b873b3cd
+spec: 0.0.1
+
+score: 200

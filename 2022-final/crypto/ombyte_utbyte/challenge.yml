@@ -1,0 +1,18 @@
+title: Ombyte utbyte
+description: Mina kompisar Doris och Håkan tror att detta är oknäckbart...
+authors:
+  - Loke Gustafsson
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: "8186595448437520490"
+
+downloadable_files:
+  - chall.py
+  - data.txt
+
+challenge_id: e55e5564-e41a-4c2c-b2d8-f7c7e172b5ef
+spec: 0.0.1
+
+score: 400

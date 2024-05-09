@@ -1,0 +1,29 @@
+title: Prank dispenser
+description: |
+  Den här uppgiften innehåller 0 pranks, jag lovar
+authors:
+  - Mateusz Drwal
+categories:
+  - pwn
+  - lätt
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: buff3r_0v3rfl0w_101
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - main.c
+
+custom:
+  build_script: build.sh
+
+score: 100
+
+challenge_id: 498b2772-0f4a-4185-9503-dc53a84e3291
+spec: 0.0.1

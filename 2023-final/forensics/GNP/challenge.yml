@@ -1,0 +1,28 @@
+title: GNP
+description: Vad är detta för filformat?
+authors:
+  - Jonathan Lööv
+categories:
+  - forensics
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: v3Ry-litTL3-enDIan
+
+downloadable_files:
+  - GNP.gnp
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 19d72e37-e620-48f8-ac63-774633ad0151
+spec: 0.0.1
+
+score: 100

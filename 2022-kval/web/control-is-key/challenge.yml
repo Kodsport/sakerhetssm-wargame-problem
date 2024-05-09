@@ -1,0 +1,19 @@
+title: Control is key - Orange Cyberdefense
+description: Check out my new blog!
+authors:
+  - Orange Cyberdefense
+categories:
+  - web
+
+flag_format_prefix: SSM{
+flags: controlling_versioning
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+
+challenge_id: d86e54f9-cb00-4f0c-b0a9-59700a19de78
+spec: 0.0.1
+
+score: 250

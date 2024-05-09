@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Secret Admin Page - Protected by Megahash&tm;</title>
+    <style>
+        body {
+            background-color: cornsilk;
+            font-family: sans-serif;
+        }
+
+        #wrapper {
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        #wrapper div {
+            margin: 20px 0;
+        }
+
+        #wrapper {
+            text-align: center;
+        }
+    </style>
+    <script src="megahash.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Admin Login</h1>
+        <div>
+            <form id="login_form">
+                Password: <input type="password" name="password">
+                <input type="submit" name="login">
+            </form>
+        </div>
+        <div id="status"></div>
+    </div>
+</body>
+
+</html>

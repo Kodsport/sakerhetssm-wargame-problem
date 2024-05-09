@@ -1,0 +1,24 @@
+title: Super Säker Säkerhet
+description: Mitt lösenord är oknäckbart! Det är bokstavligen slumpmässigt!
+authors:
+  - Laith Abbawi
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: w0w_m1n_54k3rh37_v4r_1n73_71llr4ckl16
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  privileged: true
+
+downloadable_files:
+  - main.c
+
+score: 200
+
+challenge_id: c8c5ecf2-d4fa-40da-857a-e913fd51e1c8
+spec: 0.0.1

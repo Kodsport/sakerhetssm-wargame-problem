@@ -1,0 +1,1 @@
+flag = "SSM{luckily_real_hash_functions_are_more_collision_proof}"

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <script>
+        var save_data = ["{{ save_datas[0 ]}}", {{ ", ".join(save_datas[1:]) }}];
+    </script>
+    <script src="{{url_for('static', filename='jquery-3.6.0.min.js')}}"></script>
+    <script src="{{url_for('static', filename='increment.js')}}"></script>
+
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="pickle">
+            <button type="button" onclick="pickle_click()">
+                <img src="{{url_for('static', filename='pickle.png')}}" alt="buttonpng" border="0" />
+            </button>
+        </div>
+
+        <div class="info">
+            <p id="version">Version: Unicorn_0.0.1</p>
+            <p id="pickles">Pickles: 0</p>
+            <p id="pps">PPS: 0</p>
+
+            <form action = "/save" method = "POST" onsubmit="make_Download_Request()">
+                <input type = "hidden" name = "version_name"            id = "version_name"             value = ""/>
+                <input type = "hidden" name = "pickle_amount"           id = "pickle_amount"            value = ""/>
+                <input type = "hidden" name = "pps_amount"              id = "pps_amount"               value = ""/>
+                <input type = "hidden" name = "amount_pickle_farmer"    id = "amount_pickle_farmer"     value = ""/>
+                <input type = "hidden" name = "amount_pickle_factory"   id = "amount_pickle_factory"    value = ""/>
+                <input type = "hidden" name = "amount_pickle_plane"     id = "amount_pickle_plane"      value = ""/>
+                <input type = "hidden" name = "cost_pickle_farmer"      id = "cost_pickle_farmer"       value = ""/>
+                <input type = "hidden" name = "cost_pickle_factory"     id = "cost_pickle_factory"      value = ""/>
+                <input type = "hidden" name = "cost_pickle_plane"       id = "cost_pickle_plane"        value = ""/>
+                <input type = "submit" value="Save now"/>
+            </form>
+
+            <form action = "/" method = "POST"
+                enctype = "multipart/form-data">
+                <input type = "file" name = "Choose Savefile" />
+                <input type = "submit" value="Upload Savefile"/>
+            </form>
+        </div>
+
+
+        <div class="building_1">
+            <button type="button" onclick="buy_pickle_farmer()">
+                <img src="{{url_for('static', filename='pickle_farmer.png')}}" alt="buttonpng" border="0" />
+            </button>
+        </div>
+        <div class="building_2">
+            <button type="button" onclick="buy_pickle_factory()">
+                <img src="{{url_for('static', filename='pickle_factory.png')}}" alt="buttonpng" border="0" />
+            </button>
+        </div>
+        <div class="building_3">
+            <button type="button" onclick="buy_pickle_plane()">
+                <img src="{{url_for('static', filename='pickle_plane.png')}}" alt="buttonpng" border="0" />
+            </button>
+        </div>
+
+        <div class="building_info_1">
+            <p id="pickle_farmer_cost">Cost: 100</p>
+            <p id="pickle_farmer_pps">PPS: 1</p>
+            <p id="pickle_farmer_amount">Farmer amount: 0</p>
+        </div>
+
+        <div class="building_info_2">
+            <p id="pickle_factory_cost">Cost: 1337</p>
+            <p id="pickle_factory_pps">PPS: 10</p>
+            <p id="pickle_factory_amount">Factory amount: 0</p>
+        </div>
+        <div class="building_info_3">
+            <p id="pickle_plane_cost">Cost: 11111</p>
+            <p id="pps_pickle_plane">PPS: 101</p>
+            <p id="pickle_plane_amount">Plane amount: 0</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+title: Native - Sentor
+description: Ibland så räcker det inte med Java/Kotlin och då får man använda sig av andra medel.
+authors:
+  - Sentor
+categories:
+  - reversing
+
+flag_format_prefix: SSM{
+flags: Sentor_Is-always-looking_f0r-trainees
+
+downloadable_files:
+  - ssm.apk
+
+challenge_id: 6cd493c2-2836-42bd-9657-475986822bfc
+spec: 0.0.1
+
+score: 300

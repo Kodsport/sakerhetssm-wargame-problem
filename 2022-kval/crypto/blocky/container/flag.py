@@ -1,0 +1,1 @@
+flag = "SSM{other_fun_modes_include:_ECB_and_CBC}"

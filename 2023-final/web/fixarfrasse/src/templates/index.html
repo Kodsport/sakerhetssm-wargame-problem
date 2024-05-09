@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block body %}
+<p>
+  Fix all the vulnerabilities in the index.php file without breaking any functionality and then upload the patched file here. If all functionality tests pass and all vulnerabilities are fixed, you get the flag.
+</p>
+<form method="post" action="/evaluate" enctype="multipart/form-data">
+  <input type="file" name="file">
+  <input name="submit" type="submit" value="Submit">
+</form>
+{% endblock %}

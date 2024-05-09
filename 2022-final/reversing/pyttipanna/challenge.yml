@@ -1,0 +1,28 @@
+title: Pyttipanna
+description: Det är lättare att blanda en flagga än att sortera tillbaka den
+authors:
+  - Jonathan Lööv
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: fr13d-n0t-fr0bn1c4t3d
+
+downloadable_files:
+  - source/pyttipanna
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 8e33fca8-c2eb-4181-a974-b1a79675f7f3
+spec: 0.0.1
+
+score: 100

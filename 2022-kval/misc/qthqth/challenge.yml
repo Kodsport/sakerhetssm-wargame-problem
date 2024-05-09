@@ -1,0 +1,24 @@
+title: QTH? QTH!
+description: |
+  Min kompis har börjat snacka i förkortningar och gått med i någon klubb.
+
+  Häromdagen gick han upp till mig och sa: "QST! Du ska få en kluring av mig
+  så att du börjar hänga med i svängarna!"
+authors:
+  - mkg
+categories:
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags:
+  - flag: QSC?_NO_I_AM_TEAPOT
+  - flag: QSC7_NO_I_AM_TEAPOT
+
+downloadable_files:
+  - kluring.txt
+
+challenge_id: cc1734a5-986e-4783-af2d-2d692d34aa8d
+spec: 0.0.1
+
+score: 200

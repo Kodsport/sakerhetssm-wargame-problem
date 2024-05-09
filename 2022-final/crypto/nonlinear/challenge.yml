@@ -1,0 +1,27 @@
+title: nonlinear
+description: N0nL1n34r == g00d
+authors:
+  - nnewram
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: n0n_l1n34r_lcg_1s_4_h04x
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: docker
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - dist/nonlinear.tar.xz
+
+challenge_id: 93692e11-2a89-4719-a0f2-9a4b60df7588
+spec: 0.0.1
+
+score: 200

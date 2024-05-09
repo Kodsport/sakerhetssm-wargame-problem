@@ -1,0 +1,29 @@
+title: Extreme Guessing
+description: Världsmästarna i gissa-talet kan vinna på bara 53 gissningar. Men här är vi inga amatörer, kan du göra bättre?
+authors:
+  - Jonathan Lööv
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: ∀x. NaN_är_varken_större_än_eller_mindre_än_x
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/service.js
+  - container/Dockerfile
+
+challenge_id: 959897d1-00cb-4915-a8ef-9862b131fd8d
+spec: 0.0.1
+
+score: 400

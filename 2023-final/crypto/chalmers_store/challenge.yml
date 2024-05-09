@@ -1,0 +1,28 @@
+title: Chalmers Store
+description: Det finns mycket smått och gott att köpa från Chalmers Store
+authors:
+  - Joshua Andersson
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: r4nd0m1z3_y0ur_b4s3
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 1338
+  privileged: true
+
+downloadable_files:
+  - container/service.cpp
+
+challenge_id: f493654a-a27b-45ec-b121-e82c7109605b
+spec: 0.0.1
+
+score: 350

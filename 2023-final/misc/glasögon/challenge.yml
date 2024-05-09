@@ -1,0 +1,31 @@
+title: Glasögon
+description: Du ser flaggan, men du har glömt glasögonen hemma
+authors:
+  - Jonathan Lööv
+categories:
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: suddig_flagga_tvingar_solvescript_att_lagga
+
+downloadable_files:
+  - SAX.ttf
+  - SAX_license
+  - generate-flag.py
+  - flag.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 126bb80d-75ff-4ebb-bac5-51477a89bc66
+spec: 0.0.1
+
+score: 200

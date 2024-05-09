@@ -1,0 +1,33 @@
+title: Trollbunden - Venor
+description: |
+  Hjälp!
+  Vi har fått värdefull information krypterad av en grupp välorganiserade hackare! Du måste söka efter information som kan hjälpa oss att låsa upp vår data.
+  Bifogat finns en krypterad fil (innehållet är binärt guld så det är av yttersta vikt att vi kan återställa den) samt ett hotfullt dokument från angriparna.
+  Vår omvärldsbevakning rapporterar att gruppen är känd för att skicka dolda meddelanden till varandra via kända sociala media-plattformar så det kan vara en god idé att utforska.
+authors:
+  - Venor
+categories:
+  - osint
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: n0t_th3_be5t_0psec
+
+downloadable_files:
+  - flag
+  - readme_ran$om.pdf
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 76ad4997-7660-490f-9c37-5b267d2e15b5
+spec: 0.0.1
+
+score: 300

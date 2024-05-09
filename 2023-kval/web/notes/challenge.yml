@@ -1,0 +1,20 @@
+title: Notes
+description: Testa vår nya anteckningstjänst! Perfekt för att lagra flaggor...
+authors:
+  - Movitz Sunar
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: c17r0n_d1j0n53n4p_011v01j4_t1ll_53113r1
+
+service:
+  type: website
+  image: .
+  internal_port: 8080
+
+score: 150
+
+challenge_id: d45426bc-76f4-46bb-93db-fc8773820c78
+spec: 0.0.1
