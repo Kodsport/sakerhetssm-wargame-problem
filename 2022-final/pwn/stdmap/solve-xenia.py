@@ -1,5 +1,5 @@
 # run as
-# python solve-jonathan.py ; ./stdmap < /tmp/solve.dat
+# python solve-xenia.py ; ./stdmap < /tmp/solve.dat
 #
 # assumes rsp = ...358 at entry to main, adjust line 48 accordingly
 

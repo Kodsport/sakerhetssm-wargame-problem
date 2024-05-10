@@ -21,7 +21,7 @@ freqs = []
 print("Processing FFT...")
 iterations = len(data) // segment_size
 for i in range(iterations):
-    # vår chunk som vi kör FFT på paddas med 99.9% nollor för att få tillräckligt med precision ut från FFTn för att lösa uppgiften. om den inte hade paddats, och med en segmentstorlek på sample_size hade precisionen vart 1Hz alltså skulle scriptet alltid säga 50Hz. Det är just det här som är ooptimerat, för vi får ut väldigt exakta frekvenser för hela frekvensbandet som vi inte behöver. Jonathans lösning (jupyter notebooken) är bättre på det sättet och går mycket snabbare, men har också matte man typ inte kan förstå
+    # vår chunk som vi kör FFT på paddas med 99.9% nollor för att få tillräckligt med precision ut från FFTn för att lösa uppgiften. om den inte hade paddats, och med en segmentstorlek på sample_size hade precisionen vart 1Hz alltså skulle scriptet alltid säga 50Hz. Det är just det här som är ooptimerat, för vi får ut väldigt exakta frekvenser för hela frekvensbandet som vi inte behöver. Xenias lösning (jupyter notebooken) är bättre på det sättet och går mycket snabbare, men har också matte man typ inte kan förstå
     chunk = np.concatenate(
         [
             data[i * segment_size : (i + 1) * segment_size],
@@ -88,7 +88,7 @@ for i in range(len(freqs), 31 * 24 * 3600 - len(freqs)):
 
 found_timestamp = (
     jan_1 + len(freqs) + scores.index(min(scores)) + 3 * 60 + 31
-)  # offset för när jonathan knäpper fingrarna
+)  # offset för när xenia knäpper fingrarna
 
 print(found_timestamp)
 print(datetime.datetime.fromtimestamp(found_timestamp))
