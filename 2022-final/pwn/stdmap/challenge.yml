@@ -30,7 +30,7 @@ downloadable_files:
   - container/Dockerfile
   - container/haproxy.cfg
 
-challenge_id: 1337dead-c001-4141-4242-726b19a4e1e6
+challenge_id: f50af790-0f9b-4a81-9c18-96b6e5e4f1a1
 spec: 0.0.1
 
 score: 350
