@@ -15,7 +15,6 @@ service:
 
 custom:
   build_script: build.sh
-  order: 12
 
 challenge_id: e3d076d4-1fae-437a-bd16-60419b630af6
 spec: 0.0.1
