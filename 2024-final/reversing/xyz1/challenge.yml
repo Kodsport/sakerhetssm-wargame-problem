@@ -28,6 +28,11 @@ service:
   image: challenge
   internal_port: 22
 
+predefined_services:
+- type: tcp
+  host: 188.126.67.132
+  port: 50003
+
 challenge_id: a8f3c493-9d73-4543-89ca-46604ab795d8
 spec: 0.0.1
 

@@ -14,6 +14,11 @@ service:
   internal_port: 1337
   privileged: true
 
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 50002
+
 downloadable_files:
   - fikamachine2.c
   - container/fikamachine2

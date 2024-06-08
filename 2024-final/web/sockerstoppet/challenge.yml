@@ -2,7 +2,7 @@ title: SockerStoppet
 description: >
   Only people who sign the chefsgrädde-pledge get to order it! Fikamyndigheten can't let dirty bureaucrats just get ahold of the prima-ballarina grädde.
   <br>
-  There will be two phones avaliable on-site for BankID signing in the dev environment. Do not attempt to install on your own phone because it is a hassle (existing bankid will be removed, requires reinstall). The phones (two cracked huaweies) and BankID password is <code>000001</code>. Please share the phones, you have source, so constant authing is not necessary. The SSNs are either 192403031137 or 192403031335.
+  This challenge requires a dev-instance of BankID! Installera på egen risk.
 authors:
   - Movitz Sunar
 categories:
@@ -17,6 +17,10 @@ service:
   image: .
   internal_port: 8000
 
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:50008"
 
 downloadable_files:
   - container.zip

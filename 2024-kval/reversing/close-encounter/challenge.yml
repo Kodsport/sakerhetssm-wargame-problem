@@ -16,6 +16,11 @@ service:
   internal_port: 1337
   privileged: true
 
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 50015
+
 downloadable_files:
   - container/service
 

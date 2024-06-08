@@ -4,7 +4,6 @@ authors:
   - mkg
 categories:
   - pwn
-  - reversing
 
 flag_format_prefix: SSM{
 flags: Who_3ven_needs_a_d3c0mpiler_wh3n_you_know_4ssembly!

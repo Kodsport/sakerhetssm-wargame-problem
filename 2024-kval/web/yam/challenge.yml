@@ -14,6 +14,10 @@ service:
   image: container
   internal_port: 1337
 
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:50019"
+
 downloadable_files:
   - container/server.py
 
