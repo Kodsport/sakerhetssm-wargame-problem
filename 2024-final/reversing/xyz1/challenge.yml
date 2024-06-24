@@ -15,7 +15,7 @@ categories:
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
-flags: b4s3d_0n_a_TrU3_sT0ry
+flags: based_0n_4_Tru3_St0ry
 
 # xyz.tar.gz (DO NOT REBUILD OR OVERWRITE THIS FILE - WILL LEAK FLAG!)
 # TODO: before archive, ping ZetaTwo
