@@ -1,12 +1,15 @@
-FROM ubuntu
+FROM ubuntu:22.04
 
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt upgrade -y
 
-RUN DEBIAN_FRONTEND="noninteractive" apt install -y python3 python3-pip nginx wget
+RUN apt install -y python3 python3-pip nginx wget
 RUN pip3 install flask gunicorn pymongo
+RUN apt-get install -y gnupg curl
 
-RUN wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
-RUN echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+RUN curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+
+RUN echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 RUN apt update
 RUN apt install mongodb-org -y
 
