@@ -1,0 +1,24 @@
+title: PKLBook
+description: Det bästa stället att lagra din att-göra-lista så att du inte glömmer den.
+authors:
+  - Eliyah Sundström
+categories:
+  - web
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: src
+  internal_port: 5000
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:51000"
+
+flag_format_prefix: SSM{
+flags: s4nit1z3_y0ur_pkl_1nputs
+
+challenge_id: 4353b47f-2440-4aa9-8737-88221c92eda1
+spec: 0.0.1
