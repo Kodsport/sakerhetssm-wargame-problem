@@ -11,6 +11,8 @@ flags: massor_av_skumma_lager
 
 downloadable_files:
   - challenge.py
+  - Dockerfile
+  - run.sh
 
 challenge_id: b962b23a-224f-4662-9f30-b1e7d4b854a5
 spec: 0.0.1
