@@ -1,0 +1,22 @@
+title: Lösenord vaktad av lurig orm
+description: >
+  Den luriga ormen Python är även namnet för ett programmeringsspråk, klicka på den gröna knappen "run" för att starta programmet, ange sedan ditt lösenord (flaggan) till höger sida. Du kan lista ut lösenordet genom att läsa och förstå programmet.
+
+authors:
+  - nnewram
+categories:
+  - generellt
+
+flag_format_prefix: ssmjr{
+flags: super_hemligt_lösenord
+
+downloadable_files:
+  - https://www.online-python.com/43rwGQSuKa
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+challenge_id: 6d675aea-ead6-4f81-a3b0-e1f8cac99e2b
+spec: 0.0.1

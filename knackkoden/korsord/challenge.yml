@@ -1,0 +1,21 @@
+title: Hackarens korsord
+description: >
+  Vi avlyssnade hemlig kommunikation och hörde att flaggan börjar på `ssmjr` och att 7:e bokstaven är `c`, 11:e är `s` och 14:e är `k`. Kan du hjälpa oss knäcka hackarens hemliga korsord?
+authors:
+  - nnewram
+categories:
+  - generellt
+
+flag_format_prefix: ssmjr{
+flags: cybersäker
+
+downloadable_files:
+  - https://crosswordlabs.com/embed/digital-hygien
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+challenge_id: 197c9c4f-302e-4925-ac35-941ef4ee5e87
+spec: 0.0.1

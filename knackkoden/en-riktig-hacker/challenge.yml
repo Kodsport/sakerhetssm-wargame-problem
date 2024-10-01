@@ -1,0 +1,17 @@
+title: Din första CTF uppgift!
+description: >
+  Målet med uppgiften är att hitta en flagga, flaggan kan till exempel se ut så här: ssmjr{min_första_flagga}
+  
+  Kalle har snurrat till bokstäverna i alfabetet på så sätt att varannan bokstav har bytt plats, det vill säga ab blev ba och abcd blev badc, det nya alfabetet är alltså badcfehgjilknmporqtsvuxwzyäåö. 
+  Han hade ett hemligt meddelande: ttniq{aqb_ipaabs!}, kan du återställa det?
+
+authors:
+  - nnewram
+categories:
+  - crypto
+
+flag_format_prefix: ssmjr{
+flags: bra_jobbat!
+
+challenge_id: 50e884c7-2588-479d-b8c8-7bda4189a65b
+spec: 0.0.1

@@ -1,0 +1,16 @@
+title: Ceasarchiffer
+description: >
+  En gång tiden fanns det en man som hette Julius Ceasar. Han hade W rizz. Han använde sig av ett sätt att gömma meddelanden på som heter Ceasarchiffer.
+  
+  Kan du knäcka detta chiffer? `ffzwe{falttg!}`
+
+authors:
+  - Laith Abbawi
+categories:
+  - kryptografi
+
+flag_format_prefix: ssmjr{
+flags: snyggt!
+
+challenge_id: 67f152b0-842a-4eac-a3b7-7cb109b4145a
+spec: 0.0.1

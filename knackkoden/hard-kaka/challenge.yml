@@ -1,0 +1,19 @@
+title: Hård kaka
+description: Denna kaka var jättejobbig att äta. Jag tror den kommer från Ohio :(. Kan du på något sätt ändra den?
+
+authors:
+  - Laith Abbawi
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: ssmjr{
+flags: du_lyckades_bli_admin!
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+
+challenge_id: 55c450ef-1fcc-4a3c-8198-1b8f67a48d39
+spec: 0.0.1

@@ -1,0 +1,16 @@
+title: Nål i höstacken
+description: Åh nej! Jag tappade bort en nål i höstacken! Kan du hjälpa mig leta reda på den?
+
+authors:
+  - Laith Abbawi
+categories:
+  - generellt
+
+flag_format_prefix: ssmjr{
+flags: du_hittade_nålen_i_höstacken!
+
+downloadable_files:
+  - ordlista.txt
+
+challenge_id: 09f93a2d-3d34-4170-9723-8bf6d98ead71
+spec: 0.0.1

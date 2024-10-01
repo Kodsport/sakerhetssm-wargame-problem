@@ -11,6 +11,9 @@ categories:
   - easy
   - onsite
   - hardware
+# för knäck koden
+  - generellt
+  - kryptografi
 
 authors:
   - Mateusz Drwal
@@ -56,11 +59,12 @@ authors:
 
 flag_format_prefixes:
   - SSM{
+  - ssmjr{
 
 
 custom:
   container_registry: registry.sakerhetssm.se:5000/
   platform_url: https://sakerhetssm.se/
-  platform_api_key: ctfimp_bb23b16d037d4af5994794fde78c18ca_4d33b260b1a4c231
+  platform_api_key: ctfimp_05cc2cb06e1d4e92bdad2861469a87cb_0c18d80af3655437
   bucket: ssm-wargame-prod
   secret: ssm-wargame-secret-aoisdjaoisjd!! 

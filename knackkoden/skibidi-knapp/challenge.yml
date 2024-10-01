@@ -1,0 +1,18 @@
+title: Skibidi knapp
+description: Jag har en knapp på min hemsida som är omöjlig att klicka på. Kan du hjälpa mig aktivera den?
+
+authors:
+  - Laith Abbawi
+categories:
+  - web
+
+flag_format_prefix: ssmjr{
+flags: du_lyckades_klicka_mig!
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+
+challenge_id: 1883f927-d9ab-4ec4-8cdb-62c9a6d822fe
+spec: 0.0.1
