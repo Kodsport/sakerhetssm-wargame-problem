@@ -53,17 +53,18 @@ func main() {
 		CreatedAt: time.Now().Format(time.ANSIC),
 	})
 
-	notes = append(notes, &Note{
-		Contents:  "SECT{Is You Taking Notes On a Criminal Fucking Conspiracy?}",
-		ID:        len(notes),
-		CreatedAt: time.Now().Format(time.ANSIC),
-	})
-
-	notes = append(notes, &Note{
-		Contents:  "Oj, fel CTF...",
-		ID:        len(notes),
-		CreatedAt: time.Now().Format(time.ANSIC),
-	})
+	// removed in wargame
+	// notes = append(notes, &Note{
+	// 	Contents:  "SECT{Is You Taking Notes On a Criminal Fucking Conspiracy?}",
+	// 	ID:        len(notes),
+	// 	CreatedAt: time.Now().Format(time.ANSIC),
+	// })
+	//
+	// notes = append(notes, &Note{
+	// 	Contents:  "Oj, fel CTF...",
+	// 	ID:        len(notes),
+	// 	CreatedAt: time.Now().Format(time.ANSIC),
+	// })
 
 	notes = append(notes, &Note{
 		Contents:  os.Getenv("FLAG"),
