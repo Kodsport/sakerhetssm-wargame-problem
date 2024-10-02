@@ -13,7 +13,9 @@ downloadable_files:
   - https://crosswordlabs.com/embed/digital-hygien
 
 custom:
-  is_knack_koden: true
+  chall_namespace: knackkoden
+
+score: 100
 
 challenge_id: 197c9c4f-302e-4925-ac35-941ef4ee5e87
 spec: 0.0.1

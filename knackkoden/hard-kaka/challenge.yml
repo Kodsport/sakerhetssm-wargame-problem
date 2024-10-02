@@ -20,7 +20,9 @@ predefined_services:
     url: "http://188.126.67.132:51003"
 
 custom:
-  is_knack_koden: true
+  chall_namespace: knackkoden
+
+score: 100
 
 challenge_id: 55c450ef-1fcc-4a3c-8198-1b8f67a48d39
 spec: 0.0.1

@@ -7,13 +7,15 @@ description: >
 authors:
   - Laith Abbawi
 categories:
-  - crypto
+  - kryptografi
 
 flag_format_prefix: ssmjr{
 flags: asgrymt
 
 custom:
-  is_knack_koden: true
+  chall_namespace: knackkoden
+
+score: 50
 
 challenge_id: 784e9941-977d-436b-8fd4-5587c77f3cfc
 spec: 0.0.1

@@ -13,7 +13,9 @@ flag_format_prefix: ssmjr{
 flags: snyggt!
 
 custom:
-  is_knack_koden: true
+  chall_namespace: knackkoden
+
+score: 50
 
 challenge_id: 67f152b0-842a-4eac-a3b7-7cb109b4145a
 spec: 0.0.1

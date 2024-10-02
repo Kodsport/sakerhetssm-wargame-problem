@@ -14,7 +14,9 @@ downloadable_files:
   - https://www.online-python.com/43rwGQSuKa
 
 custom:
-  is_knack_koden: true
+  chall_namespace: knackkoden
+
+score: 100
 
 challenge_id: 6d675aea-ead6-4f81-a3b0-e1f8cac99e2b
 spec: 0.0.1
