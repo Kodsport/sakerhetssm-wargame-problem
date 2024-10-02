@@ -14,5 +14,9 @@ service:
   image: container
   internal_port: 80
 
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:51004"
+
 challenge_id: 6e3ecd21-a41b-465a-bbba-b766071ac21d
 spec: 0.0.1
