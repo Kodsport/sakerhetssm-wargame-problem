@@ -12,5 +12,8 @@ flags: du_hittade_nålen_i_höstacken!
 downloadable_files:
   - ordlista.txt
 
+custom:
+  is_knack_koden: true
+
 challenge_id: 09f93a2d-3d34-4170-9723-8bf6d98ead71
 spec: 0.0.1

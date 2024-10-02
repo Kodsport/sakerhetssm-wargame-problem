@@ -12,5 +12,8 @@ categories:
 flag_format_prefix: ssmjr{
 flags: asgrymt
 
+custom:
+  is_knack_koden: true
+
 challenge_id: 784e9941-977d-436b-8fd4-5587c77f3cfc
 spec: 0.0.1

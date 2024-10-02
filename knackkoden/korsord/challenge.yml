@@ -12,10 +12,8 @@ flags: cybersäker
 downloadable_files:
   - https://crosswordlabs.com/embed/digital-hygien
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
+custom:
+  is_knack_koden: true
 
 challenge_id: 197c9c4f-302e-4925-ac35-941ef4ee5e87
 spec: 0.0.1

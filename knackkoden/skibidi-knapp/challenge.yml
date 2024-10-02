@@ -18,5 +18,8 @@ predefined_services:
   - type: website
     url: "http://188.126.67.132:51002"
 
+custom:
+  is_knack_koden: true
+
 challenge_id: 1883f927-d9ab-4ec4-8cdb-62c9a6d822fe
 spec: 0.0.1

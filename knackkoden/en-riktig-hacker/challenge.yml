@@ -13,5 +13,8 @@ categories:
 flag_format_prefix: ssmjr{
 flags: bra_jobbat!
 
+custom:
+  is_knack_koden: true
+
 challenge_id: 50e884c7-2588-479d-b8c8-7bda4189a65b
 spec: 0.0.1
