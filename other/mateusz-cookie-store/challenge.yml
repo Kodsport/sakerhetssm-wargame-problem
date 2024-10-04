@@ -1,0 +1,24 @@
+title: Cookie Store
+description: Welcome to my cookie store!
+
+authors:
+  - Mateusz Drwal
+categories:
+  - web
+
+flag_format_prefix: SSM{
+flags: c00k135_4r3_m0n3y
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+  external_port: 51061
+
+challenge_id: 0ced65fe-2946-4217-a84e-6db588ad7db4
+spec: 0.0.1
+
+score: 200
+
+custom:
+  build_script: build.sh
