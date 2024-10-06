@@ -1,0 +1,23 @@
+@model RacingRules.Views.Racing.Leaderboard
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<a herf="/Racing">Go back</a>
+@if (Model.LeaderboardEntries is null)
+{
+    <p>There is no leaderboard entries</p>
+}
+else
+{
+    <ol>
+        @foreach (var entry in Model.LeaderboardEntries)
+        {
+            <li>
+                @entry.FirstName @entry.LastName - Completion: @(entry.TimeForCompletion.TotalSeconds)s
+            </li>
+        }
+    </ol>
+}

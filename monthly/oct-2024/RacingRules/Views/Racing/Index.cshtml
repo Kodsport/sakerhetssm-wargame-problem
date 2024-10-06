@@ -1,0 +1,45 @@
+@model RacingRules.Views.Racing.Index
+
+@{
+    Layout = null;
+    ViewBag.Title = "Racing participants";
+}
+
+<title>Racing participants</title>
+
+<h1>Racing competition</h1>
+
+<h2>Race conditions</h2>
+<ol>
+    <li>You don't talk about the race</li>
+    <li>You don't talk about the race</li>
+    <li>If a race is already on going. Use the emergency key</li>
+    <li>Be nice, don't hurt anyone</li>
+</ol>
+
+<h2>Racing participants</h2>
+@if (Model.Participants?.Count != 0)
+{
+    <ul>
+        @foreach (var participant in Model.Participants ?? [])
+        {
+            <li>@participant.FirstName @participant.LastName</li>
+        }
+    </ul>
+}
+else
+{
+    <p>There is no participants!</p>
+}
+
+@using (Html.BeginForm("AddParticipant", "Racing"))
+{
+    <input type="text" placeholder="First name" name="firstName"/>
+    <input type="text" placeholder="Last name" name="lastName"/>
+    <button type="submit">Add participant</button>
+}
+
+@using (Html.BeginForm("StartRace", "Racing"))
+{
+    <button type="submit">Start race!</button>
+}

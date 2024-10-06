@@ -1,0 +1,25 @@
+@model RacingRules.Views.Error.Index
+@Html.AntiForgeryToken()
+
+@{
+    Layout = null;
+    ViewBag.Title = "We love errors!";
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>We love errors</title>
+</head>
+<body>
+<p>Seems like you encountered an error.</p>
+@if (Model.Flag is null)
+{
+    <p>But no flag for you!</p>
+}
+else
+{
+    <p>@Model.Flag</p>
+}
+</body>
+</html>

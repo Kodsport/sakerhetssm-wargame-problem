@@ -1,0 +1,19 @@
+title: Racing Rules
+description: I made a application to simulate racing, I should have prevented simultaneous races from starting. I hope at least...
+authors: Instellate
+categories: 
+  - web
+
+downloadable_files:
+  - RacingController.cs
+
+service:
+  image: ./
+  type: website
+  internal_port : 8080
+  
+flag_format_prefix: SSM{
+flags: race_c0nd1tions_are_fa1lure
+
+challenge_id: 94e1d89f-8499-49c6-b838-5d0d095b42d0
+spec: 0.0.1
