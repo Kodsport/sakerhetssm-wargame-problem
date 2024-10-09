@@ -1,3 +1,2 @@
 #!/bin/sh
-read flag
-echo $flag > container/flag.txt
+echo $1 > container/flag.txt
