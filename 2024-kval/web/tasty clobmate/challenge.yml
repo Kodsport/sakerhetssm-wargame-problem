@@ -16,10 +16,11 @@ service:
   type: website
   image: container
   internal_port: 3000
+  external_port: 50051
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50020"
+    url: "http://188.126.67.132:50051"
 
 score: 400
 

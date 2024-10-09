@@ -13,11 +13,16 @@ service:
   type: website
   image: .
   internal_port: 8080
+  external_port: 50022
 
 score: 500
 
 challenge_id: e10de716-ab7a-4db0-98b8-477384706e5f
 spec: 0.0.1
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:50022/"
 
 human_metadata:
   event_name: SSM 2023 Kval

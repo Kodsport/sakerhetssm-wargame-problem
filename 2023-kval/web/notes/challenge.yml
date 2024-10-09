@@ -13,6 +13,11 @@ service:
   type: website
   image: .
   internal_port: 8080
+  external_port: 50023
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:50023/"
 
 score: 150
 

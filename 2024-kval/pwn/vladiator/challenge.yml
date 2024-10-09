@@ -12,12 +12,13 @@ service:
   type: tcp
   image: container
   internal_port: 1337
+  external_port: 50045
   privileged: true
 
 predefined_services:
   - type: tcp
     host: 188.126.67.132
-    port: 50014
+    port: 50045
 
 downloadable_files:
   - container/ELFSign

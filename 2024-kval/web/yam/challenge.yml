@@ -13,10 +13,11 @@ service:
   type: website
   image: container
   internal_port: 1337
+  external_port: 50050
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50019"
+    url: "http://188.126.67.132:50050"
 
 downloadable_files:
   - container/server.py

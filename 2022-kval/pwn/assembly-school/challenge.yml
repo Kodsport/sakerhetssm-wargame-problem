@@ -12,10 +12,16 @@ service:
   type: tcp
   image: container
   internal_port: 1337
+  external_port: 50031
   privileged: true
 
 challenge_id: 10c3e7b9-cc03-4967-9243-12f051c1d6cd
 spec: 0.0.1
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 50031
 
 score: 100
 human_metadata:

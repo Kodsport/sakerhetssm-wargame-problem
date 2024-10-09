@@ -13,9 +13,14 @@ service:
   type: website
   image: .
   internal_port: 1337
+  external_port: 50024
 
 # downloadable_files:
 #   - container/server.py
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:50024/"
 
 score: 350
 

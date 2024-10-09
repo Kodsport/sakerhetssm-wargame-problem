@@ -17,6 +17,11 @@ service:
   type: https
   image: container
   internal_port: 8443
+  external_port: 50030
+
+predefined_services:
+  - type: website
+    url: "https://188.126.67.132:50030/"
 
 challenge_id: 99fc51a2-67d0-4a6e-941f-3d1ea13f7d46
 spec: 0.0.1
