@@ -13,11 +13,11 @@ service:
   type: website
   image: .
   internal_port: 8000
-  external_port: 52066
+  external_port: 51066
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:52066/"
+    url: "http://188.126.67.132:51066/"
 
 challenge_id: acbd2304-35af-4445-95b2-22c234f64e48
 spec: 0.0.1
