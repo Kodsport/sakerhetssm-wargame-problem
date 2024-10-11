@@ -16,12 +16,12 @@ service:
   type: website
   image: .
   internal_port: 8000
-  external_port: 50011
+  external_port: 40011
 
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50011"
+    url: "http://188.126.67.132:40011"
 
 downloadable_files:
   - container.zip

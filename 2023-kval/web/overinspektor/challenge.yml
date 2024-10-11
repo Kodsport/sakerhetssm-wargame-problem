@@ -13,11 +13,11 @@ service:
   type: website
   image: .
   internal_port: 80
-  external_port: 50021
+  external_port: 40021
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50021/"
+    url: "http://188.126.67.132:40021/"
 
 score: 50
 

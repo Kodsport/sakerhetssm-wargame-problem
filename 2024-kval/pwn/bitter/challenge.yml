@@ -15,13 +15,13 @@ service:
   type: tcp
   image: container
   internal_port: 1337
-  external_port: 50043
+  external_port: 40043
   privileged: true
 
 predefined_services:
   - type: tcp
     host: 188.126.67.132
-    port: 50043
+    port: 40043
 
 downloadable_files:
   - container/bitter

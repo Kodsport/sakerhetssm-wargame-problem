@@ -13,13 +13,13 @@ service:
   type: tcp
   image: container
   internal_port: 1337
-  external_port: 50007
+  external_port: 40007
   privileged: true
 
 predefined_services:
   - type: tcp
     host: 188.126.67.132
-    port: 50007
+    port: 40007
 
 downloadable_files:
   - container/service.py

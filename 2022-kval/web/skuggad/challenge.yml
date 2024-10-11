@@ -13,7 +13,7 @@ service:
   type: website
   image: container
   internal_port: 8080
-  external_port: 50041
+  external_port: 40041
 
 # challenge_id:
 spec: 0.0.1
@@ -22,7 +22,7 @@ challenge_id: 307c9be7-757d-46bd-92c7-ae24841a27ab
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50041/"
+    url: "http://188.126.67.132:40041/"
 
 score: 450
 human_metadata:

@@ -13,11 +13,11 @@ service:
   type: website
   image: .
   internal_port: 3001
-  external_port: 50010
+  external_port: 40010
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50010"
+    url: "http://188.126.67.132:40010"
 
 downloadable_files:
   - container/index.js

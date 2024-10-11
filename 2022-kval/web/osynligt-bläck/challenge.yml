@@ -13,14 +13,14 @@ service:
   type: website
   image: container
   internal_port: 1337
-  external_port: 50040
+  external_port: 40040
 
 challenge_id: af0d9ea3-5146-4b65-bfbe-a14391b24c08
 spec: 0.0.1
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50040/"
+    url: "http://188.126.67.132:40040/"
 
 score: 50
 human_metadata:

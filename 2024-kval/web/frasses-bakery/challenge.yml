@@ -13,11 +13,11 @@ service:
   type: website
   image: container
   internal_port: 3000
-  external_port: 50053
+  external_port: 40053
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:50053"
+    url: "http://188.126.67.132:40053"
 
 downloadable_files:
   - container/main.go

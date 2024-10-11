@@ -18,11 +18,11 @@ service:
   type: https
   image: .
   internal_port: 8443
-  external_port: 50029
+  external_port: 40029
 
 predefined_services:
   - type: website
-    url: "https://188.126.67.132:50029/"
+    url: "https://188.126.67.132:40029/"
 
 challenge_id: bda5947f-c26c-43ce-844d-662e5ae09042
 spec: 0.0.1
