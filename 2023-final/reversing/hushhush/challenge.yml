@@ -12,16 +12,6 @@ flags: sssbbbbbbcccc
 downloadable_files:
   - app-debug.apk
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 300
 
 challenge_id: b39e6de0-666b-4960-a570-cbcbb6f7e917

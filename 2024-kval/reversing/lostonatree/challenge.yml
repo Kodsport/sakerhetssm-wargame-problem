@@ -15,16 +15,6 @@ downloadable_files:
    - squirrel.py
    - tree.txt
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 450
 
 challenge_id: 18fbc860-d17f-4a52-a0c2-b13c71af4cb2

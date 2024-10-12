@@ -15,16 +15,6 @@ flags:
 downloadable_files:
   - ciphertext.txt
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80d
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 150
 
 challenge_id: ff8a72f5-11b8-411c-9223-95da6d989471

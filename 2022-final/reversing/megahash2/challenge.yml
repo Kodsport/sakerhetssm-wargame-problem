@@ -17,6 +17,7 @@ service:
   type: https
   image: container
   internal_port: 443
+  external_port: 40077
 
 challenge_id: 5a88edab-6497-4166-b8a3-6318b92e1545
 spec: 0.0.1

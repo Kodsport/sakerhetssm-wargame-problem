@@ -20,11 +20,6 @@ downloadable_files:
   - client.py
   - client2.py
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
 custom_service_types:
   - type: voice
     display: python client.py {host} {port}
@@ -33,6 +28,7 @@ service:
   type: voice
   image: .
   internal_port: 1337
+  external_port: 40071
 
 score: 250
 

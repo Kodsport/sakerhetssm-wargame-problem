@@ -12,10 +12,11 @@ service:
   type: website
   image: src
   internal_port: 5000
+  external_port: 40090
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:51000"
+    url: "http://188.126.67.132:40090"
 
 flag_format_prefix: SSM{
 flags: s4nit1z3_y0ur_pkl_1nputs

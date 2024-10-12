@@ -20,16 +20,6 @@ flags: ^3nc0d1ngh3ll^
 downloadable_files:
   - flag
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 250
 
 challenge_id: f5023bce-b7c6-4031-879c-c593ee33bdcd

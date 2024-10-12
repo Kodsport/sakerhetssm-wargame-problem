@@ -14,10 +14,11 @@ service:
   type: website
   image: container
   internal_port: 80
+  external_port: 40066
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:51003"
+    url: "http://188.126.67.132:40066"
 
 custom:
   chall_namespace: knackkoden

@@ -18,6 +18,7 @@ service:
   type: https
   image: container
   internal_port: 1337
+  external_port: 40054
 
 # downloadable_files:
 #   - container/server.py

@@ -16,6 +16,7 @@ service:
   type: tcp
   image: container
   internal_port: 50000
+  external_port: 40089
 
 spec: 0.0.1
 

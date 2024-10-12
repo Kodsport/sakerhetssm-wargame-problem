@@ -47,6 +47,7 @@ authors:
   - Michal Dzialak
   - DayDun
   - Eliyah Sundström
+  - Valter Wik
 
   - Säkerhets-SM
   - FRA
@@ -65,6 +66,6 @@ flag_format_prefixes:
 custom:
   container_registry: registry.sakerhetssm.se:5000/
   platform_url: https://sakerhetssm.se/
-  platform_api_key: ctfimp_05cc2cb06e1d4e92bdad2861469a87cb_0c18d80af3655437
+  platform_api_key: ctfimp_0f472697f8e940ee9bde4bf144a3469a_a0cc99dadd466f44
   bucket: ssm-wargame-prod
   secret: ssm-wargame-secret-aoisdjaoisjd!! 

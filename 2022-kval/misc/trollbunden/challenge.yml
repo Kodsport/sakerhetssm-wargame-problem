@@ -17,16 +17,6 @@ downloadable_files:
   - flag
   - readme_ran$om.pdf
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 challenge_id: 76ad4997-7660-490f-9c37-5b267d2e15b5
 spec: 0.0.1
 

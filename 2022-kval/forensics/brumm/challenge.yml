@@ -77,16 +77,6 @@ flags:
 downloadable_files:
   - brumm.wav
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 challenge_id: b7a62cc3-ee3e-4fad-8c57-76a54ef0dc37
 spec: 0.0.1
 

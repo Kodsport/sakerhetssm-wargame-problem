@@ -13,16 +13,6 @@ downloadable_files:
   - shuffle.py
   - given.txt
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 200
 
 challenge_id: a8540826-7799-46ab-94ed-ee345cdacebd

@@ -19,6 +19,7 @@ service:
   type: tls
   image: container
   internal_port: 1338
+  external_port: 40058
   privileged: true
 
 downloadable_files:

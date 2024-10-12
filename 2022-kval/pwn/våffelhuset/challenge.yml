@@ -12,6 +12,7 @@ service:
   type: tcp
   image: docker
   internal_port: 31337
+  external_port: 40079
 
 challenge_id: 9269bcb6-f2d0-461f-8fb4-bb4548681057
 spec: 0.0.1

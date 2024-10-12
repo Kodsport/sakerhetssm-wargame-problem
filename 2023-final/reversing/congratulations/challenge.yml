@@ -15,6 +15,7 @@ service:
    type: website
    image: .
    internal_port: 80
+   external_port: 40061
 
 
 spec: 0.0.1

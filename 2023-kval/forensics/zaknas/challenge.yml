@@ -12,16 +12,6 @@ flags: zn34ky_zn34ky_b1nw4lk_l34ky
 downloadable_files:
   - zaknas.zip
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 score: 150
 
 challenge_id: 75ce229e-2cd4-4130-9eaa-07fdd47c1fcb

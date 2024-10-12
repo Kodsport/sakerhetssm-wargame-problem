@@ -15,16 +15,6 @@ downloadable_files:
   - generate-flag.py
   - flag.png
 
-# service:
-#   type: website
-#   image: container
-#   internal_port: 80
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
-
 challenge_id: 126bb80d-75ff-4ebb-bac5-51477a89bc66
 spec: 0.0.1
 

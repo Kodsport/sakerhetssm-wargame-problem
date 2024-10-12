@@ -16,11 +16,7 @@ service:
   type: website
   image: .
   internal_port: 8080
-
-# service:
-#   type: tcp
-#   image: container
-#   internal_port: 1337
+  external_port: 40095
 
 score: 300
 

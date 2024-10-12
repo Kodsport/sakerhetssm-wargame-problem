@@ -16,6 +16,7 @@ service:
   type: tcp
   image: container
   internal_port: 50000
+  external_port: 40084
 
 challenge_id: b23a8d9a-e0cd-4885-943b-c3595061e5f9
 spec: 0.0.1

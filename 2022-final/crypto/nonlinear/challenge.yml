@@ -16,6 +16,7 @@ service:
   type: tls
   image: docker
   internal_port: 1338
+  external_port: 40055
   privileged: true
 
 downloadable_files:

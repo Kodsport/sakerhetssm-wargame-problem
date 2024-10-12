@@ -16,6 +16,7 @@ service:
   type: tcp
   image: container
   internal_port: 1337
+  external_port: 40067
   privileged: true
 
 downloadable_files:

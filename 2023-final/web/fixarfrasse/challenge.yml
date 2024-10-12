@@ -21,6 +21,7 @@ service:
   type: https
   image: .
   internal_port: 5000
+  external_port: 40060
   privileged: true
 
 challenge_id: f544bc9d-78d0-438f-a796-a1b87ef9a627
