@@ -1,5 +1,5 @@
 # Setting up chroot below
-FROM ubuntu:20.04 AS chroot
+FROM ubuntu:22.04 AS chroot
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
