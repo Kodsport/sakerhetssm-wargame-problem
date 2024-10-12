@@ -11,7 +11,7 @@ flags: 5ql_m0r3_l1k3_n05ql
 
 service:
   type: website
-  image: .
+  image: container
   internal_port: 8000
   external_port: 51066
 
