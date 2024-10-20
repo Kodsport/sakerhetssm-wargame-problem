@@ -5,7 +5,7 @@ description: >
 authors:
   - nnewram
 categories:
-  - generellt
+  - reversing
 
 flag_format_prefix: SSM{
 flags: super_hemligt_lösenord
