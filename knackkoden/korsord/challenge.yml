@@ -3,6 +3,9 @@ description: >
   Vi avlyssnade hemlig kommunikation och hörde att flaggan börjar på `SSM{` och att 10:e bokstaven är `s`.
   Kan du hjälpa oss knäcka hackarens hemliga korsord?
 
+
+  Länk: https://crosswordlabs.com/embed/knack-koden
+
 authors:
   - nnewram
 categories:
@@ -10,9 +13,6 @@ categories:
 
 flag_format_prefix: SSM{
 flags: cybersäker
-
-downloadable_files:
-  - https://crosswordlabs.com/embed/knack-koden
 
 custom:
   chall_namespace: knackkoden

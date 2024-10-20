@@ -18,9 +18,15 @@ flags:
 downloadable_files:
   - trafik.pcap
 
+service:
+  type: website
+  image: container
+  internal_port: 8085
+  external_port: 40138
+
 predefined_services: # docker-compose
   - type: website
-    url: "http://188.126.67.132:8085"
+    url: "http://188.126.67.132:40138"
 
 custom:
   chall_namespace: knackkoden
