@@ -1,0 +1,21 @@
+title: Hackarens Gömställe
+description: >
+  Mästerdetektiven Jesper är hackaren som angripit skolan på spåren, hjälp honom hitta henne så att vi kan få slut på detta sabotage!
+  Flaggan är SSM{texten som står på den vita kupolen i bilden} texten är synlig från google maps.
+
+authors:
+  - ntomsic
+categories:
+  - osint
+
+flag_format_prefix: SSM{
+flags:
+  - nordichallen
+  - Nordichallen
+
+authors: ntomsic
+
+score: 150
+
+challenge_id: 3d4451a7-b462-4805-99ef-fdf716dfb78a
+spec: 0.0.1
