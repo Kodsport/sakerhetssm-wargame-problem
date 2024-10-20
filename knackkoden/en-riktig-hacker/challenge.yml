@@ -1,6 +1,6 @@
 title: Din första CTF uppgift!
 description: >
-  Målet med uppgiften är att hitta en flagga, flaggan kan till exempel se ut så här: ssmjr{min_första_flagga}
+  Målet med uppgiften är att hitta en flagga, flaggan kan till exempel se ut så här: SSM{min_första_flagga}
   
   Kalle har snurrat till bokstäverna i alfabetet på så sätt att varannan bokstav har bytt plats, det vill säga ab blev ba och abcd blev badc, det nya alfabetet är alltså `badcfehgjilknmporqtsvuxwzyäåö`. 
   Han hade ett hemligt meddelande: `TTN{aqb_ipaabs!}`, kan du återställa det?
