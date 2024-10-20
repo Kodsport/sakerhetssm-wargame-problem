@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: container
+    ports:
+    - 80:80
+version: '3'
