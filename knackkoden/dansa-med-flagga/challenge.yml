@@ -1,0 +1,25 @@
+title: Dansa med min flagga!
+description: >
+  Mitt python program är väldigt bra på att dansa med flaggor, men de blir helt yra efteråt.
+  Kan du dansa min flagga baklänges?
+
+  Kolla på länken för att se mina danssteg!
+
+authors:
+  - nnewram
+categories:
+  - reverse engineering
+
+flag_format_prefix: SSM{
+flags: dansa_med_min_flagga
+
+downloadable_files:
+  - https://www.online-python.com/jr6QW975Oh
+
+custom:
+  chall_namespace: knackkoden
+
+score: 500
+
+challenge_id: 1f1a8b37-0001-4e63-847a-2584af0e0700
+spec: 0.0.1
