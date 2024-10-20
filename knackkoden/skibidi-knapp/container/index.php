@@ -17,7 +17,7 @@
             return ret;
         }
         function fåFlagga() {
-            const flagga = strxor("\x11\x12\x03\x0b\x1c\x19\x05\x1b\x3e\x02\x1b\x02\x05\x00\x0a\x07\x12\x31\x0a\x02\x0b\x02\x05\x00\x31\x0f\x08\x09\x40\x13", "banan")
+            const flagga = strxor("12#\x1a\n\x17>\x02\x18\r\t\x00\n\x04\x1d=\n\x02\x08\r\t\x001\x0c\x07\x05@\x13", "banan")
             console.log(flagga)
             document.getElementById('b').innerHTML += "<h1>Grattis! Flaggan är " + flagga + "</h1>"
         }

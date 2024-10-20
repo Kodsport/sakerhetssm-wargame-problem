@@ -1,16 +1,18 @@
 title: Hackarens korsord
 description: >
-  Vi avlyssnade hemlig kommunikation och hörde att flaggan börjar på `ssmjr` och att 7:e bokstaven är `c`, 11:e är `s` och 14:e är `k`. Kan du hjälpa oss knäcka hackarens hemliga korsord?
+  Vi avlyssnade hemlig kommunikation och hörde att flaggan börjar på `SSM{` och att 10:e bokstaven är `s`.
+  Kan du hjälpa oss knäcka hackarens hemliga korsord?
+
 authors:
   - nnewram
 categories:
   - generellt
 
-flag_format_prefix: ssmjr{
+flag_format_prefix: SSM{
 flags: cybersäker
 
 downloadable_files:
-  - https://crosswordlabs.com/embed/digital-hygien
+  - https://crosswordlabs.com/embed/knack-koden
 
 custom:
   chall_namespace: knackkoden

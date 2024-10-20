@@ -6,7 +6,7 @@ authors:
 categories:
   - web
 
-flag_format_prefix: ssmjr{
+flag_format_prefix: SSM{
 flags: du_lyckades_klicka_mig!
 
 service:
