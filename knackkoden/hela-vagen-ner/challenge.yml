@@ -1,0 +1,31 @@
+title: Hela vägen ner
+description: >
+  Nu har vi kikat lite på hur web trafik funkar, men hur överförs det egentligen över internet?
+  I de nedladdbara filerna finns en pcap fil, en inspelning av nätverkstrafik.
+  Du kan inspektera nätverkstrafiken i pcap filen genom hemsidan som länkas, kan du lista ut vilka hemsidor hackaren har besökt?
+
+authors:
+  - nnewram
+  - laith
+categories:
+  - forensics
+
+flag_format_prefix: SSM{
+flags:
+  - du_såg_igenom_mina_get_requests
+  - du_sag_igenom_mina_get_requests
+
+downloadable_files:
+  - trafik.pcap
+
+predefined_services: # docker-compose
+  - type: website
+    url: "http://188.126.67.132:40138" # xx
+
+custom:
+  chall_namespace: knackkoden
+
+score: 150
+
+challenge_id: e06c31af-5d1e-4cbf-a0bf-fe9f1175524c
+spec: 0.0.1

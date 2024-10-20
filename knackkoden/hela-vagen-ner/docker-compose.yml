@@ -1,0 +1,8 @@
+services:
+  challenge:
+    image: ghcr.io/qxip/webshark:latest
+    ports:
+    - 8085:8085
+    volumes:
+    - "./captures:/captures"
+version: '3'
