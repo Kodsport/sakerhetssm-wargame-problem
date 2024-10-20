@@ -1,0 +1,26 @@
+title: Faktorisera
+description: >
+  I modern kryptografi så använder vi inte subsitutions- eller rotationschiffer, vi använder istället svårare matematiska problem för att hålla vår data hemlig.
+  Ett sådant problem är faktoriseringsproblemet, alltså att det är väldigt svårt att lista ut talen `p` och `q` om vi bara har deras produkt <code>n</code> ur <code>p * q = n</code>.
+  
+  Detta stämmer bara om <code>p</code> och <code>q</code> är primtal (tal som enbart är jämnt delbara med sig själv och 1, te.x. 2, 3, 5, 7, 11, 13, ...), men inte (4, 6, 8, 9, 12, 15, ...).
+
+  Om vi kan hitta faktorerna till n (alltså p och q) så kan vi också avkoda hemliga meddelanden!
+
+  Erik har varit lite lurig och mixtrat med vår topphemliga primtalsgenerator, den har börjat agera helt knasigt! Kan du faktorisera talet?
+  Flaggan är den största faktorn till n, till exempel SSM{17}
+
+  n = 1743
+
+authors:
+  - nnewram
+categories:
+  - kryptografi
+
+flag_format_prefix: SSM{
+flags: 83
+
+score: 150
+
+challenge_id: aea1052b-c258-4ffa-b933-86731b5e55e1
+spec: 0.0.1
