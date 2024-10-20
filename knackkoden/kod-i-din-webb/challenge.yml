@@ -1,0 +1,36 @@
+title: Lek i din egna sandlåda! 
+description: >
+  Sluta kasta sand på mig! Håll dig till din egna sandlåda!
+
+  I webbläsaren så körs kod, vad kan gå fel?
+  För att skydda din dator så används något som kallas för en sandlåda, som begränsar vad koden kan göra.
+
+  Om du öppnar inspect element och går till fliken "sources" så kan du se javascript kod som körs i din webbläsare, dessa kodfiler slutar på ".js".
+  Kan du lista ut vad min kod gör?
+
+authors:
+  - nnewram
+categories:
+  - web
+  - reverse engineering
+
+flag_format_prefix: SSM{
+flags: bästa_sanden_i_sandlådan!
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+  external_port: 40137 # xx
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:40137" # xx
+
+custom:
+  chall_namespace: knackkoden
+
+score: 200
+
+challenge_id: fe8a23ff-683b-4ff3-8c5e-74a495516ece
+spec: 0.0.1
