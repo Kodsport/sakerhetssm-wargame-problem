@@ -20,7 +20,7 @@ downloadable_files:
 
 predefined_services: # docker-compose
   - type: website
-    url: "http://188.126.67.132:40138" # xx
+    url: "http://188.126.67.132:8085"
 
 custom:
   chall_namespace: knackkoden
