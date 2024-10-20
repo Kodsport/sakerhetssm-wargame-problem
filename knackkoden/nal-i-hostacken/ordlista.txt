@@ -4997,7 +4997,7 @@ studiekonsulent
 musikinstrumentmakerska
 kyrkoherdefru
 fabriksarbetskarl
-ssmjr{du_hittade_nålen_i_höstacken!}
+SSM{du_hittade_nålen_i_höstacken!}
 cementstampare
 systemprovare
 sprinklermontör

@@ -21,7 +21,7 @@
         {
             if (!document.cookie.toLowerCase().includes('admin=true'))
                 return
-            const flagga = strxor("\x12\x03\b\x06\x01\x12\n\x14/\t\x15\x10\x02\x0F\x05\x15\x163\x11\x05\x07>\x11\x01\x01\x1A\x07O\x1C", "apelsin")
+            const flagga = strxor("2#(\x17\x17\x1c1\r\t\x06\x07\x12\r\x0b\x12/\x07\x00\x1a6\x0f\x05\x1d\x0c\x02R\x14", "apelsin")
             console.log(flagga)
             document.getElementById('b').innerHTML += "<h1>Grattis! Flaggan är " + flagga + "</h1>"
         }

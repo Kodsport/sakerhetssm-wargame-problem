@@ -6,7 +6,7 @@ authors:
 categories:
   - web
 
-flag_format_prefix: ssmjr{
+flag_format_prefix: SSM{
 flags: hur_lyckades_du_hitta_du_mig?
 
 service:

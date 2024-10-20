@@ -7,11 +7,11 @@ authors:
 categories:
   - generellt
 
-flag_format_prefix: ssmjr{
+flag_format_prefix: SSM{
 flags: super_hemligt_lösenord
 
 downloadable_files:
-  - https://www.online-python.com/43rwGQSuKa
+  - https://www.online-python.com/mWRd6a7Uso
 
 custom:
   chall_namespace: knackkoden

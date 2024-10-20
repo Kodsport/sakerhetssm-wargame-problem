@@ -7,7 +7,7 @@ categories:
   - web
 
 # set the flag_format_prefix to `null` to not use the flag format
-flag_format_prefix: ssmjr{
+flag_format_prefix: SSM{
 flags: du_lyckades_bli_admin!
 
 service:

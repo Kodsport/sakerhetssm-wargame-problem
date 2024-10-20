@@ -12,7 +12,7 @@
     <h1>Osynligt bläck</h1>
     <h2>Hejsan och välkommen till min sida!</h2>
     <p>Det finns en flagga gömd här någonstans. Kan du hitta vart den är?</p>
-    <!-- ssmjr{hur_lyckades_du_hitta_du_mig?} -->
+    <!-- SSM{hur_lyckades_du_hitta_du_mig?} -->
 </body>
 
 </html>
