@@ -8,7 +8,7 @@ description: >
 authors:
   - nnewram
 categories:
-  - reverse engineering
+  - reversing
 
 flag_format_prefix: SSM{
 flags: dansa_med_min_flagga

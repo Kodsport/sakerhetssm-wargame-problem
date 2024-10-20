@@ -18,7 +18,8 @@ categories:
   - kryptografi
 
 flag_format_prefix: SSM{
-flags: 83
+flags: 
+  - flag: "83"
 
 score: 150
 

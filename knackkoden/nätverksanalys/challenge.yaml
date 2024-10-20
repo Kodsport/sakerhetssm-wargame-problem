@@ -1,6 +1,8 @@
 title: Nätverksanalys
 description: >
-  Lisa har antecknat vilka som pratar med varandra på skolgården och hon misstänker att något fuffens är på gång. Det verkar som att några håller på att planera en överraskning, kan du hjälpa Lisa att ta reda på vem som är ledaren och vem som ska bli överraskad? Flaggan är SSM{namn på ledare,namn på överaskad person} t.ex. SSM{Linus,Micke}
+  Lisa har antecknat vilka som pratar med varandra på skolgården och hon misstänker att något fuffens är på gång. Det verkar som att några håller på att planera en överraskning, kan du hjälpa Lisa att ta reda på vem som är ledaren och vem som ska bli överraskad? 
+  
+  Ordningen på vilka som har pratat med varandra spelar ingen roll. Flaggan är SSM{namn på ledare,namn på överaskad person} t.ex. SSM{Linus,Micke} 
 
   Nour har pratat med Imane
   Imane har pratat med Emre
@@ -8,13 +10,10 @@ description: >
   Sarah har pratat med Isidro
   Ella har pratat med Imane
   Thelma har pratat med Imane
-  Isidro har pratat med Aaro
-  Frank har pratat med Emre
+  Emre har pratat med Frank
   Aaro har pratat med Sarah
   Martin har pratat med Sarah
   Markus har pratat med Ted
-  Ted har pratat med Ola
-  Abdel har pratat med Ola
   Ola har pratat med Markus
   Abdel har pratat med Markus
   Emre har pratat med Markus
@@ -26,13 +25,13 @@ categories:
 
 flag_format_prefix: SSM{
 flags: 
-  - Emre,Frank
-  - emre,frank
+  - flag: "Emre,Frank"
+  - flag: "emre,frank"
 
 custom:
   chall_namespace: knackkoden
 
-score: 200
+score: 300
 
 challenge_id: fc53a713-4bd5-4142-b51a-7fd431d2a6a2
 spec: 0.0.1

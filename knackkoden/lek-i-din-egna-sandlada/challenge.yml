@@ -12,7 +12,6 @@ authors:
   - nnewram
 categories:
   - web
-  - reverse engineering
 
 flag_format_prefix: SSM{
 flags: bästa_sanden_i_sandlådan!

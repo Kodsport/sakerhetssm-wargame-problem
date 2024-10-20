@@ -10,10 +10,8 @@ categories:
 
 flag_format_prefix: SSM{
 flags:
-  - nordichallen
-  - Nordichallen
-
-authors: ntomsic
+  - flag: nordichallen
+  - flag: Nordichallen
 
 score: 150
 

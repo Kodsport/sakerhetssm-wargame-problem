@@ -6,14 +6,14 @@ description: >
 
 authors:
   - nnewram
-  - laith
+  - Laith Abbawi
 categories:
   - forensics
 
 flag_format_prefix: SSM{
 flags:
-  - du_såg_igenom_mina_get_requests
-  - du_sag_igenom_mina_get_requests
+  - flag: du_såg_igenom_mina_get_requests
+  - flag: du_sag_igenom_mina_get_requests
 
 downloadable_files:
   - trafik.pcap
