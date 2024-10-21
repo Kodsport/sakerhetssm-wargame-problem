@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sandlådan</title>
+    <title>Giffelfika</title>
     <style>
             body { font-family: Courier; background-color: black; } 
             h1 { color: #00FF00; }
