@@ -59,7 +59,7 @@ def copy_hook_data(base_elf, hook_elf):
 
 def patch_init(base_elf, hook_address):
     # Get current init info
-    init_entry = base_elf[lief.ELF.DYNAMIC_TAGS.INIT]
+    init_entry = base_elf[lief.ELF.DynamicEntry.TAG.INIT]
     init_section = base_elf.get_section('.init')
     init_segment = base_elf.segment_from_virtual_address(
         init_section.virtual_address)

