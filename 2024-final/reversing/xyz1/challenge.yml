@@ -23,11 +23,11 @@ downloadable_files:
   - https://drive.google.com/file/d/1qfwPtbfSZKY8AGuRtyeQfi5KyNe3Wkgb/view?usp=drive_link
 
 # service for part 2
-#service:
-#  type: tcp
-#  image: challenge
-#  internal_port: 22
-#  external_port: 40006
+service:
+  type: tcp
+  image: challenge
+  internal_port: 22
+  external_port: 40006
 
 predefined_services:
 - type: tcp
