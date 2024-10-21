@@ -6,7 +6,7 @@ description: >
 authors:
   - nnewram
 categories:
-  - forensics
+  - kryptografi
 
 flag_format_prefix: SSM{
 flags: gifflar
