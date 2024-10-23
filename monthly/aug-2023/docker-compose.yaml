@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  challenge:
+    build: container
+    privileged: true
+    ports:
+    - "50000:50000"

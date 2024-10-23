@@ -1,0 +1,26 @@
+title: vad är en bpf?
+description: haha documentation go brrrrrrrr
+authors:
+  - nnewram
+categories:
+  - pwn
+
+flag_format_prefix: SSM{
+flags: 3n_572b11_k0n57ruk710n_u72n_d0kum3n72710n
+
+downloadable_files:
+  - src/runner.c
+  - src/bpf_loader
+
+custom:
+  build_script: build.sh
+
+service:
+  type: tcp
+  image: container
+  internal_port: 50000
+  privileged: true
+
+spec: 0.0.1
+
+challenge_id: 6d7d527a-7178-4f9b-8f0b-6d66a8bd9e8e
