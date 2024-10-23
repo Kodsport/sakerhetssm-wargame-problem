@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Agbalumo";
+  src: url(../fonts/Agbalumo-Regular.ttf);
+}
+@font-face {
+  font-family: "BlackOpsOne";
+  src: url(../fonts/BlackOpsOne-Regular.ttf);
+}
+@font-face {
+  font-family: "GreatVibes";
+  src: url(../fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+  font-family: "IndieFlower";
+  src: url(../fonts/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: "LibreBarcode39";
+  src: url(../fonts/LibreBarcode39-Regular.ttf);
+}
+@font-face {
+  font-family: "SortsMillGoudy";
+  src: url(../fonts/SortsMillGoudy-Regular.ttf);
+}
+@font-face {
+  font-family: "PressStart2P";
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  transition: all ease-in-out 0.2s;
+  font-family: "Agbalumo", "sans-serif";
+}
+
+.container {
+  height: 100vh;
+  background: rgb(255, 209, 91);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 209, 91, 1) 0%,
+    rgba(255, 137, 83, 1) 50%,
+    rgba(255, 37, 37, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Agbalumo", "sans-serif";
+}
+.card {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 208, 151);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border: 4px solid rgb(207, 80, 80);
+}
+.input-field-transform-this-div-section {
+  display: inline;
+}
+.input-field-transform-this-div-section .label {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+.input-field-transform-this-div-section .field {
+  width: 100px;
+}
+.flex-thing {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+.some-more-margin-please {
+  margin-left: 10px;
+}
+.some-right-margin-ok {
+  margin-right: 10px;
+}
+.margin-on-the-top {
+  margin-top: 10px;
+}
+.margin-bottom-is-also-needed {
+  margin-bottom: 30px;
+}
+.kebab-card {
+  padding: 0;
+}
+.kebab-image {
+  margin-bottom: -4px;
+  border-radius: 5px;
+}
+.space-around-the-flex {
+  justify-content: space-around;
+}
+.i-dont-want-to-touch-the-wall-please {
+  padding: 0 10px;
+}
+.i-want-this-card-to-be-a-bit-bigger-please {
+  width: 600px !important;
+}
+
+select,
+textarea {
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+}
+input {
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+}
+h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 17px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+button {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(255, 137, 83);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 0 20px;
+  padding-bottom: 4px;
+}
+button:hover {
+  background-color: rgb(255, 158, 113);
+}

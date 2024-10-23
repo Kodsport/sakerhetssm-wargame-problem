@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KebabCraft - Tema</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/styles.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card i-want-this-card-to-be-a-bit-bigger-please">
+        <h1>Anpassa ditt CSS tema</h1>
+        <div class="flex-thing">
+          <div class="input-field-transform-this-div-section">
+            <p class="label">CSS mall</p>
+            <select class="field" id="css-template">
+              <option value="0">Vanlig</option>
+              <option value="1">Kamouflage</option>
+              <option value="2">Oldschool</option>
+              <option value="3">Blommor</option>
+              <option value="4">???</option>
+              <option value="5">Blåbär</option>
+              <option value="6">Gaming</option>
+            </select>
+          </div>
+
+          <button class="some-more-margin-please" id="submit-theme">
+            Spara
+          </button>
+        </div>
+
+        <h4>
+          ⚠️Genomgår testning (kan endast användas av certifierade
+          kebabtekniker)⚠️
+        </h4>
+        <div class="flex-thing">
+          <div class="input-field-transform-this-div-section">
+            <p class="label">Kebabteknikernyckel</p>
+            <input type="text" id="secret" placeholder="1337" />
+          </div>
+          <div class="input-field-transform-this-div-section">
+            <p class="label">CSS</p>
+            <textarea
+              rows="3"
+              placeholder="background-color: peru;&#10;color: blanchedalmond;"
+              id="css"
+            ></textarea>
+          </div>
+
+          <button id="submit-admin-theme">Spara</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("submit-admin-theme")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          send(
+            document.getElementById("css").value,
+            document.getElementById("secret").value || "1337"
+          );
+        });
+
+      document.getElementById("submit-theme").addEventListener("click", (e) => {
+        e.preventDefault();
+        send(document.getElementById("css-template").value, "");
+      });
+
+      function send(css, secret) {
+        fetch("/api/theme", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            css,
+            secret,
+          }),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            alert(res.msg);
+          });
+      }
+    </script>
+  </body>
+</html>

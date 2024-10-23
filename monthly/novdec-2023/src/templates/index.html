@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KebabCraft</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/styles.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>KebabCraft</h1>
+        <p>Det bästa sättet att skapa din alldeles egen kebab!</p>
+        <button id="create" class="some-right-margin-ok">Skapa</button>
+        <button id="theme">Ändra tema</button>
+      </div>
+    </div>
+
+    <script>
+      function navigation(name) {
+        document.getElementById(name).addEventListener("click", (e) => {
+          e.preventDefault();
+          const path = "/" + name;
+          window.open(path, name);
+        });
+      }
+
+      navigation("create");
+      navigation("theme");
+    </script>
+  </body>
+</html>

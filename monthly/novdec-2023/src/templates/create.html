@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KebabCraft - Skapa</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='styles/styles.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Skapa din kebab</h1>
+        <div class="flex-thing">
+          <div class="input-field-transform-this-div-section">
+            <p class="label">Title</p>
+            <textarea
+              rows="3"
+              placeholder="Kebabinator 3000"
+              id="title"
+            ></textarea>
+          </div>
+          <div class="input-field-transform-this-div-section">
+            <p class="label">Beskrivning</p>
+            <textarea
+              rows="3"
+              placeholder="Den saftigaste kebaben i stan!"
+              id="content"
+            ></textarea>
+          </div>
+        </div>
+        <div class="flex-thing">
+          <div class="input-field-transform-this-div-section">
+            <p class="label">Bild</p>
+            <select id="image">
+              <option value="1.jpg">Kebab i bröd 1</option>
+              <option value="2.jpg">Kebab i bröd 2</option>
+              <option value="3.jpg">Kebab i bröd 3</option>
+              <option value="4.jpg">Kebabrulle 1</option>
+              <option value="5.jpg">Kebabrulle 2</option>
+              <option value="6.jpg">Kebabrulle 3</option>
+              <option value="7.jpg">Kebabtallrik 1</option>
+              <option value="8.jpg">Kebabtallrik 2</option>
+              <option value="9.jpg">Kebabtallrik 3</option>
+            </select>
+          </div>
+          <div class="input-field-transform-this-div-section">
+            <p class="label">Texttyp</p>
+            <select id="text">
+              <option value="none">Normal</option>
+              <option value="underline">Underlina</option>
+              <option value="overline">Överlina</option>
+              <option value="middleline">Mittenlina</option>
+              <option value="rainbow">Regnbåge</option>
+              <option value="fontsize">Alternerande textstorlek</option>
+              <option value="overundermiddle">Allt möjligt</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="margin-on-the-top" id="submit">Skapa!</button>
+      </div>
+    </div>
+    <script>
+      document.getElementById("submit").addEventListener("click", (e) => {
+        e.preventDefault();
+
+        const content = encodeURIComponent(
+          document.getElementById("content").value
+        );
+        const title = encodeURIComponent(
+          document.getElementById("title").value
+        );
+        const image = encodeURIComponent(
+          document.getElementById("image").value
+        );
+        const text = encodeURIComponent(document.getElementById("text").value);
+
+        window.location.href = `/view?text=${
+          text + "," + text
+        }&image=${image}&content=${content}&title=${title}`;
+      });
+    </script>
+  </body>
+</html>
