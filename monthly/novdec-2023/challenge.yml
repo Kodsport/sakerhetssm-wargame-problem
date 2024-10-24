@@ -11,6 +11,11 @@ service:
   type: website
   image: src
   internal_port: 5000
+  external_port: 40098
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:40098/"
 
 flag_format_prefix: SSM{
 flags: kebab_is_love

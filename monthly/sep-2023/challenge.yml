@@ -19,7 +19,13 @@ service:
   type: tcp
   image: container
   internal_port: 50000
+  external_port: 40099
   privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40099
 
 spec: 0.0.1
 
