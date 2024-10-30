@@ -19,6 +19,11 @@ service:
   external_port: 40070
   privileged: true
 
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40070
+
 downloadable_files:
   - container/service
 
