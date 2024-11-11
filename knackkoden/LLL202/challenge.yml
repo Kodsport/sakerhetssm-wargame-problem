@@ -1,5 +1,5 @@
 title: LLL202
-description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf
+description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
 authors:
   - chopingu
 categories:
