@@ -1,0 +1,26 @@
+title: LLL202
+description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: m0dul0_4r_s4_tr3vl1gt
+
+downloadable_files:
+  - src.py
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 39ab577e-3c2b-47f8-9560-072b16f1a338
+spec: 0.0.1
