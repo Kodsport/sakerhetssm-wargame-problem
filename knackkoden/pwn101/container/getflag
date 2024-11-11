@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+
+import sys
+
+def generate_flag():
+    return "".join((x+y)[::-1] for x,y in zip("}0_w__0{S"[::-1], "SMnw10nyu"))
+
+if len(sys.argv) != 2:
+    print("Ange ett argument ./getflag <argument>")
+    exit(1)
+
+print(f'Du angav "{sys.argv[1]}" som argument')
+
+if sys.argv[1] == "gemigflagganbara":
+    print("Flaggan är:", generate_flag())
+else:
+    print("fel argument angivet till programet.")
