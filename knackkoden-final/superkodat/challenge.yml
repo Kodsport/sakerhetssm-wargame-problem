@@ -1,0 +1,19 @@
+title: Superkodat
+description: "Det kallas security by obscurity! Jag orkar inte kryptera min flagga, så jag kodar om den massa bara! NDY0NjVhN2I3YTZlNmM2ZjcyNWY2MTYyNjc1ZjY2NjI2MjVmNjY3MjcwNjg2NTcyN2Q="
+
+authors:
+  - Movitz Sunar
+categories:
+  - kryptografi
+
+flag_format_prefix: SSM{
+flags: maybe_not_soo_secure
+
+
+custom:
+  chall_namespace: knackkoden
+
+score: 200
+
+challenge_id: 5cfa296b-6bda-4bcc-8178-15795235af65
+spec: 0.0.1
