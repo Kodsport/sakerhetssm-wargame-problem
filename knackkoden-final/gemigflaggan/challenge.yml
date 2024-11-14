@@ -8,7 +8,7 @@ categories:
   - misc
 
 flag_format_prefix: SSM{
-flags:
+flags: 377_v41d1gt_d4117_pr070k011
 
 service:
   type: website
