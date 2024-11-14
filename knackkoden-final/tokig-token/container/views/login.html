@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWT Utmaning - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="matrix-background"></div>
+    <div class="content-box">
+        <div class="content">
+            <h1>🔓 JWT Hackare Utmaning</h1>
+            <p>Välkommen, hackare! Logga in för att börja utforska JWT-systemet.</p>
+            <form id="login-form">
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" name="username" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="jwt-display" style="display: none; margin-top: 20px;">
+                <h3>Här är din JWT-token:</h3>
+                <textarea id="jwt-token" style="width: 100%; height: 100px; white-space: pre-wrap;"></textarea>
+                <br>
+                <button id="use-token-button">Använd denna token</button>
+            </div>
+            <div id="decoded-jwt" style="display: none; margin-top: 20px;">
+                <h3>Avkodad JWT Information:</h3>
+                <pre id="decoded-output"></pre>
+            </div>
+            <div id="response-output" style="display: none; margin-top: 20px;">
+                <h3>Server Response:</h3>
+                <pre id="response-text"></pre>
+            </div>
+            <div id="jwt-explanation">
+                <h2>Vad är en JWT?</h2>
+                <p>En <strong>JSON Web Token (JWT)</strong> är en standard för att överföra information mellan parter som ett JSON-objekt. Den används ofta för autentisering och sessionshantering i webbapplikationer.</p>
+                <p>En JWT består av tre delar: <code>header</code>, <code>payload</code> och <code>signature</code>. Varje del är separerad av en punkt (.).</p>
+                <p>Målet är att manipulera eller skapa en JWT för att få åtkomst till administratörspanelen genom att skapa en token för användaren <strong>admin</strong>.</p>
+            </div>
+        </div>
+    </div>
+    <script src="matrix-effect.js"></script>
+    <script>
+        document.getElementById('login-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams({ username })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                const jwtDisplay = document.getElementById('jwt-display');
+                const jwtToken = document.getElementById('jwt-token');
+                jwtDisplay.style.display = 'block';
+                jwtToken.value = data.token;
+                decodeJWT(data.token);
+            } else {
+                const errorText = await response.text();
+                alert(errorText);
+            }
+        });
+
+        document.getElementById('jwt-token').addEventListener('input', function() {
+            const token = document.getElementById('jwt-token').value;
+            decodeJWT(token);
+        });
+
+        document.getElementById('use-token-button').addEventListener('click', async function() {
+            const token = document.getElementById('jwt-token').value;
+
+            const response = await fetch(`/admin?token=${encodeURIComponent(token)}`);
+            const responseText = document.getElementById('response-output');
+            const responseContent = document.getElementById('response-text');
+
+            if (response.ok) {
+                const data = await response.json();
+                responseText.style.display = 'block';
+                responseContent.textContent = data.message;
+            } else {
+                const errorText = await response.text();
+                responseText.style.display = 'block';
+                responseContent.textContent = errorText;
+            }
+        });
+
+        function decodeJWT(token) {
+            try {
+                const parts = token.split('.');
+                if (parts.length !== 3) {
+                    document.getElementById('decoded-jwt').style.display = 'none';
+                    return;
+                }
+                const header = JSON.parse(atob(parts[0]));
+                const payload = JSON.parse(atob(parts[1]));
+                const decodedOutput = document.getElementById('decoded-output');
+                decodedOutput.textContent = `Header: ${JSON.stringify(header, null, 2)}\n\nPayload: ${JSON.stringify(payload, null, 2)}`;
+                document.getElementById('decoded-jwt').style.display = 'block';
+            } catch (e) {
+                document.getElementById('decoded-jwt').style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
