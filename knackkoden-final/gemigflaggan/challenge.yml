@@ -13,7 +13,7 @@ flags:
 service:
   type: website
   image: container
-  internal_port: 80
+  internal_port: 3000
   external_port: 40785
 
 predefined_services:
