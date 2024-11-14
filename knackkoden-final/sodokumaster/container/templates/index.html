@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Skilltester</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        .sudoku-grid {
+            display: grid;
+            grid-template-columns: repeat(9, 40px);
+            gap: 0;
+            max-width: 360px;
+            margin: 20px auto;
+            border: 2px solid #000;
+        }
+        .sudoku-cell {
+            border: 1px solid #ccc;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            cursor: pointer;
+            position: relative;
+        }
+        .sudoku-cell input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            font-size: 1.2em;
+            outline: none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: #cce7ff;
+        }
+        .highlight-occurrence {
+            background-color: #ffeb3b;
+        }
+        .quadrant-border-right {
+            border-right: 2px solid black;
+        }
+        .quadrant-border-bottom {
+            border-bottom: 2px solid black;
+        }
+        .fixed-cell {
+            font-weight: bold;
+        }
+        .completed-counter {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 class="center-align">Sudoku CTF Challenge</h3>
+        <div class="completed-counter">Puzzles Completed: <span id="completed-counter">0</span>/50</div>
+        <div class="sudoku-grid" id="sudoku-grid"></div>
+        <div class="center-align">
+            <button id="submit-button" class="btn waves-effect waves-light">Submit Solution</button>
+        </div>
+    </div>
+
+    <script>
+        let puzzle = JSON.parse('{{ puzzle | safe }}'); // Load the initial puzzle from the server
+        let solution = JSON.parse('{{ solution | safe }}'); // Load the initial solution from the server
+        let userSolution = JSON.parse(JSON.stringify(puzzle));
+        let completedCount = 0; // Track the number of completed puzzles
+    
+        function createGrid() {
+            const grid = document.getElementById('sudoku-grid');
+            grid.innerHTML = '';  // Clear any existing grid
+            puzzle.forEach((row, i) => {
+                row.forEach((cell, j) => {
+                    const cellElement = document.createElement('div');
+                    cellElement.classList.add('sudoku-cell');
+                    addQuadrantBorders(cellElement, i, j);
+    
+                    if (cell !== 0) {
+                        cellElement.textContent = cell;
+                        cellElement.classList.add('fixed-cell');
+                        cellElement.addEventListener('click', () => highlightRowColAndOccurrences(i, j, cell));
+                    } else {
+                        const input = document.createElement('input');
+                        input.type = 'text';
+                        input.maxLength = 1;
+                        input.addEventListener('input', (e) => handleInput(e, i, j, cellElement, input));
+                        input.addEventListener('focus', () => highlightRowColAndOccurrences(i, j, input.value));
+                        input.addEventListener('blur', () => clearHighlights());
+                        input.addEventListener('click', (e) => highlightRowColAndOccurrences(i, j, e.target.value));
+                        cellElement.appendChild(input);
+                    }
+                    grid.appendChild(cellElement);
+                });
+            });
+        }
+    
+        function handleInput(event, row, col, cellElement, inputElement) {
+            const value = parseInt(event.target.value, 10);
+            if (isNaN(value) || value < 1 || value > 9) {
+                event.target.value = '';
+                userSolution[row][col] = 0;
+            } else {
+                userSolution[row][col] = value;
+                // Fix the input as a permanent number
+                cellElement.textContent = value;
+                cellElement.classList.add('fixed-cell');
+                if (cellElement.contains(inputElement)) {
+                    cellElement.removeChild(inputElement); // Remove input only if it exists
+                }
+                highlightOccurrences(value);
+                cellElement.addEventListener('click', () => highlightRowColAndOccurrences(row, col, value)); // Add click event for highlighting occurrences
+            }
+        }
+    
+        function addQuadrantBorders(cellElement, row, col) {
+            if (col === 2 || col === 5) {
+                cellElement.classList.add('quadrant-border-right');
+            }
+            if (row === 2 || row === 5) {
+                cellElement.classList.add('quadrant-border-bottom');
+            }
+        }
+    
+        function highlightRowColAndOccurrences(row, col, value) {
+            const grid = document.getElementById('sudoku-grid');
+            const cells = grid.children;
+    
+            for (let i = 0; i < cells.length; i++) {
+                cells[i].classList.remove('highlight', 'highlight-occurrence');
+            }
+    
+            for (let i = 0; i < 9; i++) {
+                cells[row * 9 + i].classList.add('highlight');  // Highlight row
+                cells[i * 9 + col].classList.add('highlight');  // Highlight column
+            }
+    
+            highlightOccurrences(value);
+        }
+    
+        function highlightOccurrences(value) {
+            if (!value || isNaN(value)) return;
+    
+            const grid = document.getElementById('sudoku-grid');
+            const cells = grid.children;
+    
+            for (let i = 0; i < 81; i++) {
+                const cellValue = cells[i].textContent || cells[i].querySelector('input')?.value;
+                if (parseInt(cellValue, 10) === parseInt(value, 10)) {
+                    cells[i].classList.add('highlight-occurrence');
+                }
+            }
+        }
+    
+        function clearHighlights() {
+            const grid = document.getElementById('sudoku-grid');
+            const cells = grid.children;
+    
+            for (let i = 0; i < cells.length; i++) {
+                cells[i].classList.remove('highlight', 'highlight-occurrence');
+            }
+        }
+    
+        function isValidSudoku(grid) {
+            // Check rows
+            for (let i = 0; i < 9; i++) {
+                const rowSet = new Set();
+                for (let j = 0; j < 9; j++) {
+                    if (grid[i][j] !== 0) {
+                        if (rowSet.has(grid[i][j])) return false;
+                        rowSet.add(grid[i][j]);
+                    }
+                }
+            }
+    
+            // Check columns
+            for (let j = 0; j < 9; j++) {
+                const colSet = new Set();
+                for (let i = 0; i < 9; i++) {
+                    if (grid[i][j] !== 0) {
+                        if (colSet.has(grid[i][j])) return false;
+                        colSet.add(grid[i][j]);
+                    }
+                }
+            }
+    
+            // Check 3x3 sub-grids
+            for (let boxRow = 0; boxRow < 3; boxRow++) {
+                for (let boxCol = 0; boxCol < 3; boxCol++) {
+                    const boxSet = new Set();
+                    for (let i = 0; i < 3; i++) {
+                        for (let j = 0; j < 3; j++) {
+                            const value = grid[boxRow * 3 + i][boxCol * 3 + j];
+                            if (value !== 0) {
+                                if (boxSet.has(value)) return false;
+                                boxSet.add(value);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            return true;
+        }
+    
+        document.getElementById('submit-button').addEventListener('click', () => {
+            if (isValidSudoku(userSolution)) {
+                fetch('/check_solution', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ solution: userSolution, completed: completedCount })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        alert(`Congratulations! You completed all puzzles! Flag: ${data.flag}`);
+                    } else if (data.status === 'correct') {
+                        completedCount = data.completed;
+                        document.getElementById('completed-counter').textContent = completedCount;
+                        puzzle = data.new_puzzle;
+                        solution = data.new_solution;
+                        userSolution = JSON.parse(JSON.stringify(puzzle));
+                        createGrid();
+                    } else {
+                        alert('Incorrect solution. Try again.');
+                    }
+                });
+            } else {
+                alert('The solution is incorrect. Please try again.');
+            }
+        });
+    
+        createGrid();  // Initialize the grid on page load
+    </script>
+    
+</body>
+</html>
