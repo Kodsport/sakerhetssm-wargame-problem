@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: #b2fffb;
+      }
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex items-center justify-center">
+      <h1 class="text-6xl text-center my-6">Hjälp Svante hitta platsen!</h1>
+
+      <a
+        class="bg-purple-600 rounded-md text-white text-xl p-3 ml-4 hover:bg-purple-500"
+        href="{{next_url}}"
+      >
+        Gå till {{next_name}}
+      </a>
+    </div>
+    <div class="flex justify-center">
+      <div class="container">
+        <p class="text-lg">
+          {{desc}} Klicka på rätt plats på kartan för att få flaggan.
+          <span id="guess-res"></span>
+        </p>
+        <div id="map" class="border-2 border-purple-600 rounded-md"></div>
+      </div>
+    </div>
+    <div class="flex justify-center my-4">
+      <div class="container flex justify-center">
+        <img
+          src="/static/{{image_name}}"
+          class="border-2 border-purple-600 rounded-md"
+        />
+      </div>
+    </div>
+
+    <script>
+      let map = L.map("map").setView([0, 0], 1);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      let guessRes = document.getElementById("guess-res");
+
+      async function onMapClick(e) {
+        guessRes.innerText = "Laddar...";
+        guessRes.style.color = "black";
+        guessRes.style.fontWeight = "normal";
+        await new Promise((r) => setTimeout(r, 1000));
+        let res = await fetch("{{guess_url}}", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            lat: e.latlng.lat,
+            lng: e.latlng.lng,
+          }),
+        });
+        let data = await res.json();
+
+        if (data.success) {
+          guessRes.innerText = `Grattis du hittade rätt plats! Här är flaggan: ${data.flag}`;
+          guessRes.style.color = "green";
+          guessRes.style.fontWeight = "bold";
+        } else {
+          guessRes.innerText = "Tyvärr, det var fel plats! Försök igen.";
+          guessRes.style.color = "red";
+        }
+      }
+
+      map.on("click", onMapClick);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+title: Glömsk turist 
+description: Svante har varit på semester och tog ett fint foto. han blev tyvärr infekterad av ett skibidi-virus och har helt glömt bort vart fotot togs. Hjälp svante och hitta platsen!!!
+authors:
+  - LiamoOo
+categories:
+  - osint
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: skibidi_viruset_är_ingen_lek
+
+service:
+  type: website
+  image: container
+  internal_port: 5000
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 200
+
+challenge_id: 03006c09-9d86-4de4-8331-363bcc10240e
+spec: 0.0.1

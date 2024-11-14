@@ -1,0 +1,20 @@
+title: Glömsk turist 2
+description: Svante är väldigt sjuk på grund av skibidi-viruset och han behöver botas. Han hittade en plats som har ett botemedel, hjälp Svante hitta dit! (Använd samma hemsida som för utmaningen "Glömsk turist" och skriv in flaggan här)
+authors:
+  - LiamoOo
+categories:
+  - osint
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: sydkorea_fixar_biffen_on_skibidi
+
+challenge_id: 
+spec: 0.0.1
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 300
+
+challenge_id: ca4951db-c463-4d44-b289-b0c68445ad88
