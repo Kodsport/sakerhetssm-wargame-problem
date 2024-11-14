@@ -33,14 +33,13 @@ def andra():
 
 @app.route("/guess1", methods=["POST"])
 def guess1():
-
     CORRECT_LAT = round(63.3463821, 3)
     CORRECT_LNG = round(13.4601362, 3)
 
     data = request.get_json()
 
     lat = round(data["lat"], 3)
-    lng = round(data["lng"], 3)
+    lng = round(data["lng"], 3) % 360
 
     if lat != CORRECT_LAT or lng != CORRECT_LNG:
         return flask.jsonify({"success": False, "error": "Wrong coordinates!"})
@@ -57,7 +56,7 @@ def guess2():
     data = request.get_json()
 
     lat = round(data["lat"], 3)
-    lng = round(data["lng"], 3)
+    lng = round(data["lng"], 3) % 360
 
     if lat != CORRECT_LAT or lng != CORRECT_LNG:
         return flask.jsonify({"success": False, "error": "Wrong coordinates!"})
