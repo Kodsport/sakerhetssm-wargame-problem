@@ -13,7 +13,7 @@ flags: tack_för_att_jag_fick_låna_din_token
 service:
   type: website
   image: container
-  internal_port: 80
+  internal_port: 3000
   external_port: 40783
 
 predefined_services:

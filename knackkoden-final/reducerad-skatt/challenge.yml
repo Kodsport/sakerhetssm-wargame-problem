@@ -15,7 +15,7 @@ flags: vilken_dr0m_med_en_reducerad_skatt
 service:
   type: website
   image: container
-  internal_port: 80
+  internal_port: 3000
   external_port: 40781
 
 predefined_services:
