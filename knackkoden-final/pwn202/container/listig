@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+import sys
+import os
+
+my_list = [os.environ["FLAG"], "Hej!", "Kul att du hittat hit!", "Programmering är skojsigt :)"]
+
+if len(sys.argv) != 2:
+    print("Var god ange ett argument till programmet med ./listig <argument>. Mitt program tar index i en lista som argument :)")
+    exit(0)
+
+user_input = int(sys.argv[1])
+
+if user_input > 3:
+    exit(0)
+elif user_input == 0:
+    print("Hörru du du, flaggan är hemlig!")
+else:
+    print(my_list[user_input])
