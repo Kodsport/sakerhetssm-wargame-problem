@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitta Skatten i Gittret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🦄 Hitta Skatten i Gittret! 🦄</h1>
+    <p>Justera basvektorerna för att hitta den dolda skatten i gittret. Klicka på "Uppdatera Gittret" för att kontrollera!</p>
+    <div id="grid-container">
+        <canvas id="latticeCanvas" width="600" height="600"></canvas>
+    </div>
+    <div id="controls">
+        <div class="control-group">
+            <label for="vector1x">Vektor 1 (x):</label>
+            <input type="number" id="vector1x" value="2">
+            <label for="vector1y">Vektor 1 (y):</label>
+            <input type="number" id="vector1y" value="1">
+        </div>
+        <div class="control-group">
+            <label for="vector2x">Vektor 2 (x):</label>
+            <input type="number" id="vector2x" value="1">
+            <label for="vector2y">Vektor 2 (y):</label>
+            <input type="number" id="vector2y" value="3">
+        </div>
+        <button id="updateGrid" class="sparkly-button">✨ Uppdatera Gittret ✨</button>
+    </div>
+    <div id="message"></div>
+    <div id="explanation">
+        <h2>Hur man använder vektorer för att hitta skatten!</h2>
+        <p>En <strong>vektor</strong> är som en pil som pekar i en viss riktning och har en längd. Du kan använda två vektorer för att skapa ett "gitter" av punkter, precis som att rita ett mönster med pilar!</p>
+        <p>När du multiplicerar en vektor med ett heltal betyder det att du använder den flera gånger i följd. Om du t.ex. har en vektor som går 1 steg åt höger och 2 steg upp (1, 2) och du multiplicerar den med 3, så blir resultatet 3 steg åt höger och 6 steg upp.</p>
+        <p>För att hitta skatten måste du justera två vektorer så att du kan nå punkten <strong>(5, 8)</strong>. Det betyder att du ska hitta ett sätt att "gå" till skatten genom att kombinera vektorerna.</p>
+        <p>Skatten kommer att visas när du hittar rätt kombination av vektorer!</p>
+    </div>
+    <div id="treasure-hint">
+        <h3>🎯 Din målpunkt: (5, 8) 🎯</h3>
+        <p>Justera dina vektorer för att nå denna punkt i gittret!</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

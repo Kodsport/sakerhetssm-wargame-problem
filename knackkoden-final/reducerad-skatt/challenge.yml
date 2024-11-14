@@ -1,0 +1,31 @@
+title: Reducerad Skatt
+description: >
+  Reducerad skatt är något många drömmer om, här kan vi göra det till en verklighet!
+
+  Reducera basvektorerna för att få skatten i ditt gitter på koordinaten (5, 8) och få flaggan!
+
+authors:
+  - nnewram
+categories:
+  - crypto
+
+flag_format_prefix: SSM{
+flags: vilken_dr0m_med_en_reducerad_skatt
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+  external_port: 40781
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:40781" # xx
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 150
+
+challenge_id: e3b098f9-6938-4e96-9646-ce5ac9fed7e4
+spec: 0.0.1

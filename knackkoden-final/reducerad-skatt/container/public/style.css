@@ -1,0 +1,94 @@
+body {
+    background: linear-gradient(to bottom right, #ffccff, #ff99ff);
+    color: #4b0082;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff99ff, 0 0 10px #ff66cc, 0 0 15px #ff33cc;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff00ff, 0 0 30px #cc00cc;
+    }
+}
+
+#grid-container {
+    margin: 20px auto;
+    border: 5px solid #ff66cc;
+    width: 600px;
+    height: 600px;
+    background-color: #fff0f5;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    border-radius: 15px;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ff66cc;
+    margin-right: 10px;
+}
+
+button.sparkly-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff66cc, #ff33cc);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button.sparkly-button:hover {
+    background: linear-gradient(45deg, #ff33cc, #ff00ff);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#explanation {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: #ffebf5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+#treasure-hint {
+    margin-top: 20px;
+    padding: 10px;
+    background: #ffebf5;
+    border: 2px solid #ff66cc;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    font-weight: bold;
+}
