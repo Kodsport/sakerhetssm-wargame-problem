@@ -1,0 +1,36 @@
+title: enhörning
+description: >
+  Min magiska enhörningshanterare visar alla de enhörningar jag samlat över åren, jag har en hemlig enhörning som bara jag vet om som gömmer flaggan!
+  Denna hemsida använder en databas för att lagra mina enhörningar, och den får ut information från databasen genom följande SQL fråga:
+
+
+  "SELECT * FROM unicorns WHERE name = '$unicorn_name'"
+
+
+  Där unicorn_name är det vi anger i sökfältet. kan du rymma denna fråga för att injicera egen SQL kod och få ut alla mina enhörningar?
+
+authors:
+  - nnewram
+categories:
+  - web
+
+flag_format_prefix: SSM{
+flags: en_glittrande_magisk_tabell
+
+service:
+  type: website
+  image: container
+  internal_port: 80
+  external_port: 40780
+
+predefined_services:
+  - type: website
+    url: "http://188.126.67.132:40780" # xx
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 250
+
+challenge_id: dfc8c8bb-bb70-4cbc-bd23-b5594c75d8e3
+spec: 0.0.1
