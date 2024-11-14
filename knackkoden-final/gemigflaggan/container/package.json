@@ -1,0 +1,24 @@
+{
+  "name": "exif-challenge",
+  "version": "1.0.0",
+  "description": "CTF-utmaning för att manipulera och läsa EXIF-data från bilder",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ctf",
+    "challenge",
+    "exif",
+    "metadata",
+    "web"
+  ],
+  "author": "Ditt namn",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "exif-parser": "^0.1.12"
+  }
+}
+

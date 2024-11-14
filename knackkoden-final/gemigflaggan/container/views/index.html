@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXIF-Data Utmaning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>✨ EXIF-Data Utmaning ✨</h1>
+    <p>Din uppgift är att manipulera EXIF-datan för en bild och lägga till texten <strong>"gemigflaggan"</strong>. Ladda upp bilden här för att se om du lyckas!</p>
+
+    <h2>Vad är EXIF-data?</h2>
+    <p>EXIF-data (Exchangeable Image File Format) är metadata som är inbäddad i bildfiler. Det kan inkludera information som kamerainställningar, datum, plats och mycket mer. I denna utmaning ska du manipulera EXIF-datan för att inkludera en specifik text.</p>
+
+    <form id="upload-form" enctype="multipart/form-data">
+        <input type="file" id="image-file" name="image-file" accept="image/*" required><br><br>
+        <button type="submit">Ladda upp bilden</button>
+    </form>
+
+    <div id="response-output" style="display: none; margin-top: 20px;">
+        <h3>Resultat:</h3>
+        <pre id="response-text"></pre>
+    </div>
+
+    <script>
+        document.getElementById('upload-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const formData = new FormData();
+            const fileInput = document.getElementById('image-file');
+            formData.append('image-file', fileInput.files[0]);
+
+            const response = await fetch('/upload', {
+                method: 'POST',
+                body: formData
+            });
+
+            const responseOutput = document.getElementById('response-output');
+            const responseText = document.getElementById('response-text');
+            const data = await response.json();
+
+            responseOutput.style.display = 'block';
+            responseText.textContent = data.message + (data.success ? `\n\nDin flagga: ${data.flag}` : '');
+        });
+    </script>
+</body>
+</html>
+
