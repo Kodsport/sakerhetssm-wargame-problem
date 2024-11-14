@@ -8,10 +8,11 @@ description: >
   Du exekverar programmet genom att köra kommandot "./listig <argument>", till exempel "./listig 1".
   Leta online efter sätt att läsa ut filer i linux, läs ut programmet listig, och försök förstå vad för argument den förväntar sig, och vilka argument den inte förväntar sig!
 
+
   Lösenordet för att få tillgång till terminalen är "admin"
 
 authors:
-  - nnewram
+  - Ellinor
 categories:
   - web
 
