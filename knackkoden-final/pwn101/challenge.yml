@@ -8,12 +8,13 @@ description: >
   Du exekverar programmet genom att köra kommandot "./getflag <argument>", till exempel "./getflag banan".
   Leta online efter sätt att läsa ut filer i linux, läs ut programmet getflag, och försök förstå vad för argument den förväntar sig.
 
+
   Lösenordet för att få tillgång till terminalen är "admin"
 
 authors:
   - nnewram
 categories:
-  - web
+  - pwn
 
 flag_format_prefix: SSM{
 flags: n0w_1_0wn_y0u
@@ -29,7 +30,7 @@ predefined_services:
     url: "http://188.126.67.132:40888" # xx
 
 custom:
-  chall_namespace: knackkoden
+  chall_namespace: knackkoden-final
 
 score: 150
 

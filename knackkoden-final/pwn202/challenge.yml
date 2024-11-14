@@ -14,7 +14,7 @@ description: >
 authors:
   - Ellinor
 categories:
-  - web
+  - pwn
 
 flag_format_prefix: SSM{
 flags: En_Listig_Flagga
