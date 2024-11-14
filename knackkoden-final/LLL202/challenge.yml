@@ -1,5 +1,5 @@
 title: LLL202
-description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
+description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
 authors:
   - chopingu
 categories:
@@ -21,6 +21,11 @@ downloadable_files:
 #   type: tcp
 #   image: container
 #   internal_port: 1337
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 600
 
 challenge_id: 39ab577e-3c2b-47f8-9560-072b16f1a338
 spec: 0.0.1
