@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En lat sårbarhetsforskare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>💥 En lat sårbarhetsforskare 💥</h1>
+    <p>Din uppgift är att hitta en länk till en rad kod i ett offentligt GitHub-repository som innehåller en kommentar som matchar följande regex:</p>
+    <pre>/FIXME.*buffer overflow/</pre>
+    <p>Länken måste peka till en rad i <strong>master-branchen</strong><br>Exempelvis: https://github.com/foo/bar/blob/master/src/util.c#L123</p>
+
+    <h2>Vad är en buffer overflow?</h2>
+    <p>En <strong>buffer overflow</strong> inträffar när mängden data överstiger den tilldelade minnesbuffertens kapacitet, vilket kan leda till oväntat beteende, krascher eller säkerhetssårbarheter. Ofta sker detta på grund av bristande kontroll över gränser.</p>
+    
+    <p><strong>Tips:</strong> Du kan använda <a href="https://sourcegraph.com/" target="_blank">Sourcegraph</a> för att söka i offentliga repositories på GitHub.</p>
+
+    <p>För att kopiera raden du har hittat i ett GitHub repository så kan du klicka på de tre punkterna bredvid raden, sedan klicka på "Copy Permalink" och ange nedan.</p>
+    <img src="example-bof.png">
+
+    <form id="submission-form">
+        <label for="line-url">Ange URL till raden i GitHub-repository:</label><br>
+        <input type="url" id="line-url" name="line-url" placeholder="https://github.com/user/repo/blob/master/file.ext#L123" required><br><br>
+        <button type="submit">Skicka in</button>
+    </form>
+
+    <div id="response-output" style="display: none; margin-top: 20px;">
+        <h3>Resultat:</h3>
+        <pre id="response-text"></pre>
+    </div>
+
+    <script>
+        document.getElementById('submission-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const lineUrl = document.getElementById('line-url').value;
+
+            const response = await fetch('/check', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ lineUrl })
+            });
+
+            const responseOutput = document.getElementById('response-output');
+            const responseText = document.getElementById('response-text');
+            const data = await response.json();
+
+            responseOutput.style.display = 'block';
+            responseText.textContent = data.message + (data.success ? `\n\nDin flagga: ${data.flag}` : '');
+        });
+    </script>
+</body>
+</html>

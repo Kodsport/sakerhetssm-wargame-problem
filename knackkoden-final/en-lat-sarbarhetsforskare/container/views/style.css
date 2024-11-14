@@ -1,0 +1,56 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: #e0e0e0;
+    margin: 0;
+}
+
+h1 {
+    color: #ff3366;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input {
+    width: 80%;
+    max-width: 300px;
+    background: #1c1c1c;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
+
+img {
+    max-width: 25%;
+}
+
+button {
+    background: #ff3366;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #e02e58;
+}
+
+#response-output {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 1px solid #ff3366;
+}
