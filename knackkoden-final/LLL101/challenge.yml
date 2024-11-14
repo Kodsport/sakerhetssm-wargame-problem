@@ -1,5 +1,5 @@
 title: LLL101
-description: Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus presentation https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath på https://cocalc.com/features/sage
+description: Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus presentation [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath på https://cocalc.com/features/sage
 authors:
   - chopingu
 categories:
@@ -21,6 +21,11 @@ downloadable_files:
 #   type: tcp
 #   image: container
 #   internal_port: 1337
+
+custom:
+  chall_namespace: knackkoden-final
+
+score: 450
 
 challenge_id: 216ab11a-dbd5-4ed4-ac1e-6b0f1d08bcd3
 spec: 0.0.1
