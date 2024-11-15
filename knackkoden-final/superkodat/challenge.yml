@@ -13,7 +13,7 @@ flags: maybe_not_soo_secure
 custom:
   chall_namespace: knackkoden
 
-score: 200
+score: 100
 
 challenge_id: 5cfa296b-6bda-4bcc-8178-15795235af65
 spec: 0.0.1
