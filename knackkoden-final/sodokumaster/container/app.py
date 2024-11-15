@@ -66,7 +66,7 @@ def check_solution():
     # Accept any solution without validation (intended vulnerability)
     data = request.json
     completed = data.get('completed', 0) + 1
-    if completed == 50:
+    if completed == 200:
         return jsonify({"status": "success", "flag": "SSM{sud0_sud0ku_m4s73r}"})
     new_puzzle, new_solution = generate_sudoku()
     return jsonify({"status": "correct", "completed": completed, "new_puzzle": new_puzzle, "new_solution": new_solution})
