@@ -1,5 +1,10 @@
-title: LLL202
-description: Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
+title: LLL202 (Otroligt svår!)
+description: >
+  Denna utmaning är väldigt svår, vi förväntar oss inte att ni löser den på en timme! Om ni är intresserade av matematik så kan vi prata mer om utmaningen i kodsports discord server efter tävlingen.
+
+  
+  Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
+
 authors:
   - chopingu
 categories:

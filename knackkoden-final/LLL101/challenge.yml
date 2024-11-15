@@ -1,5 +1,10 @@
-title: LLL101
-description: Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus presentation [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath på https://cocalc.com/features/sage
+title: LLL101 (Otroligt svår!)
+description: >
+  Denna utmaning är väldigt svår, vi förväntar oss inte att ni löser den på en timme! Om ni är intresserade av matematik så kan vi prata mer om utmaningen i kodsports discord server efter tävlingen.
+
+
+  Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus presentation [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath på https://cocalc.com/features/sage
+
 authors:
   - chopingu
 categories:
@@ -25,7 +30,7 @@ downloadable_files:
 custom:
   chall_namespace: knackkoden
 
-score: 450
+score: 550
 
 challenge_id: 216ab11a-dbd5-4ed4-ac1e-6b0f1d08bcd3
 spec: 0.0.1
