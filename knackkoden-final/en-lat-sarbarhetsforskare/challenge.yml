@@ -24,7 +24,7 @@ service:
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:40967" # xx
+    url: "http://188.126.67.132:40965"
 
 custom:
   chall_namespace: knackkoden
