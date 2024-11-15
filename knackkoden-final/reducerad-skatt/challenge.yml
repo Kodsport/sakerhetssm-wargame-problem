@@ -23,7 +23,7 @@ predefined_services:
     url: "http://188.126.67.132:40781" # xx
 
 custom:
-  chall_namespace: knackkoden-final
+  chall_namespace: knackkoden
 
 score: 150
 

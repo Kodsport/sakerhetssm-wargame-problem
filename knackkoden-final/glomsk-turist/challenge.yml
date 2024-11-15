@@ -15,7 +15,7 @@ service:
   internal_port: 5000
 
 custom:
-  chall_namespace: knackkoden-final
+  chall_namespace: knackkoden
 
 score: 200
 
