@@ -12,10 +12,15 @@ flags: du_hittade_nålen_i_höstacken!
 downloadable_files:
   - ordlista.txt
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 50
 
 challenge_id: 09f93a2d-3d34-4170-9723-8bf6d98ead71
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024
+

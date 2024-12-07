@@ -13,10 +13,14 @@ flags: super_hemligt_lösenord
 downloadable_files:
   - https://www.online-python.com/mWRd6a7Uso
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 100
 
 challenge_id: 6d675aea-ead6-4f81-a3b0-e1f8cac99e2b
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024

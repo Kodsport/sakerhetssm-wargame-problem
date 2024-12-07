@@ -27,10 +27,15 @@ downloadable_files:
 #   image: container
 #   internal_port: 1337
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 550
 
 challenge_id: 216ab11a-dbd5-4ed4-ac1e-6b0f1d08bcd3
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024
+

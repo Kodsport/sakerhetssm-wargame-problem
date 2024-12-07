@@ -14,10 +14,14 @@ categories:
 flag_format_prefix: SSM{
 flags: cybersäker
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 100
 
 challenge_id: 197c9c4f-302e-4925-ac35-941ef4ee5e87
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024

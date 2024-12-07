@@ -27,8 +27,13 @@ flags:
 
 score: 150
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 challenge_id: aea1052b-c258-4ffa-b933-86731b5e55e1
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024
+

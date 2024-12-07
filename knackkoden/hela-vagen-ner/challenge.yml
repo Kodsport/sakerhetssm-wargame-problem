@@ -28,10 +28,14 @@ predefined_services: # docker-compose
   - type: website
     url: "http://188.126.67.132:40138"
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 150
 
 challenge_id: e06c31af-5d1e-4cbf-a0bf-fe9f1175524c
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024

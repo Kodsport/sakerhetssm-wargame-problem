@@ -12,10 +12,14 @@ categories:
 flag_format_prefix: SSM{
 flags: asgrymt
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 50
 
 challenge_id: 784e9941-977d-436b-8fd4-5587c77f3cfc
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024

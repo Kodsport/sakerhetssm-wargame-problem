@@ -20,10 +20,14 @@ predefined_services:
   - type: website
     url: "http://188.126.67.132:40783" # xx
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 250
 
 challenge_id: 7f0f3aef-5e38-4c29-b7a6-a02534b00505
 spec: 0.0.1
+
+human_metadata:
+  event_name: Knäck Koden 2024

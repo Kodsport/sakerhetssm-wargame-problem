@@ -11,9 +11,13 @@ flags: sydkorea_fixar_biffen_on_skibidi
 
 spec: 0.0.1
 
-custom:
-  chall_namespace: knackkoden
+# Migrated to main namespace
+#custom:
+#  chall_namespace: knackkoden
 
 score: 300
 
 challenge_id: ca4951db-c463-4d44-b289-b0c68445ad88
+
+human_metadata:
+  event_name: Knäck Koden 2024
