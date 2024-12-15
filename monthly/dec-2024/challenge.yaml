@@ -1,0 +1,24 @@
+title: Färg - Affischproblem 2025
+description: >
+    De konstiga färgerna har något att säga... 
+    <br><br>
+    Årets Säkerhets-SM affisch har två problem! Båda ger poäng på kvalet!
+
+    <img class="img-fluid" src="https://storage.googleapis.com/ssm-wargame-prod/485eb05196da656f279c54102448b12025fff9468a500f34e5c442dd1f0d4aed/image.png">
+authors:
+  - ZetaTwo
+  - DayDun
+categories:
+  - misc
+
+flag_format_prefix: SSM{
+flags: färg-affischionado
+
+downloadable_files:
+  - image.png
+  - poster_4x.png
+
+score: 200
+
+challenge_id: af873865-812f-4bc4-b9c8-9e548e8c826d
+spec: 0.0.1
