@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"sync"
 	"time"
 
 	"github.com/google/uuid"
@@ -29,6 +30,8 @@ var db map[string]*userdata
 
 var notes []*Note
 
+var lock sync.Mutex
+
 var cookieName = "notessession"
 
 type Server struct {
@@ -40,6 +43,28 @@ func main() {
 	mux := http.NewServeMux()
 	s := newServer()
 	s.fixRoutes(mux)
+
+	addData()
+	initialLength := len(notes)
+
+	go func() {
+		for range time.Tick(time.Minute * 30) {
+			lock.Lock()
+
+			notes = notes[:initialLength]
+			db = make(map[string]*userdata)
+
+			lock.Unlock()
+		}
+	}()
+
+	db = map[string]*userdata{}
+	http.ListenAndServe("0.0.0.0:8080", mux)
+}
+
+func addData() {
+	lock.Lock()
+	defer lock.Unlock()
 
 	notes = append(notes, &Note{
 		Contents:  "Välkommen till anteckningsappen för alla dina anteckningsapplikativa behov.",
@@ -53,7 +78,8 @@ func main() {
 		CreatedAt: time.Now().Format(time.ANSIC),
 	})
 
-	// removed in wargame
+	// Removed to avoid confusion in wargame
+
 	// notes = append(notes, &Note{
 	// 	Contents:  "SECT{Is You Taking Notes On a Criminal Fucking Conspiracy?}",
 	// 	ID:        len(notes),
@@ -71,9 +97,6 @@ func main() {
 		ID:        len(notes),
 		CreatedAt: time.Now().Format(time.ANSIC),
 	})
-
-	db = map[string]*userdata{}
-	http.ListenAndServe("0.0.0.0:8080", mux)
 }
 
 func newServer() *Server {
@@ -125,6 +148,9 @@ func (s *Server) getUser(w http.ResponseWriter, r *http.Request) *userdata {
 }
 
 func (s *Server) index(w http.ResponseWriter, r *http.Request) {
+	lock.Lock()
+	defer lock.Unlock()
+
 	user := s.getUser(w, r)
 
 	s.indexTmpl.Execute(w, map[string]any{
@@ -134,6 +160,9 @@ func (s *Server) index(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) getNote(w http.ResponseWriter, r *http.Request) {
+	lock.Lock()
+	defer lock.Unlock()
+
 	idx, err := strconv.Atoi(r.URL.Query().Get("id"))
 	if err != nil {
 		w.Write([]byte(err.Error()))
@@ -150,6 +179,10 @@ func (s *Server) getNote(w http.ResponseWriter, r *http.Request) {
 }
 
 func (s *Server) newNote(w http.ResponseWriter, r *http.Request) {
+
+	lock.Lock()
+	defer lock.Unlock()
+
 	if r.Method != http.MethodPost {
 		w.WriteHeader(http.StatusMethodNotAllowed)
 		return
