@@ -3,7 +3,7 @@ module movitz.dev/sockerstoppet
 go 1.21.8
 
 require (
-	github.com/Kansuler/bankid v1.1.1
+	github.com/Kansuler/bankid v1.1.4
 	github.com/gin-gonic/gin v1.9.1
 	github.com/google/uuid v1.6.0
 	github.com/mattn/go-sqlite3 v1.14.22
@@ -29,10 +29,11 @@ require (
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	golang.org/x/arch v0.3.0 // indirect
-	golang.org/x/crypto v0.22.0 // indirect
+	golang.org/x/crypto v0.31.0 // indirect
 	golang.org/x/net v0.24.0 // indirect
-	golang.org/x/sys v0.19.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
+	golang.org/x/sys v0.28.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+	software.sslmate.com/src/go-pkcs12 v0.5.0 // indirect
 )
