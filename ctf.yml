@@ -62,6 +62,7 @@ authors:
 flag_format_prefixes:
   - SSM{
   - ssmjr{
+  - cratectf{
 
 
 custom:
