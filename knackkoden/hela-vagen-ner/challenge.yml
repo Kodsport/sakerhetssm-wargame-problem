@@ -32,7 +32,7 @@ predefined_services: # docker-compose
 #custom:
 #  chall_namespace: knackkoden
 
-score: 150
+score: 100
 
 challenge_id: e06c31af-5d1e-4cbf-a0bf-fe9f1175524c
 spec: 0.0.1

@@ -47,7 +47,7 @@ flags:
 #custom:
 #  chall_namespace: knackkoden
 
-score: 300
+score: 100
 
 challenge_id: fc53a713-4bd5-4142-b51a-7fd431d2a6a2
 spec: 0.0.1

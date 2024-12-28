@@ -6,7 +6,7 @@ description: >
 authors:
   - nnewram
 categories:
-  - kryptografi
+  - crypto
 
 flag_format_prefix: SSM{
 flags: gifflar

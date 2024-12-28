@@ -26,7 +26,7 @@ predefined_services:
 #custom:
 #  chall_namespace: knackkoden
 
-score: 150
+score: 100
 
 challenge_id: e3b098f9-6938-4e96-9646-ce5ac9fed7e4
 spec: 0.0.1

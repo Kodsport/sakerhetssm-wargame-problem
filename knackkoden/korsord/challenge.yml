@@ -9,7 +9,7 @@ description: >
 authors:
   - nnewram
 categories:
-  - generellt
+  - misc
 
 flag_format_prefix: SSM{
 flags: cybersäker

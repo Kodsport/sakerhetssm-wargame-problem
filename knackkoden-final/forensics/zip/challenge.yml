@@ -1,5 +1,5 @@
 title: Raderat lösenord
-description: Onej, jag har råkat radera lösenordet till flaggan från zip filen! Det kanske inte är helt borta dock... (Poänget har ändrats till 200)
+description: Onej, jag har råkat radera lösenordet till flaggan från zip filen! Det kanske inte är helt borta dock...
 authors:
   - Mateusz Drwal
 categories:
@@ -26,7 +26,7 @@ downloadable_files:
 #custom:
 #  chall_namespace: knackkoden
 
-score: 200
+score: 100
 
 challenge_id: 4d4b0d4b-4219-4fef-91e8-05339aca55b3
 spec: 0.0.1

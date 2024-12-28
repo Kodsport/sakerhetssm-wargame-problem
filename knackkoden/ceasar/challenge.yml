@@ -7,7 +7,7 @@ description: >
 authors:
   - Laith Abbawi
 categories:
-  - kryptografi
+  - crypto
 
 flag_format_prefix: SSM{
 flags: snyggt!
