@@ -1,0 +1,15 @@
+title: COSMAC-spel?
+description: Jag hittade detta på min gamla COSMAC VIP - kan du knäcka koden?
+authors:
+- jerry
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: ch1p8_h4ck3d
+downloadable_files:
+- protected.ch8
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 3cb4ddbc-2655-416e-9276-b9300891b42b
+spec: 0.0.1
