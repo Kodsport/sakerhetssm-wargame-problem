@@ -1,0 +1,20 @@
+title: Sofia
+description: 'Här är en minnesdump från Sofias maskin. Sofia gillar albatrosser, och
+  vill ha en som husdjur.
+
+
+  Flaggan har dock inget med fåglar att göra, men kanske hanterar hon känsligheter
+  någonstans?'
+authors:
+- larshson
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: xp_ej_naggande_gott
+downloadable_files:
+- dump.raw.xz
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: c5566880-7141-45ef-bff5-18979b2707b8
+spec: 0.0.1
