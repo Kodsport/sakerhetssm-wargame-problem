@@ -1,0 +1,15 @@
+title: Signalanalys
+description: Den transmissionsagnostiska flaggan tonar bort i fjärran ...
+authors:
+- martin
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: brandhinkar
+downloadable_files:
+- signalanalys.wav.xz
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: bdde9eb6-6343-461c-86ce-966a9b2b779c
+spec: 0.0.1
