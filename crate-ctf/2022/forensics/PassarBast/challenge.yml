@@ -1,0 +1,22 @@
+title: PassarBast
+description: 'Vi har fått tag på följande dump av oallokerat utrymme från en NTFS-formaterad
+  Windowshårddisk. Sannolikt innehåller den en fragmenterad fil med ett slumpmässigt,
+  men skrivbart, lösenord. Varje fragment verkar endast innehålla ett tecken som repeteras
+  genom hela fragmentet, troligen för att skydda mot diskkorruption.
+
+
+  Kan du pussla ihop fragmenten i ordningen som "passar bäst" och ta reda på lösenordet?
+  Flaggan fås sedan genom att sätta in lösenordet i cratectf{}, t.ex. cratectf{nfa4NBgj9a}.'
+authors:
+- martin
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: ytg7JIwP!>m
+downloadable_files:
+- PB.img
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 27bb3792-bf98-4994-92f8-1893e605294c
+spec: 0.0.1
