@@ -1,0 +1,18 @@
+title: Mikrokontrollerad
+description: 'Programmet vi tänkte använda för att skriva ut flaggan verkar ha blivit
+  utsatt för någon form av bitflip och fungerar inte längre. Kan du laga det?
+
+  Klockfrekvensen för processorn som ska köra programmet är 8 MHz.'
+authors:
+- Johan
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: just_an_AVRage_program_nothing_to_see_here
+downloadable_files:
+- challenge
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 3fe75758-7ed6-48c3-be47-b5da57c85fda
+spec: 0.0.1
