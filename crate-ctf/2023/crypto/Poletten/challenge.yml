@@ -1,0 +1,18 @@
+title: Poletten
+description: "<pre>\n32 9C 9B 13 AB A1 29 85 59 E5 59 A6 3A 9E DD 8B \n8D E2 8E A3\
+  \ A3 31 75 77 43 58 15 24 6A E7 EB 0F \nD4 E8 87 1F E9 14 F8 49 FF 2C 81 1C 07 0D\
+  \ BB 29 \n08 5C 4D 42 09 47 BB 8A 06 A3 11 28 6A 32 68 B6 \nAD \n\n05 86 9F 47 BA\
+  \ B0 28 97 4A 8A 64 85 3A 13 C1 8B \n96 E1 85 35 A5 74 37 42 59 49 19 40 6E E4 E3\
+  \ 4A \nC4 EC 9B 1D AC 5B E2 00 FE 21 CF 4C 12 9E BF 68 \n13 D4 19 5F 1A \n</pre>\n\
+  \nThe truth is in there. The Difference will prevail in dark times."
+authors:
+- daneid
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: OTP är oknäckbart, men bara om man gör rätt
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 62c15f39-d798-4bf7-b32d-e1c23abcbb4b
+spec: 0.0.1
