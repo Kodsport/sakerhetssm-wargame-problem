@@ -1,0 +1,18 @@
+title: Konstigt ljud
+description: Vi hittade en dator på kontoret som hade något lustigt ljud för sig,
+  men vår IT-säkerhetsexpert bara muttrade något om pakethanterare eller "advanced
+  persistent threats" och gick iväg på lunch. Kan du hjälpa till att analysera inspelningen
+  och se om vi har en dataläcka?
+authors:
+- johahed
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: kanske_inte_var_så_farligt_ändå
+downloadable_files:
+- chall.wav.xz
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 88e02f2a-ae5b-476b-876d-4059d36464c5
+spec: 0.0.1
