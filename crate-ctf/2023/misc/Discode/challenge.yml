@@ -1,0 +1,15 @@
+title: Discode
+description: Den discoälskande Alice blinkar kod till vännen Bob
+authors:
+- martin
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: lightemittingdiodesrule
+downloadable_files:
+- filer.zip
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 7210f74d-ac86-4959-bed8-bcfa5e0a7a23
+spec: 0.0.1
