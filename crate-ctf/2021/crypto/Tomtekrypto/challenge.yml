@@ -1,0 +1,16 @@
+title: Tomtekrypto
+description: Jag ville bara läsa lite litteratur, men texten har blivit alldels konstig.
+  Kan du hjälpa mig att tyda den?
+authors:
+- toblu
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: Se,_där_är_ju_en_till!
+downloadable_files:
+- krypterad.txt
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 4e9ae5d2-55b8-4458-ac1f-d630b35e1e6e
+spec: 0.0.1
