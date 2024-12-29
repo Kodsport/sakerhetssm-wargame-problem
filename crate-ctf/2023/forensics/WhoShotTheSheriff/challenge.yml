@@ -1,0 +1,17 @@
+title: WhoShotTheSheriff
+description: Brottslingen sågs senast i 42:a sektorn. På brottsplatsen hittades lite
+  digitalt DNA i form av WhoShotTheSheriff.txt. Vilket mugshot föreställer brottslingen?
+authors:
+- martin
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: 3806690.jpg
+downloadable_files:
+- WhoShotTheSheriff.txt
+- mugshots.zip
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: b9b4aefb-0654-4bbb-ae5f-dc24d006b9e6
+spec: 0.0.1
