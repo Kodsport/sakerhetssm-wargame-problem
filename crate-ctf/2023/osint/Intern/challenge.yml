@@ -1,0 +1,20 @@
+title: Intern
+description: 'Tjenare Ossian Wallengren!
+
+  Välkommen till ditt internship här hos oss. Vi hoppas att du komer trivas! Det är
+  egentligen inga konstigheter som anställd här, det mesta lär du dig längs med vägen.
+  Det enda du behöver tänka på är hur du representerar dig själv på nätet med tanke
+  på vad du har för position här.
+
+  Lycka till, mvh. HR'
+authors:
+- Denise
+categories:
+- osint
+flag_format_prefix: cratectf{
+flags: kanske_borde_rapportera_det_här_till_cyber_caching_inc
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: e3bf4d3b-665b-4678-a18d-f1d5e20fbf62
+spec: 0.0.1
