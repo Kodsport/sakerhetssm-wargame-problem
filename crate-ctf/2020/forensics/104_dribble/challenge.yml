@@ -1,0 +1,17 @@
+title: dataleak
+description: Ondingarna har kommit på ett sätt att läcka data via en sidokanal genom
+  att skicka instruktioner med hjälp av ett SCADA-protokoll till en transformatorstation.
+  Kan du få ut flaggan?
+authors:
+- tomgus
+categories:
+- forensics
+flag_format_prefix: 2020ctf{
+flags: thegoldbugin104
+downloadable_files:
+- 104_dribble.pcap.tar.gz
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: aee956e1-9056-4e5f-8e04-1d59ddfcdfa5
+spec: 0.0.1

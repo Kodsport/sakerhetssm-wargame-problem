@@ -57,11 +57,14 @@ authors:
   - jerry
   - johahed
   - Johan
+  - larhel
   - Lars
   - larshson
   - martin
   - Mathias
   - Mikael
+  - toblun
+  - tomgus
 
   # Sponsors
   - Säkerhets-SM
@@ -76,8 +79,8 @@ authors:
 flag_format_prefixes:
   - SSM{
   - ssmjr{
+  - 2020ctf{
   - cratectf{
-
 
 custom:
   container_registry: registry.sakerhetssm.se:5000/
