@@ -1,0 +1,16 @@
+title: Bösarp
+description: Franz reste iväg för att söka efter högre makter och kom aldrig hem igen.
+  Nio år senare mailade han en fil.
+authors:
+- larshson
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: vi_vill_alla_vandra_till_cirkeln_i_bosarp
+downloadable_files:
+- track.gpx
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 1ba3e516-8678-4554-b53f-11debd36f490
+spec: 0.0.1
