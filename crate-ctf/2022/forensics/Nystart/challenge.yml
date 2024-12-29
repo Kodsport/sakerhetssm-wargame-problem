@@ -1,0 +1,17 @@
+title: Nystart
+description: Det gäller att ha bilden klar för sig, för flaggan står mitt i blickfånget
+  (dock utan sedvanlig cratectf{}-formatering). Börja om från början, börja om på
+  nytt ...
+authors:
+- martin
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: Nu_blev_jag_ren_sa_hjorten!
+downloadable_files:
+- files.tgz
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: b9f22959-9b60-427d-b546-acd570567a02
+spec: 0.0.1
