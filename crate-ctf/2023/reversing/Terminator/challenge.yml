@@ -1,0 +1,17 @@
+title: Terminator
+description: Efter att ha gjort en forensisk analys av ett chip som ramlade av en
+  Cyberdyne Systems Model 101 hittades följande kod. Vad gör den? Och ännu viktigare,
+  är den skadlig?
+authors:
+- Denise
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: concider_that_a_flag_baby!
+downloadable_files:
+- T-800.arnoldc
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 32b19afb-ad3b-42e0-bb86-4f996c90be0e
+spec: 0.0.1
