@@ -1,0 +1,18 @@
+title: Pin2
+description: 'Kan du hitta rätt PIN-kod?'
+authors:
+- larshson
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: hashi_bashi_pumpkin_juice
+service:
+  type: website
+  image: docker
+  internal_port: 8080
+  external_port: 40144
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 99d00369-5a08-4142-bc1d-b34db8c9e589
+spec: 0.0.1
