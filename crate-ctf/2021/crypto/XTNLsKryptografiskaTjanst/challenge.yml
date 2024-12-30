@@ -1,0 +1,22 @@
+title: Xtnls Kryptografiska Tjänst
+description: 'Jag kom på ett jättebra sätt att fiffla och trixa med meddelanden så
+  att bara jag kan läsa dem!
+
+  Nu ger jag dig en alldeles unik möjlighet att pröva min kryptografiska tjänst!'
+authors:
+- toblu
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: kan_man_ens_kalla_detta_kryptografi
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+  external_port: 40115
+downloadable_files: []
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 2e47df53-c061-4b4e-ac48-115756c35b3d
+spec: 0.0.1
