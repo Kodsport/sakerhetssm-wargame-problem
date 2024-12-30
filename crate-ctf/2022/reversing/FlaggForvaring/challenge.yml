@@ -1,0 +1,21 @@
+title: Flaggförvaring
+description: Licensen för det här flaggförvaringsprogrammet har gått ut, går det att
+  få tag på flaggan ändå?
+authors:
+- Johan
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: safe_and_secure
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+  external_port: 40139
+downloadable_files:
+- chall
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 99295b4e-3d20-4c1a-915e-be4c0d1ae3b3
+spec: 0.0.1
