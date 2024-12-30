@@ -1,0 +1,24 @@
+title: Max 30
+description: 'Motorburen ungdom är mer avancerad än man kan tro! Här är Olle "Epa-Kungen"
+  Karlssons konceptskiss över det displaysystem som han bygger och säljer för en spottstyver.
+
+
+  Till slut hittade vi honom på snapchat, köpte ett kit och satte upp.'
+authors:
+- larshson
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: dotmatrix_modbus_atraktorhaxx
+service:
+  type: tcp
+  image: docker
+  internal_port: 5020
+  external_port: 40117
+downloadable_files:
+- traktor.jpg
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: b1da752f-83eb-45b0-b307-dc7fcae1ee97
+spec: 0.0.1
