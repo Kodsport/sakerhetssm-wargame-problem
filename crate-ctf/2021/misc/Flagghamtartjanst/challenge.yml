@@ -1,0 +1,20 @@
+title: Flagghämtartjänst
+description: 'Någon Apache-grej, kan du komma på vad det är?'
+authors:
+- toblu
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: thriiiiiiift
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+  external_port: 40116
+downloadable_files:
+- docker/description
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 5ab04587-d194-457a-8834-5b60be0e675d
+spec: 0.0.1
