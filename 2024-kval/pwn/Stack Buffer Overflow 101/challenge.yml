@@ -16,6 +16,11 @@ service:
   external_port: 40093
   privileged: true
 
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40093
+
 downloadable_files:
   - Stack Buffer Overflow 101.c
   - Stack Buffer Overflow 101
