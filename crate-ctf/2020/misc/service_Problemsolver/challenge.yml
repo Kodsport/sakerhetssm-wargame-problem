@@ -1,0 +1,19 @@
+title: Problemsolver
+description: Den här tjänsten har några frågor, kan du svaren?
+authors:
+- larhel
+categories:
+- misc
+flag_format_prefix: 2020ctf{
+flags: Nature never uses prime numbers. But mathematicians do.
+service:
+  type: tcp
+  image: docker
+  internal_port: 1337
+  external_port: 40003
+  privileged: true
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: 79ea4ad4-e5ea-4684-ba6e-abccd4fad900
+spec: 0.0.1
