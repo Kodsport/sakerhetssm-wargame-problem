@@ -1,0 +1,22 @@
+title: Skyltsmedjan
+description: 'Den bästa skyltsmedjan i staden! Kom och köp smidda skyltar! Är du extra
+
+  snäll kanske det kan bjudas på en flagga också!'
+authors:
+- Mathias
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: du_skulle_väl_inte_förfalska_en_skylt_bara_för_poäng_i_en_ctf?
+service:
+  type: tcp
+  image: docker
+  internal_port: 2456
+  external_port: 40105
+downloadable_files:
+- docker/skyltsmedjan.py
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 5df4669e-73e5-4134-b96f-6ac9f2908988
+spec: 0.0.1
