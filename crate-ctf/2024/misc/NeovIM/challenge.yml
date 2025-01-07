@@ -1,0 +1,25 @@
+title: NeovIM
+description: 'Du hade begett dig in i skogen NeoVim för att söka efter skatter och
+  guld, men nu stod du i mitten av skogen borttappad.
+
+  I din ögonvrå skymtar du ett värdhus. Inne i värdhuset skådar du en mörk figur som
+  sitter vid disken. Du närmar dig och frågar om han kan hjälpa dig hitta ut.
+
+  Medan han plockar fram en tändsticksask yttrar han sig: "Jag kan hjälpa dig hitta
+  ut ur NeoVim, men först måste du spela..."'
+authors:
+- Caspian
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: Write_:wq_to_exit_neovim
+service:
+  type: tcp
+  image: docker
+  internal_port: 50002
+  external_port: 40107
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: d9b7304e-e1ce-4bfb-9888-7dc65717c8f0
+spec: 0.0.1
