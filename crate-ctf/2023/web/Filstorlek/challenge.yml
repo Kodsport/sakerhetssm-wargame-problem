@@ -1,0 +1,18 @@
+title: Lagom är bäst
+description: Ladda upp en lagom stor fil.
+authors:
+- Johan
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: inte_för_stort_inte_för_litet
+service:
+  type: website
+  image: docker
+  internal_port: 8000
+  external_port: 40119
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: acb6a20f-dbf0-4253-819e-155de4c7adc0
+spec: 0.0.1
