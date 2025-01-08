@@ -1,0 +1,18 @@
+title: KaKlickare
+description: Det här spelet som jag hittade slukar upp all min fritid.
+authors:
+- Caspian
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: JagHoppasInteDuKlickadeManuellt!
+service:
+  type: website
+  image: docker
+  internal_port: 8000
+  external_port: 40026
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 983f2890-d14d-4019-8512-0a7ab12200fe
+spec: 0.0.1
