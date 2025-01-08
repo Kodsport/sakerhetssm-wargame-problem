@@ -1,0 +1,30 @@
+title: XML-kontroll
+description: 'Kontrollera din XML med vår webbtjänst!
+
+  Skriv in din XML-data, vänta några sekunder, och få (nästan) samma sträng tillbaka.
+
+
+  Snabbt, enkelt och... ja, det är ganska meningslöst, men det fungerar (nästan) felfritt!
+
+
+  Servern används också för att lagra en hemlig flagga,
+
+  men den är i säkert förvar i namnet på ett användarkonto så det finns
+
+  (nästan) absolut ingen risk att någon läser ut den från filsystemet!'
+authors:
+- Johan
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: xml_xxe_xploit_xpert
+service:
+  type: website
+  image: docker
+  internal_port: 8000
+  external_port: 40032
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: ae8c53d3-b2c9-4392-9d87-7012cef58e60
+spec: 0.0.1
