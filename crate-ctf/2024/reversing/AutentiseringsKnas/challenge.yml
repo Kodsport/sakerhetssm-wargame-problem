@@ -1,0 +1,24 @@
+title: Autentiseringsknas
+description: 'Autentiseringar på våra servrar har börjat bete sig mystiskt. IT på
+  vårat företag har tidigare varit fascinerade i färgen "Matrixgreen".
+
+  Nuförtiden måste man registrera sin dator hos IT innan man kan logga in...'
+authors:
+- Caspian
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: NamnServerSomHashDatabas?
+custom_service_types:
+  - type: ssh
+    display: ssh ctf@{host} -p {port}
+service:
+  type: ssh
+  image: docker
+  internal_port: 22
+  external_port: 40101
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 53a00f7a-8f5e-404d-b64f-0c97f1f0e78f
+spec: 0.0.1
