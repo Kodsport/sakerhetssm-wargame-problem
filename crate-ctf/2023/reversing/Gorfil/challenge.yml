@@ -4,7 +4,7 @@ description: 'Make är ett väldigt enkelt byggsystem och den här makefilen är
 
   högsta prioritet.'
 authors:
-- Mathias
+- Mathias Magnusson
 categories:
 - reversing
 flag_format_prefix: cratectf{
