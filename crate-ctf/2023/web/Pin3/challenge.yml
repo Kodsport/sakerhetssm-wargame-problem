@@ -1,0 +1,18 @@
+title: Pin3
+description: Kan du hitta rätt PIN-kod?
+authors:
+- larshson
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: p1n_4pi_bru73_ach13vm3nt_unl0ck3d
+service:
+  type: website
+  image: docker
+  internal_port: 8080
+  external_port: 40121
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 7c69fbfe-e740-49f7-86f0-496a2c4e90fd
+spec: 0.0.1
