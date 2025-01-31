@@ -1,0 +1,18 @@
+title: HittaHit 1
+description: Var är bilden tagen? Använd decimalgrader.
+authors:
+- Mikael
+categories:
+- osint
+flag_format_prefix: cratectf{
+flags: En_av_orterna_är_större
+service:
+  type: website
+  image: docker
+  internal_port: 80
+  external_port: 40018
+score: 100
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 5211a856-d380-472d-820d-9d9d5754ae7d
+spec: 0.0.1
