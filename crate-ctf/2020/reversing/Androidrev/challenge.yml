@@ -1,0 +1,15 @@
+title: Androidrev
+description: Kan man bli belönad av att smälla bubblor? Har hört att de som till och
+  med passerat elit-klassen kan det...
+authors:
+- larshson
+categories:
+- reversing
+flag_format_prefix: 2020ctf{
+flags: high_salaries_for_phone_reversing_dude
+score: 100
+downloadable_files: ["bulbula-debug-1.0.apk"]
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: a1d2e6b1-ec8c-45eb-9615-c15a181f858d
+spec: 0.0.1
