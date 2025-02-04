@@ -15,7 +15,7 @@ service:
   internal_port: 31337
   external_port: 40115
 downloadable_files: []
-score: 100
+score: 400
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 2e47df53-c061-4b4e-ac48-115756c35b3d

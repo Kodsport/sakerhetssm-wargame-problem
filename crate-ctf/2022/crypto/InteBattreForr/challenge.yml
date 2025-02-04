@@ -27,7 +27,7 @@ flags: shall_we_gather_for_whiskey_and_cigars_tonight?
 downloadable_files:
 - message.bin
 - rsa.pub
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 027b07fe-4a91-4be4-ae08-2f754648b4cb

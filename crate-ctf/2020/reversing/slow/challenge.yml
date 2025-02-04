@@ -9,7 +9,7 @@ flag_format_prefix: 2020ctf{
 flags: '3340200223'
 downloadable_files:
 - build/chall
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: 737c8ecb-10c2-4ed0-aaa4-5c5d5e570464

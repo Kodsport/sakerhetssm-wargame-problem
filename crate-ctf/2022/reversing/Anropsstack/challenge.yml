@@ -18,7 +18,7 @@ downloadable_files:
 - check_flag_format
 - check_flag_format.core.xz
 - libs.tar.xz
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: fd85e3f2-5310-4485-b7b4-0d3b8f311b05

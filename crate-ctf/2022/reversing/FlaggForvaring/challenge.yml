@@ -14,7 +14,7 @@ service:
   external_port: 40139
 downloadable_files:
 - chall
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 99295b4e-3d20-4c1a-915e-be4c0d1ae3b3

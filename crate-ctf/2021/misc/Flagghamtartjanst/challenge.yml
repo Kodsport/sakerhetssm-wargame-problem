@@ -13,7 +13,7 @@ service:
   external_port: 40116
 downloadable_files:
 - docker/description
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 5ab04587-d194-457a-8834-5b60be0e675d

@@ -10,7 +10,7 @@ flag_format_prefix: cratectf{
 flags: Nu_blev_jag_ren_sa_hjorten!
 downloadable_files:
 - files.tgz
-score: 100
+score: 400
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: b9f22959-9b60-427d-b546-acd570567a02

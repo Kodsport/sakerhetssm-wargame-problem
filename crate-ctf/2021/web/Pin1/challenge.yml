@@ -11,7 +11,7 @@ service:
   image: docker
   internal_port: 8080
   external_port: 40114
-score: 100
+score: 150
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 84e8ffdd-f425-4611-896f-32462f834198

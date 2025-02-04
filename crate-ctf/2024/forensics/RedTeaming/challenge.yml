@@ -13,7 +13,7 @@ flag_format_prefix: cratectf{
 flags: infra-redteamingftw
 downloadable_files:
 - data.bin
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: e5c5ecb9-fb66-4fe3-968d-7d5b037017eb

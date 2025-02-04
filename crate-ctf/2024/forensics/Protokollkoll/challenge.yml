@@ -13,7 +13,7 @@ service:
   external_port: 40015
 downloadable_files:
 - capture.pcapng
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: b4b93eb6-b130-41cd-b3a2-cd5e9921c2ed

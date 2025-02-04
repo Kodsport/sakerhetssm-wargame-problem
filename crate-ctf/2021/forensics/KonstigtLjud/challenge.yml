@@ -11,7 +11,7 @@ flag_format_prefix: cratectf{
 flags: kanske_inte_var_så_farligt_ändå
 downloadable_files:
 - chall.wav.xz
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 88e02f2a-ae5b-476b-876d-4059d36464c5

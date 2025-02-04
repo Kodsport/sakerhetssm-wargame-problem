@@ -17,7 +17,7 @@ service:
 downloadable_files:
   - container/challenge.py
 
-score: 100
+score: 450
 
 human_metadata:
   event_name: Crate-CTF 2021

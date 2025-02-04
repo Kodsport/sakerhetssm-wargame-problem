@@ -15,7 +15,7 @@ downloadable_files:
 - card_blank.png
 - generate.py
 - LiberationMono-Regular.ttf
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 35a96244-5537-439f-a3d6-a837327ccb4c

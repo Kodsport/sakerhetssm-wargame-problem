@@ -7,7 +7,7 @@ categories:
 - reversing
 flag_format_prefix: 2020ctf{
 flags: high_salaries_for_phone_reversing_dude
-score: 100
+score: 500
 downloadable_files: ["bulbula-debug-1.0.apk"]
 human_metadata:
   event_name: Crate-CTF 2020

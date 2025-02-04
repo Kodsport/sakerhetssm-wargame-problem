@@ -21,7 +21,7 @@ flag_format_prefix: cratectf{
 flags: franz$the$circular$hero
 downloadable_files:
 - bosarp.pcap.xz
-score: 100
+score: 400
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 940e9136-5009-4acb-b417-47678c971496

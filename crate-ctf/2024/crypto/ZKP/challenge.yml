@@ -23,7 +23,7 @@ service:
 downloadable_files:
 - main.c
 - libc.so.6
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: 2a166fcc-62e9-4b9d-862d-d58069134457

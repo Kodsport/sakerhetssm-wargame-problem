@@ -8,7 +8,7 @@ flag_format_prefix: cratectf{
 flags: lightemittingdiodesrule
 downloadable_files:
 - filer.zip
-score: 100
+score: 200
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 7210f74d-ac86-4959-bed8-bcfa5e0a7a23

@@ -11,7 +11,7 @@ categories:
 - crypto
 flag_format_prefix: cratectf{
 flags: OTP är oknäckbart, men bara om man gör rätt
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 62c15f39-d798-4bf7-b32d-e1c23abcbb4b

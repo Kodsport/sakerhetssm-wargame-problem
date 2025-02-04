@@ -13,7 +13,7 @@ flag_format_prefix: cratectf{
 flags: xp_ej_naggande_gott
 downloadable_files:
 - dump.raw.xz
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: c5566880-7141-45ef-bff5-18979b2707b8

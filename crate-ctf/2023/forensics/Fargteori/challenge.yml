@@ -34,7 +34,7 @@ flag_format_prefix: cratectf{
 flags: färgglad
 downloadable_files:
 - dig-rep-farg.pptx
-score: 100
+score: 350
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 1de9df73-99bf-4638-83c1-947542cd54b7

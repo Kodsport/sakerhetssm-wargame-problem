@@ -9,7 +9,7 @@ flags: rsa_rsa_rsa_rsa_rsa_rsa_rsa_rsa_rsa_rsa_rsa_rsa
 downloadable_files:
 - output.txt
 - generate_cipher.py
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: 08700fb7-e7f4-4c7a-82aa-0c3f79384b67

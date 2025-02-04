@@ -15,7 +15,7 @@ flag_format_prefix: cratectf{
 flags: ytg7JIwP!>m
 downloadable_files:
 - PB.img
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 27bb3792-bf98-4994-92f8-1893e605294c

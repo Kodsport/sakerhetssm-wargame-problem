@@ -10,7 +10,7 @@ flag_format_prefix: cratectf{
 flags: gb_4ever
 downloadable_files:
 - intro.gb
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 79e1e55c-8cbd-4b77-bb11-92cf95a7165e

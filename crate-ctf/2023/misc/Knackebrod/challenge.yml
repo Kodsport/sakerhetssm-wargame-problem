@@ -13,7 +13,7 @@ service:
   external_port: 40129
 downloadable_files:
 - docker/hashes
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: d530e6bd-60f1-4f44-b3cf-511e14e35afc

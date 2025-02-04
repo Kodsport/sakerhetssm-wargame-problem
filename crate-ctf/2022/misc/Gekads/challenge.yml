@@ -8,7 +8,7 @@ flag_format_prefix: cratectf{
 flags: 3d_print_happyx9
 downloadable_files:
 - data.xz
-score: 100
+score: 200
 human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: a66d65bf-3a24-4a87-898f-06601d76bc93

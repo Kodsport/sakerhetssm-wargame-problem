@@ -10,7 +10,7 @@ flag_format_prefix: cratectf{
 flags: concider_that_a_flag_baby!
 downloadable_files:
 - T-800.arnoldc
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 32b19afb-ad3b-42e0-bb86-4f996c90be0e

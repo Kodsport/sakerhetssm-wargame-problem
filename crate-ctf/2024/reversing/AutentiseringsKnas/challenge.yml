@@ -17,7 +17,7 @@ service:
   image: docker
   internal_port: 22
   external_port: 40101
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: 53a00f7a-8f5e-404d-b64f-0c97f1f0e78f

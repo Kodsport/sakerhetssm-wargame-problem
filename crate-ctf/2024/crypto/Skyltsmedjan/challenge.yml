@@ -15,7 +15,7 @@ service:
   external_port: 40105
 downloadable_files:
 - docker/skyltsmedjan.py
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: 5df4669e-73e5-4134-b96f-6ac9f2908988

@@ -11,7 +11,7 @@ flag_format_prefix: cratectf{
 flags: checktheflag
 downloadable_files:
 - Makefile
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 0544f5cf-0c93-4aa2-844c-f7a3b4920497

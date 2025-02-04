@@ -19,7 +19,7 @@ service:
   external_port: 40038
 downloadable_files:
 - grill
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: 3ab3f574-1c27-4344-9498-1cbdc0e1824f

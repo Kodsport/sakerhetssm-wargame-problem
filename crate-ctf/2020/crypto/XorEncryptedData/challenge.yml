@@ -11,7 +11,7 @@ service:
   image: docker
   internal_port: 57000
   external_port: 40147
-score: 100
+score: 450
 human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: b1b30059-d328-4cf9-86ec-5ba580da3492

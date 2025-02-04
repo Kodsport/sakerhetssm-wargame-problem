@@ -12,7 +12,7 @@ downloadable_files:
   - generate_cipher.py
   - output.txt
 
-score: 100
+score: 450
 
 human_metadata:
   event_name: Crate-CTF 2021

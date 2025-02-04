@@ -9,7 +9,7 @@ flag_format_prefix: cratectf{
 flags: Se,_där_är_ju_en_till!
 downloadable_files:
 - krypterad.txt
-score: 100
+score: 350
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 4e9ae5d2-55b8-4458-ac1f-d630b35e1e6e

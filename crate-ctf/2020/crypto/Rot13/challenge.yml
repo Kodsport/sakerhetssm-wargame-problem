@@ -9,7 +9,7 @@ categories:
 - crypto
 flag_format_prefix: 2020ctf{
 flags: aja_inte_så_annorlunda_men_i_alla_fall_lite
-score: 100
+score: 50
 human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: 2eae882a-90e2-4bf4-8a83-afc569a27b7b

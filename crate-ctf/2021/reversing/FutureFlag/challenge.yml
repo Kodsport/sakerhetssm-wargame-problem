@@ -8,7 +8,7 @@ flag_format_prefix: cratectf{
 flags: avlusning_med_ett_simpelt_knep
 downloadable_files:
 - challenge
-score: 100
+score: 400
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: ed38bedd-b990-48be-9128-553144682743

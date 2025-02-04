@@ -8,7 +8,7 @@ flag_format_prefix: cratectf{
 flags: ch1p8_h4ck3d
 downloadable_files:
 - protected.ch8
-score: 100
+score: 500
 human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 3cb4ddbc-2655-416e-9276-b9300891b42b
