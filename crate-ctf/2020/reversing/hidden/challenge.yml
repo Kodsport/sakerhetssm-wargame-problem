@@ -13,3 +13,5 @@ human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: a533f32b-0356-4a48-ab02-2b4066823ce4
 spec: 0.0.1
+custom:
+  publish: true

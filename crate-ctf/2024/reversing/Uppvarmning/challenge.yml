@@ -1,11 +1,7 @@
 title: Uppvärmning
-description: 'Det här med ny teknologi? Min grill har 32 knappar, och hur jag än trycker
-  och skruvar verkar den inte sätta en jämn värme.
-
-  Kan du hjälpa mig läsa manualen?
-
-
-  (VARNING: Trots implikationen i namnet så är detta inte den lättaste uppgiften.)'
+description: "Det här med ny teknologi? Min grill har 32 knappar, och hur jag än trycker
+  och skruvar verkar den inte sätta en jämn värme.\nKan du hjälpa mig läsa manualen?\n
+  \n(VARNING: Trots implikationen i namnet så är detta inte den lättaste uppgiften.)"
 authors:
 - Caspian
 categories:
@@ -24,3 +20,5 @@ human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: 3ab3f574-1c27-4344-9498-1cbdc0e1824f
 spec: 0.0.1
+custom:
+  publish: true

@@ -1,8 +1,7 @@
 title: Tokfrans
-description: "Min vän satt på ett cafe och råkade se när en skum filur loggade in\
-  \ på en webbsida. \n\nFiluren loggade in med användaren zeke och lösenordet irule42.\
-  \ Det verkade inte finnas nåt spännande dock, man behöver nog logga in som någon\
-  \ annan..."
+description: "Min vän satt på ett cafe och råkade se när en skum filur loggade in
+  på en webbsida. \n\nFiluren loggade in med användaren zeke och lösenordet irule42.
+  Det verkade inte finnas nåt spännande dock, man behöver nog logga in som någon annan..."
 authors:
 - larshson
 categories:
@@ -19,3 +18,5 @@ human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: db8ab6f8-c612-4a3f-8def-cc1e65f6b906
 spec: 0.0.1
+custom:
+  publish: true

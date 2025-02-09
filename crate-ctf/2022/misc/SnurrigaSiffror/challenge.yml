@@ -1,12 +1,12 @@
 title: SnurrigaSiffror
-description: "Året är 1962, och Jürgens fru Claudia börjar misstänka att hon\nblir\
-  \ bedragen. Hon har märkt att han på nätterna smyger upp och\nsitter långa stunder\
-  \ vid bänken i hallen . Han verkar inte prata \nmed någon, men deras ännu skinande\
-  \ `DBH 1001` har ändå egenskaper\nsom gör att hon vaknar när han sitter där.\n\n\
-  En natt, efter lång våndan och ansamling av mod, lyckades hon\nspela in en av hans\
-  \ sittningar. Tyvärr lyckades Claudia aldrig\nförstå vad han gjorde, och konfronterade\
-  \ heller aldrig sin make.\n\n60 år senare hittade parets barnbarn inspelningen och\
-  \ bad oss om \nhjälp.\n\nVad gjorde han egentligen på nätterna, den där Jürgen?"
+description: "Året är 1962, och Jürgens fru Claudia börjar misstänka att hon\nblir
+  bedragen. Hon har märkt att han på nätterna smyger upp och\nsitter långa stunder
+  vid bänken i hallen . Han verkar inte prata \nmed någon, men deras ännu skinande
+  `DBH 1001` har ändå egenskaper\nsom gör att hon vaknar när han sitter där.\n\nEn
+  natt, efter lång våndan och ansamling av mod, lyckades hon\nspela in en av hans
+  sittningar. Tyvärr lyckades Claudia aldrig\nförstå vad han gjorde, och konfronterade
+  heller aldrig sin make.\n\n60 år senare hittade parets barnbarn inspelningen och
+  bad oss om \nhjälp.\n\nVad gjorde han egentligen på nätterna, den där Jürgen?"
 authors:
 - martin
 categories:
@@ -20,3 +20,5 @@ human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: b14dc8d1-85d6-4da5-ba40-47fcc84ba6b3
 spec: 0.0.1
+custom:
+  publish: true

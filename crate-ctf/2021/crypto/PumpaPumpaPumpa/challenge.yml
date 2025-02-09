@@ -1,9 +1,9 @@
 title: PumpaPumpaPumpa # TODO: real name is 🎃🎃🎃 but challtools don't like it
 description: Fråga om flaggan bara.
 authors:
-  - toblu
+- toblu
 categories:
-  - crypto
+- crypto
 
 flag_format_prefix: cratectf{
 flags: den_signaturen_pumpade_du_fint
@@ -15,7 +15,7 @@ service:
   external_port: 40014
 
 downloadable_files:
-  - container/challenge.py
+- container/challenge.py
 
 score: 450
 
@@ -25,3 +25,5 @@ human_metadata:
 
 challenge_id: 65a4afd3-d8bf-4111-b986-16576ae4db91
 spec: 0.0.1
+custom:
+  publish: true

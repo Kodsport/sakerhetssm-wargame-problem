@@ -18,3 +18,5 @@ human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: b4b93eb6-b130-41cd-b3a2-cd5e9921c2ed
 spec: 0.0.1
+custom:
+  publish: true

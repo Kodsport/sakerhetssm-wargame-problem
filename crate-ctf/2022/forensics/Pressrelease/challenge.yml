@@ -1,15 +1,15 @@
 title: Pressrelease
-description: "Bengan hade utvecklat starka känslor för Pia på marknadsavdelningen.\n\
-  \nIstället för att uppvakta Pia på traditionellt vis, och helt enkelt\nberätta för\
-  \ henne vad han känner, ville han veta ALLT om Pia för\natt på så vis öka sina chanser\
-  \ att lyckas vinna hennes hjärta.\n\nHan stalkade hennes sociala medier, pushade\
-  \ ut spionprogram till hennes\ntjänstetelefon (Bengan jobbade ju trots allt på IT-avdelningen),\
-  \ och\ngick till och med så långt att han installerade en hemmabyggd keylogger \n\
-  mellan tangentbordet och dockningsstationen på hennes arbetsplats.\n\nDen observante\
-  \ kollegan Nicolai larmade polisen, och Bengan åkte fast.\nSamtidigt som Pia och\
-  \ Nicolai  (som efter incidenten hopplöst föll för \nvarandra) var på smekmånad,\
-  \ släppte polisen en exempel-fil från Bengans\nkeylogger.\n\nHittar du något sätt\
-  \ att tyda den data som Bengans hemmabyggda hårdvara\ngenererat?"
+description: "Bengan hade utvecklat starka känslor för Pia på marknadsavdelningen.\n
+  \nIstället för att uppvakta Pia på traditionellt vis, och helt enkelt\nberätta för
+  henne vad han känner, ville han veta ALLT om Pia för\natt på så vis öka sina chanser
+  att lyckas vinna hennes hjärta.\n\nHan stalkade hennes sociala medier, pushade ut
+  spionprogram till hennes\ntjänstetelefon (Bengan jobbade ju trots allt på IT-avdelningen),
+  och\ngick till och med så långt att han installerade en hemmabyggd keylogger \n
+  mellan tangentbordet och dockningsstationen på hennes arbetsplats.\n\nDen observante
+  kollegan Nicolai larmade polisen, och Bengan åkte fast.\nSamtidigt som Pia och Nicolai\
+  \  (som efter incidenten hopplöst föll för \nvarandra) var på smekmånad, släppte
+  polisen en exempel-fil från Bengans\nkeylogger.\n\nHittar du något sätt att tyda
+  den data som Bengans hemmabyggda hårdvara\ngenererat?"
 authors:
 - larshson
 categories:
@@ -23,3 +23,5 @@ human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 44b6065f-f053-409d-8940-3ce45d61777c
 spec: 0.0.1
+custom:
+  publish: true

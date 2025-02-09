@@ -1,23 +1,12 @@
 title: Det var inte alltid bättre förr
-description: 'En kollega brukar alltid envisas med att ta emot sina after work-inbjudningar
-  i krypterad form via OpenSSL.
-
-
-  "Det har fungerat bra de senaste 15 åren" säger han.
-
-
-  Nog ska Debian vara stabilt, men det kanske är nyttigt att uppdatera sitt system
-  lite då och då?
-
-
-  Våra uppmaningar om att söka efter "debian openssl vulnerability" och läsa på om
-  alla brister faller på döva öron,
-
-  kan du dekryptera meddelandet och visa att "det var bättre förr" inte gäller kryptomjukvara?
-
-
-  Kommandot `openssl pkeyutl -inkey rsa.key -decrypt -in message.bin` borde fungera
-  när du har lyckats hitta den privata nyckeln.'
+description: "En kollega brukar alltid envisas med att ta emot sina after work-inbjudningar
+  i krypterad form via OpenSSL.\n\n\"Det har fungerat bra de senaste 15 åren\" säger
+  han.\n\nNog ska Debian vara stabilt, men det kanske är nyttigt att uppdatera sitt
+  system lite då och då?\n\nVåra uppmaningar om att söka efter \"debian openssl vulnerability\"\
+  \ och läsa på om alla brister faller på döva öron,\nkan du dekryptera meddelandet
+  och visa att \"det var bättre förr\" inte gäller kryptomjukvara?\n\nKommandot `openssl
+  pkeyutl -inkey rsa.key -decrypt -in message.bin` borde fungera när du har lyckats
+  hitta den privata nyckeln."
 authors:
 - Johan
 categories:
@@ -32,3 +21,5 @@ human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 027b07fe-4a91-4be4-ae08-2f754648b4cb
 spec: 0.0.1
+custom:
+  publish: true

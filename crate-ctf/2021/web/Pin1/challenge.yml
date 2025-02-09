@@ -1,5 +1,5 @@
 title: Pin1
-description: 'Kan du hitta rätt PIN-kod?'
+description: Kan du hitta rätt PIN-kod?
 authors:
 - larshson
 categories:
@@ -16,3 +16,5 @@ human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 84e8ffdd-f425-4611-896f-32462f834198
 spec: 0.0.1
+custom:
+  publish: true

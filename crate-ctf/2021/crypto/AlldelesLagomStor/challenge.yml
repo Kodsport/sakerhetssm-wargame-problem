@@ -1,16 +1,17 @@
 title: Alldeles lagom stor
-description: Har hört bra saker om ECC, men jag skulle säga att RSA ändå fungerar relativt prima.
+description: Har hört bra saker om ECC, men jag skulle säga att RSA ändå fungerar
+  relativt prima.
 authors:
-  - toblu
+- toblu
 categories:
-  - crypto
+- crypto
 
 flag_format_prefix: cratectf{
 flags: Small_exponent_small_message_large_primes_not_very_good
 
 downloadable_files:
-  - generate_cipher.py
-  - output.txt
+- generate_cipher.py
+- output.txt
 
 score: 450
 
@@ -19,3 +20,5 @@ human_metadata:
 
 challenge_id: b024b05f-acef-4dbd-a70a-30c46cea68c3
 spec: 0.0.1
+custom:
+  publish: true

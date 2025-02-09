@@ -1,9 +1,7 @@
 title: Antimodänerna
-description: 'Hackergruppen "Antimodänerna" har förberett sig för sin stora övertagningsoperation.
-
-  Vilka organisationer de har riktat in sig på är ännu oklart. Kanske finns det ledtrådar
-
-  på deras server vi identifierat?'
+description: "Hackergruppen \"Antimodänerna\" har förberett sig för sin stora övertagningsoperation.\n
+  Vilka organisationer de har riktat in sig på är ännu oklart. Kanske finns det ledtrådar\n
+  på deras server vi identifierat?"
 authors:
 - larshson
 categories:
@@ -20,3 +18,5 @@ human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: a71a6896-85ff-41bc-8d66-d1f054967d0c
 spec: 0.0.1
+custom:
+  publish: true

@@ -19,3 +19,5 @@ human_metadata:
   event_name: Crate-CTF 2022
 challenge_id: 99295b4e-3d20-4c1a-915e-be4c0d1ae3b3
 spec: 0.0.1
+custom:
+  publish: true

@@ -8,8 +8,10 @@ categories:
 flag_format_prefix: 2020ctf{
 flags: high_salaries_for_phone_reversing_dude
 score: 500
-downloadable_files: ["bulbula-debug-1.0.apk"]
+downloadable_files: [bulbula-debug-1.0.apk]
 human_metadata:
   event_name: Crate-CTF 2020
 challenge_id: a1d2e6b1-ec8c-45eb-9615-c15a181f858d
 spec: 0.0.1
+custom:
+  publish: true

@@ -16,3 +16,5 @@ human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: f02773cc-bb38-45ac-a164-e813a1dc3321
 spec: 0.0.1
+custom:
+  publish: true

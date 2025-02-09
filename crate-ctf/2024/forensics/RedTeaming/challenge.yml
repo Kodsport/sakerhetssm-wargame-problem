@@ -1,10 +1,7 @@
 title: Red teaming?
-description: 'Jobbet som privatdetektiv är slitigt, man måste alltid vara på sina
-  tår.
-
-  Sittandes i en buske med en kikare spanar du in i mannens vardagsrum.
-
-  Bakåtlutad i fåtöljen med fötterna på bordet och TV:n på högsta volym...'
+description: "Jobbet som privatdetektiv är slitigt, man måste alltid vara på sina
+  tår.\nSittandes i en buske med en kikare spanar du in i mannens vardagsrum.\nBakåtlutad
+  i fåtöljen med fötterna på bordet och TV:n på högsta volym..."
 authors:
 - Caspian
 categories:
@@ -18,3 +15,5 @@ human_metadata:
   event_name: Crate-CTF 2024
 challenge_id: e5c5ecb9-fb66-4fe3-968d-7d5b037017eb
 spec: 0.0.1
+custom:
+  publish: true

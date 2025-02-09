@@ -13,3 +13,5 @@ human_metadata:
   event_name: Crate-CTF 2021
 challenge_id: 9957b2cc-e4c9-46f7-8a00-d4d7cafa4d01
 spec: 0.0.1
+custom:
+  publish: true

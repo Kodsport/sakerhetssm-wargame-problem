@@ -1,24 +1,8 @@
 title: Oraklet
-description: 'Lyssna på vad oraklet har att säga:
-
-
-  ```plain
-
-  BOwquzaj5VAuw+W243CFTPt+B6Lmg4y+8J0jCMw4MMk4z64Y12gIA+4fB6Tk8oBD
-
-  ```
-
-  ```plain
-
-  I6gFIFq515l0MgmX5fRm6YOqHj+ZwBP50sSOqxbQizjjWqTKvmdAS9jlBEUUaXnIJtOXUbqlzxFO642SxbMUrA==
-
-  ```
-
-  ```plain
-
-  wcF5Zvm5tksqSkjQMwqxTVpxUmLoJirj7sbivnEbbH2wawRdaiJGPESGWlF58S0JHntZqho87t9IkCbudLOV8g==
-
-  ```'
+description: "Lyssna på vad oraklet har att säga:\n\n```plain\nBOwquzaj5VAuw+W243CFTPt+B6Lmg4y+8J0jCMw4MMk4z64Y12gIA+4fB6Tk8oBD\n\
+  ```\n```plain\nI6gFIFq515l0MgmX5fRm6YOqHj+ZwBP50sSOqxbQizjjWqTKvmdAS9jlBEUUaXnIJtOXUbqlzxFO642SxbMUrA==\n\
+  ```\n```plain\nwcF5Zvm5tksqSkjQMwqxTVpxUmLoJirj7sbivnEbbH2wawRdaiJGPESGWlF58S0JHntZqho87t9IkCbudLOV8g==\n\
+  ```"
 authors:
 - Johan
 categories:
@@ -35,3 +19,5 @@ human_metadata:
   event_name: Crate-CTF 2023
 challenge_id: 70ff59b6-3ee3-4ae5-a8e2-b3c36b72f74e
 spec: 0.0.1
+custom:
+  publish: true
