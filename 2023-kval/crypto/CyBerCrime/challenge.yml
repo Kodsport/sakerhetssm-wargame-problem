@@ -18,9 +18,9 @@ service:
   external_port: 40073
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40073
+- type: tcp
+  host: 188.126.67.132
+  port: 40073
 
 downloadable_files:
 - container/service.py

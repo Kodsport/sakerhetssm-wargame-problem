@@ -5,11 +5,7 @@ description: Det kallas security by obscurity! Jag orkar inte kryptera min flagg
 authors:
 - Movitz Sunar
 categories:
-<<<<<<< Updated upstream
-  - crypto
-=======
-- kryptografi
->>>>>>> Stashed changes
+- crypto
 
 flag_format_prefix: SSM{
 flags: maybe_not_soo_secure

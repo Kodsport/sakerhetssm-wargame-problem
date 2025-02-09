@@ -1,6 +1,10 @@
 title: LLL101
 description: >
-  Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus presentation [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath på https://cocalc.com/features/sage
+  Min granne Ceasar berättade att det finns något kallat LLL som är väldigt populärt
+  nuförtiden. Man kan tydligen skapa fina pinnar. Han visade mig även professor Chopingus
+  presentation [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf)
+  och sade att man enkelt kunde använda sig av denna LLL med ett library kallat sagemath
+  på https://cocalc.com/features/sage
 
 authors:
 - chopingu

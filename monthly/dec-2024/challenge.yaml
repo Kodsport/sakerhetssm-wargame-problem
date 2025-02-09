@@ -15,7 +15,7 @@ flag_format_prefix: SSM{
 flags: färg-affischionado
 
 downloadable_files:
-  - poster_4x.png
+- poster_4x.png
 
 score: 200
 

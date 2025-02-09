@@ -17,9 +17,9 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40093
+- type: tcp
+  host: 188.126.67.132
+  port: 40093
 
 downloadable_files:
 - Stack Buffer Overflow 101.c
