@@ -21,3 +21,7 @@ challenge_id: 5df4669e-73e5-4134-b96f-6ac9f2908988
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40105
+  type: tcp

@@ -19,3 +19,7 @@ challenge_id: 79ea4ad4-e5ea-4684-ba6e-abccd4fad900
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40003
+  type: tcp

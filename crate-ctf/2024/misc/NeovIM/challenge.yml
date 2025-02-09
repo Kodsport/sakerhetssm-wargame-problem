@@ -22,3 +22,7 @@ challenge_id: d9b7304e-e1ce-4bfb-9888-7dc65717c8f0
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40107
+  type: tcp

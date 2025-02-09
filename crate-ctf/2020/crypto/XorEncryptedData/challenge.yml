@@ -18,3 +18,7 @@ challenge_id: b1b30059-d328-4cf9-86ec-5ba580da3492
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40147
+  type: tcp

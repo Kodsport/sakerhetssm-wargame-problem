@@ -23,3 +23,7 @@ challenge_id: e75db160-254a-4833-af89-68177d42a9bc
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40109
+  type: ssh

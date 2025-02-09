@@ -22,3 +22,7 @@ challenge_id: 3ab3f574-1c27-4344-9498-1cbdc0e1824f
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40038
+  type: tcp

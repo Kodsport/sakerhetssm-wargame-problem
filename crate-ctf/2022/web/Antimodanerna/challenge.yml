@@ -20,3 +20,6 @@ challenge_id: a71a6896-85ff-41bc-8d66-d1f054967d0c
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- url: http://188.126.67.132:40133
+  type: website

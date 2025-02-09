@@ -27,3 +27,7 @@ challenge_id: 65a4afd3-d8bf-4111-b986-16576ae4db91
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40014
+  type: tcp

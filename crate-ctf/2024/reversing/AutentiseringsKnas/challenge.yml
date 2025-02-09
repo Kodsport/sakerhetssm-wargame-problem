@@ -23,3 +23,7 @@ challenge_id: 53a00f7a-8f5e-404d-b64f-0c97f1f0e78f
 spec: 0.0.1
 custom:
   publish: true
+predefined_services:
+- host: 188.126.67.132
+  port: 40101
+  type: ssh
