@@ -1,10 +1,11 @@
 title: Skibidi knapp
-description: Jag har en knapp på min hemsida som är omöjlig att klicka på. Kan du hjälpa mig aktivera den?
+description: Jag har en knapp på min hemsida som är omöjlig att klicka på. Kan du
+  hjälpa mig aktivera den?
 
 authors:
-  - Laith Abbawi
+- Laith Abbawi
 categories:
-  - web
+- web
 
 flag_format_prefix: SSM{
 flags: du_lyckades_klicka_mig!
@@ -16,12 +17,12 @@ service:
   external_port: 40064
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40064"
+- type: website
+  url: http://188.126.67.132:40064
 
-# Migrated to main namespace
-#custom:
-#  chall_namespace: knackkoden
+custom:
+#  chall_namespace: knackkoden # Migrated to main namespace
+  publish: true
 
 score: 50
 

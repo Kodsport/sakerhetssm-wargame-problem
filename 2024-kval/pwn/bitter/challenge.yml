@@ -3,9 +3,9 @@ description: |
   What on earth, who made my hummus bitter?!
   Can you please fix this, I don't know what to do.
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -19,16 +19,17 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40043
+- type: tcp
+  host: 188.126.67.132
+  port: 40043
 
 downloadable_files:
-  - container/bitter
-  - bitter.c
+- container/bitter
+- bitter.c
 
 custom:
   build_script: build.sh
+  publish: true
 score: 300
 
 challenge_id: 74272d0f-9f89-4421-899e-682cf628f6df

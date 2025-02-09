@@ -1,18 +1,21 @@
 title: Nordic Aeronautics and Space Administration
-description: Welcome to the Nordic Aeronautics and Space Administration. Our new discovery has led us to believe that our world can be created out of only singular hydrogen and helium atoms! We observed how neutrons and protons started merging as everything cooled down. Let me show you!
+description: Welcome to the Nordic Aeronautics and Space Administration. Our new discovery
+  has led us to believe that our world can be created out of only singular hydrogen
+  and helium atoms! We observed how neutrons and protons started merging as everything
+  cooled down. Let me show you!
 authors:
-  - chopingu
+- chopingu
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: phys1c_2_h4rd
 
 downloadable_files:
-  - source.py
-  - helium
-  - hydrogen
+- source.py
+- helium
+- hydrogen
 
 challenge_id: 1d519f0d-8021-4a1f-8d2e-f1685797ddf7
 spec: 0.0.1
@@ -21,3 +24,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 500
+custom:
+  publish: true

@@ -1,9 +1,12 @@
 title: Hellman & Diffie
-description: Have you seen the new clothing store that just opened? H&D, Hellman & Diffie, is taking over every street and making a ton of profit. However, I also heard they are discussing top secret info about their business. Let's listen in and maybe we can also create our own successful clothing brand!
+description: Have you seen the new clothing store that just opened? H&D, Hellman &
+  Diffie, is taking over every street and making a ton of profit. However, I also
+  heard they are discussing top secret info about their business. Let's listen in
+  and maybe we can also create our own successful clothing brand!
 authors:
-  - chopingu
+- chopingu
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -17,12 +20,12 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40007
+- type: tcp
+  host: 188.126.67.132
+  port: 40007
 
 downloadable_files:
-  - container/service.py
+- container/service.py
 
 challenge_id: b542733a-836d-4f09-a0c3-8ae8120a175f
 spec: 0.0.1
@@ -31,3 +34,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 500
+custom:
+  publish: true

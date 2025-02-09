@@ -9,16 +9,16 @@ description: |
   Good luck!
 
 authors:
-  - Orange Cyberdefense
+- Orange Cyberdefense
 categories:
-  - forensics
+- forensics
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: CTF{
 flags: ^3nc0d1ngh3ll^
 
 downloadable_files:
-  - flag
+- flag
 
 score: 250
 
@@ -27,3 +27,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

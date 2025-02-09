@@ -1,20 +1,21 @@
 title: vad är en bpf?
 description: haha documentation go brrrrrrrr
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 flag_format_prefix: SSM{
 flags: 3n_572b11_k0n57ruk710n_u72n_d0kum3n72710n
 
 downloadable_files:
-  - src/runner.c
-  - src/bpf_loader
+- src/runner.c
+- src/bpf_loader
 
 custom:
   build_script: build.sh
 
+  publish: true
 service:
   type: tcp
   image: container
@@ -23,9 +24,9 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40099
+- type: tcp
+  host: 188.126.67.132
+  port: 40099
 
 spec: 0.0.1
 

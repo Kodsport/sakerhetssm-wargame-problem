@@ -1,12 +1,13 @@
 title: Moryse
-description: Detta är en bild på Moryse. Han är inte den minsta biten bekymrad att du kommer klara hans uppgift.
+description: Detta är en bild på Moryse. Han är inte den minsta biten bekymrad att
+  du kommer klara hans uppgift.
 authors:
-  - DayDun
+- DayDun
 categories:
-  - forensics
+- forensics
 
 downloadable_files:
-  - moryse.jpg
+- moryse.jpg
 
 flag_format_prefix: SSM{
 flags: why_do_you_have_a_picture_of_moryse_on_your_computer
@@ -17,3 +18,5 @@ spec: 0.0.1
 score: 300
 human_metadata:
   event_name: SSM 2022 Final
+custom:
+  publish: true

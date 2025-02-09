@@ -1,11 +1,13 @@
 title: Ge mig flaggan!
 description: >
-  För att gömma data från avlyssnare har jag hittat på ett nytt protkoll där vi kominucerar genom exif data i bilder. Skicka mig det hemliga kommandot "gemigflaggan" för att bevisa din identitet.
+  För att gömma data från avlyssnare har jag hittat på ett nytt protkoll där vi kominucerar
+  genom exif data i bilder. Skicka mig det hemliga kommandot "gemigflaggan" för att
+  bevisa din identitet.
 
 authors:
-  - nnewram
+- nnewram
 categories:
-  - misc
+- misc
 
 flag_format_prefix: SSM{
 flags: 377_v41d1gt_d4117_pr070k011
@@ -17,8 +19,8 @@ service:
   external_port: 40785
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40785" # xx
+- type: website
+  url: http://188.126.67.132:40785     # xx
 
 # Migrated to main namespace
 #custom:
@@ -31,3 +33,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: Knäck Koden 2024
+custom:
+  publish: true

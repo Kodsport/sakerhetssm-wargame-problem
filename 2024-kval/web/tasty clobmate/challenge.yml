@@ -1,16 +1,16 @@
 title: Tasty Clob-Mate
 description: We are hosting a competition where you can create your own Clob-Mate!
 authors:
-  - ntomsic
+- ntomsic
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: d0mcl0bb3ring-is-fun-4ll-of-th3-t1m3
 
 downloadable_files:
-  - container/index.js
+- container/index.js
 
 service:
   type: website
@@ -19,8 +19,8 @@ service:
   external_port: 40051
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40051"
+- type: website
+  url: http://188.126.67.132:40051
 
 score: 400
 
@@ -29,3 +29,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2024 Kval
+custom:
+  publish: true

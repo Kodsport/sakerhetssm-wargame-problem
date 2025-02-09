@@ -4,15 +4,15 @@ description: |
 
   Sickans favoritverktyg för att bryta sig in i kassaskåp är <del>stetoskopet</del> Ghidra.
 authors:
-  - mkg
+- mkg
 categories:
-  - reversing
+- reversing
 
 flag_format_prefix: SSM{
 flags: J4g_h4r_3n_plan!_V1_beh0v3r_3n_plansk155_over_arl4nda......
 
 downloadable_files:
-  - franz-jager
+- franz-jager
 
 challenge_id: 1e0ad6b7-2737-4d06-843a-2fcf7389f6e8
 spec: 0.0.1
@@ -20,3 +20,5 @@ spec: 0.0.1
 score: 100
 human_metadata:
   event_name: SSM 2022 Kval
+custom:
+  publish: true

@@ -1,16 +1,16 @@
 title: Raderat lösenord
 description: Onej, jag har råkat radera lösenordet till flaggan från zip filen! Det kanske inte är helt borta dock...
 authors:
-  - Mateusz Drwal
+- Mateusz Drwal
 categories:
-  - forensics
+- forensics
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: anvand_battre_losenord_an_detta!
 
 downloadable_files:
-  - chall.zip
+- chall.zip
 
 # service:
 #   type: website
@@ -34,3 +34,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

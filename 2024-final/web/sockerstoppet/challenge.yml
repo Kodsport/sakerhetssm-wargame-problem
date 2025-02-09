@@ -1,12 +1,13 @@
 title: SockerStoppet
 description: >
-  Only people who sign the chefsgrädde-pledge get to order it! Fikamyndigheten can't let dirty bureaucrats just get ahold of the prima-ballarina grädde.
+  Only people who sign the chefsgrädde-pledge get to order it! Fikamyndigheten can't
+  let dirty bureaucrats just get ahold of the prima-ballarina grädde.
   <br>
   This challenge requires a dev-instance of BankID! Installera på egen risk.
 authors:
-  - Movitz Sunar
+- Movitz Sunar
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -20,11 +21,11 @@ service:
 
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40011"
+- type: website
+  url: http://188.126.67.132:40011
 
 downloadable_files:
-  - container.zip
+- container.zip
 
 challenge_id: 15a65ef4-a004-4c75-948f-4f92e120302a
 spec: 0.0.1
@@ -33,3 +34,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 300
+custom:
+  publish: true

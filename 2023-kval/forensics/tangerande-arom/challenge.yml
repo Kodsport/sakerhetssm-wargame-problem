@@ -1,17 +1,18 @@
 title: Tangerande Arom
-description: Snälla hjälp, jag har glömt flaggan! Som tur är spelar jag in all USB-trafik, just för sådana här situationer...
+description: Snälla hjälp, jag har glömt flaggan! Som tur är spelar jag in all USB-trafik,
+  just för sådana här situationer...
 
 authors:
-  - Movitz Sunar
+- Movitz Sunar
 categories:
-  - forensics
+- forensics
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: tur_a77_j4g_1n73_k0r_ps2
 
 downloadable_files:
-  - usb.pcapng
+- usb.pcapng
 
 score: 150
 
@@ -20,3 +21,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

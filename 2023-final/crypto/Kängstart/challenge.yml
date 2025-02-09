@@ -1,16 +1,17 @@
 title: Kängstart — FRA
-description: Knäck mig och hitta lösenordet. Notera att processorn behöver stödja AES-NI. Kör qemu-system-x86_64 boot.bin -cpu qemu64,+aes
-authors: 
-  - FRA
+description: Knäck mig och hitta lösenordet. Notera att processorn behöver stödja
+  AES-NI. Kör qemu-system-x86_64 boot.bin -cpu qemu64,+aes
+authors:
+- FRA
 categories:
-  - crypto
-  - reversing
+- crypto
+- reversing
 
 flag_format_prefix: SSM{
 flags: fiestel_ciphers_are_their_own_inverse
 
 downloadable_files:
-  - boot.bin
+- boot.bin
 
 score: 350
 
@@ -19,3 +20,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Final
+custom:
+  publish: true

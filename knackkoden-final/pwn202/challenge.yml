@@ -3,18 +3,23 @@ description: >
   Kan du knäcka mitt program?
 
 
-  Du kommer i denna utmaning få tillgång till ett så kallat "skal" som låter dig exekvera kommandon på vår server.
-  På servern så finns ett program som heter "listig" som ger dig flaggan om du ger den rätt argument.
-  Du exekverar programmet genom att köra kommandot "./listig <argument>", till exempel "./listig 1".
-  Leta online efter sätt att läsa ut filer i linux, läs ut programmet listig, och försök förstå vad för argument den förväntar sig, och vilka argument den inte förväntar sig!
+  Du kommer i denna utmaning få tillgång till ett så kallat "skal" som låter dig exekvera
+  kommandon på vår server.
+  På servern så finns ett program som heter "listig" som ger dig flaggan om du ger
+  den rätt argument.
+  Du exekverar programmet genom att köra kommandot "./listig <argument>", till exempel
+  "./listig 1".
+  Leta online efter sätt att läsa ut filer i linux, läs ut programmet listig, och
+  försök förstå vad för argument den förväntar sig, och vilka argument den inte förväntar
+  sig!
 
 
   Lösenordet för att få tillgång till terminalen är "admin"
 
 authors:
-  - Ellinor
+- Ellinor
 categories:
-  - pwn
+- pwn
 
 flag_format_prefix: SSM{
 flags: En_Listig_Flagga
@@ -26,8 +31,8 @@ service:
   external_port: 40889
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40889" # xx
+- type: website
+  url: http://188.126.67.132:40889     # xx
 
 # Migrated to main namespace
 #custom:
@@ -41,3 +46,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

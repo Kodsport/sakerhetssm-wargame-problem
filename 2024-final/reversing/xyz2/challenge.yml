@@ -1,5 +1,5 @@
-title: "XYZ: Part 2"
-description: > 
+title: 'XYZ: Part 2'
+description: >
   Good job on finding that thing in the disk image.
   We have been locked out of one of our other servers and we suspect
   they were compsomised by the same attacker. Can you try to regain access to it.
@@ -7,10 +7,10 @@ description: >
   Note: The service can be found in "XYZ: Part 1"
 
 authors:
-  - ZetaTwo
+- ZetaTwo
 categories:
-  - reversing
-  - crypto
+- reversing
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -25,3 +25,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 450
+custom:
+  publish: true

@@ -1,18 +1,19 @@
 title: Alldeles vanlig Python
-description: Kan man verkligen kalla det för "reverse engineering" om man får tillgång till källkoden?
+description: Kan man verkligen kalla det för "reverse engineering" om man får tillgång
+  till källkoden?
 authors:
-  - toblu
+- toblu
 categories:
-  - reversing
+- reversing
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: massor_av_skumma_lager
 
 downloadable_files:
-  - challenge.py
-  - Dockerfile
-  - run.sh
+- challenge.py
+- Dockerfile
+- run.sh
 
 challenge_id: b962b23a-224f-4662-9f30-b1e7d4b854a5
 spec: 0.0.1
@@ -20,3 +21,5 @@ spec: 0.0.1
 score: 150
 human_metadata:
   event_name: SSM 2022 Kval
+custom:
+  publish: true

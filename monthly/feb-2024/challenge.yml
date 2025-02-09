@@ -8,6 +8,8 @@ categories:
 downloadable_files:
   - chall.sage
 
+score: 500
+
 flag_format_prefix: SSM{
 flags: my573r137_e_l0s7 :)
 

@@ -3,16 +3,16 @@ description: >
   Har ni hört om modulo innan? Enligt Ceasar är det också väldigt populärt bland kryptografi ungdomarna nuförtiden. Professor Chopingu nämnde också modulo [klicka här](https://github.com/chopingu/ctf/blob/main/lectures/bootcamp_2024/slides.pdf) och sade även att sagemath ska hantera sådant väl (https://cocalc.com/features/sage)
 
 authors:
-  - chopingu
+- chopingu
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: m0dul0_4r_s4_tr3vl1gt
 
 downloadable_files:
-  - src.py
+- src.py
 
 # service:
 #   type: website
@@ -36,3 +36,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

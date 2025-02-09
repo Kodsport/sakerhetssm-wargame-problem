@@ -1,9 +1,11 @@
 title: Fikamachine
-description: As you entered the monument that is Fikamyndigheten, you soon discover a golden treasure, a machine full of gifflar. Maybe you should stop and take a fika before meeting the GD.
+description: As you entered the monument that is Fikamyndigheten, you soon discover
+  a golden treasure, a machine full of gifflar. Maybe you should stop and take a fika
+  before meeting the GD.
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 flag_format_prefix: SSM{
 flags: 7h3_f1k4_w111_b3_s3rv3d_by_FRAs_4r32_2r0und_10_4nd_16
@@ -16,17 +18,18 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40005
+- type: tcp
+  host: 188.126.67.132
+  port: 40005
 
 downloadable_files:
-  - fikamachine2.c
-  - container/fikamachine2
+- fikamachine2.c
+- container/fikamachine2
 
 custom:
   build_script: build.sh
 
+  publish: true
 challenge_id: cf06de2a-96f7-4bd3-b8a3-43987a77e4b7
 spec: 0.0.1
 

@@ -1,17 +1,17 @@
 title: Miniräknare
 description: Vi fick en lite konstig miniräknare till crypto provet, nåt verkar fel...
 authors:
-  - nnewram
+- nnewram
 categories:
-  - crypto
+- crypto
 
 flag_format_prefix: SSM{
 flags: m1n_m1n1_m1n1r4kn4r3
 
 downloadable_files:
-  - rsa.py
-  - miniräknare.py
-  - output.txt
+- rsa.py
+- miniräknare.py
+- output.txt
 
 challenge_id: 5c64454d-7e64-46b6-b549-39e3d65dd9d6
 spec: 0.0.1
@@ -19,3 +19,5 @@ spec: 0.0.1
 score: 150
 human_metadata:
   event_name: SSM 2023 Final
+custom:
+  publish: true

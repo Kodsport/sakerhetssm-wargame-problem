@@ -1,9 +1,9 @@
 title: BlackSmith
 description: Welcome to our store! Please tell us what you want to forge
 authors:
-  - chopingu
+- chopingu
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -17,12 +17,12 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40048
+- type: tcp
+  host: 188.126.67.132
+  port: 40048
 
 downloadable_files:
-  - container/service.py
+- container/service.py
 
 score: 350
 
@@ -32,3 +32,5 @@ spec: 0.0.1
 human_metadata:
   event_name: SSM 2024 Kval
 
+custom:
+  publish: true

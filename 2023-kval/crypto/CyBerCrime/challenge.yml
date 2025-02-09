@@ -1,9 +1,11 @@
 title: CyBerCrimes
-description: Jag har hört att AES i CBC-läge ska vara oknäckbart. Lycka till att komma åt min hemliga data! För att du verkligen ska förstå hur långt ifrån min data du är får du till och med veta det varje försök du gör >:)
+description: Jag har hört att AES i CBC-läge ska vara oknäckbart. Lycka till att komma
+  åt min hemliga data! För att du verkligen ska förstå hur långt ifrån min data du
+  är får du till och med veta det varje försök du gör >:)
 authors:
-  - Xenia Lööv
+- Xenia Lööv
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -21,7 +23,7 @@ predefined_services:
     port: 40073
 
 downloadable_files:
-  - container/service.py
+- container/service.py
 
 score: 300
 
@@ -30,3 +32,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

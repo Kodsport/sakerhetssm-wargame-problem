@@ -1,9 +1,9 @@
 title: Phototub
 description: Check out my new photo sharing site, Phototub!
 authors:
-  - Mateusz Drwal
+- Mateusz Drwal
 categories:
-  - web
+- web
 
 flag_format_prefix: SSM{
 flags: uh_0h_54n171z3_y0ur_upl04d5_pr0p3rly
@@ -17,9 +17,10 @@ service:
 custom:
   build_script: build.sh
 
+  publish: true
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40039/"
+- type: website
+  url: http://188.126.67.132:40039/
 
 challenge_id: e3d076d4-1fae-437a-bd16-60419b630af6
 spec: 0.0.1

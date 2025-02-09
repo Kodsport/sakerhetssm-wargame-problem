@@ -1,18 +1,19 @@
 title: Inden'tation
-description: Mina kolegor klagar på att koden är ful, men va gör det för skillnad om den kör ändå?\n(Kräver gcc och wsl för windows)
+description: Mina kolegor klagar på att koden är ful, men va gör det för skillnad
+  om den kör ändå?\n(Kräver gcc och wsl för windows)
 authors:
-  - Adrian Wireklint
+- Adrian Wireklint
 categories:
-  - reversing
+- reversing
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: au70foRm4t_Ma5t3rraC3
 
 downloadable_files:
-  - main.cpp
-  - run.sh
-  - Hello World.txt
+- main.cpp
+- run.sh
+- Hello World.txt
 
 challenge_id: c1157ff4-8888-465e-bebb-83f88e346023
 spec: 0.0.1
@@ -20,3 +21,5 @@ spec: 0.0.1
 score: 300
 human_metadata:
   event_name: SSM 2023 Final
+custom:
+  publish: true

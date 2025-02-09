@@ -2,9 +2,9 @@ title: Signal
 description: |
   I keep catching the wrong signals, how does this stuff work anyway?
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -18,16 +18,17 @@ service:
   privileged: true
 
 downloadable_files:
-  - container/signal
+- container/signal
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40096
+- type: tcp
+  host: 188.126.67.132
+  port: 40096
 
 custom:
   build_script: build.sh
 
+  publish: true
 score: 450
 
 challenge_id: 345b158c-cf60-45ed-8ab4-50e6e32979b9

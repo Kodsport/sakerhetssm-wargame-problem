@@ -1,9 +1,9 @@
 title: Super Säker Säkerhet
 description: Mitt lösenord är oknäckbart! Det är bokstavligen slumpmässigt!
 authors:
-  - Laith Abbawi
+- Laith Abbawi
 categories:
-  - pwn
+- pwn
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -17,12 +17,12 @@ service:
   privileged: true
 
 downloadable_files:
-  - main.c
+- main.c
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40013
+- type: tcp
+  host: 188.126.67.132
+  port: 40013
 
 score: 200
 
@@ -31,3 +31,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

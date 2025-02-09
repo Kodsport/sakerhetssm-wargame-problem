@@ -1,17 +1,17 @@
-title: "XYZ: Part 1"
-description: > 
-  Several of our servers have been acting 
-  a bit strangely recently. We suspect something bad has happened to it.
+title: 'XYZ: Part 1'
+description: >
+  Several of our servers have been acting  a bit strangely recently. We suspect something
+  bad has happened to it.
   We managed to create a disk image of one of them.
   Can you take a look and see if you can find anything suspicious.
 
   Note: The service is only relevant for "XYZ: Part 2"
 
 authors:
-  - ZetaTwo
+- ZetaTwo
 categories:
-  - forensics
-  - reversing
+- forensics
+- reversing
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -20,7 +20,7 @@ flags: based_0n_4_Tru3_St0ry
 # xyz.tar.gz (DO NOT REBUILD OR OVERWRITE THIS FILE - WILL LEAK FLAG!)
 # TODO: before archive, ping ZetaTwo
 downloadable_files:
-  - https://drive.google.com/file/d/1qfwPtbfSZKY8AGuRtyeQfi5KyNe3Wkgb/view?usp=drive_link
+- https://drive.google.com/file/d/1qfwPtbfSZKY8AGuRtyeQfi5KyNe3Wkgb/view?usp=drive_link
 
 # service for part 2
 service:
@@ -41,3 +41,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 250
+custom:
+  publish: true

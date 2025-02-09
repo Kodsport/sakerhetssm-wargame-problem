@@ -1,14 +1,14 @@
 title: Sudoku skilldiff
 description: >
   Visa dina sudokuskills och få flaggan, det behövs bara 200 felfria lösningar, eller?
-  
-  
+
+
   Sätt fart!
 
 authors:
-  - nnewram
+- nnewram
 categories:
-  - web
+- web
 
 flag_format_prefix: SSM{
 flags: sud0_sud0ku_m4s73r
@@ -20,8 +20,8 @@ service:
   external_port: 40675
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40675" # xx
+- type: website
+  url: http://188.126.67.132:40675     # xx
 
 # Migrated to main namespace
 #custom:
@@ -35,3 +35,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

@@ -1,9 +1,12 @@
 title: Pølse by Damgård
-description: I heard that the Aarhus startup Pølse by Damgård has been attracting a lot of customers lately with his secret mustard recipe and a small sprinkle of salt and pepper. They also give a small sample to every new customer! Let's check it out!!!
+description: I heard that the Aarhus startup Pølse by Damgård has been attracting
+  a lot of customers lately with his secret mustard recipe and a small sprinkle of
+  salt and pepper. They also give a small sample to every new customer! Let's check
+  it out!!!
 authors:
-  - chopingu
+- chopingu
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -17,12 +20,12 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40009
+- type: tcp
+  host: 188.126.67.132
+  port: 40009
 
 downloadable_files:
-  - container/service.py
+- container/service.py
 
 challenge_id: 4b3d7bbc-2a7f-4aff-a900-c42f371eebbc
 spec: 0.0.1
@@ -31,3 +34,5 @@ human_metadata:
   event_name: SSM 2024 Final
 
 score: 500
+custom:
+  publish: true

@@ -1,13 +1,14 @@
 title: Colours
-description: Jag höll precis på att måla klart en fantastiskt fin bild men så kraschade programmet. Kan du få tillbaka min målning?
+description: Jag höll precis på att måla klart en fantastiskt fin bild men så kraschade
+  programmet. Kan du få tillbaka min målning?
 authors:
-  - ZetaTwo
+- ZetaTwo
 categories:
-  - forensics
+- forensics
 
 # colours.zip: sha256 42e329a4f6f8a470054027360c09d2eea8b765b6f08485b19989f4ed6017116f
 downloadable_files:
-  - https://drive.google.com/file/d/16c4TptfyzZSXi-HURrtvAlcbak8TdEIC/view?usp=sharing
+- https://drive.google.com/file/d/16c4TptfyzZSXi-HURrtvAlcbak8TdEIC/view?usp=sharing
 
 flag_format_prefix: SSM{
 flags: p1cass0_dMp
@@ -18,3 +19,5 @@ spec: 0.0.1
 score: 300
 human_metadata:
   event_name: SSM 2022 Final
+custom:
+  publish: true

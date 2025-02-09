@@ -1,9 +1,10 @@
 title: PTSd
-description: Post och Telestyrelsen regularly deals with inputs and outputs, I'm sick and tired of their foolishness. THIS is how it's done.
+description: Post och Telestyrelsen regularly deals with inputs and outputs, I'm sick
+  and tired of their foolishness. THIS is how it's done.
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 flag_format_prefix: SSM{
 flags: y0ur_0u7pu7_15_b310ng_70_u5
@@ -21,11 +22,12 @@ predefined_services:
   port: 40004
 
 downloadable_files:
-  - PTSd.c
-  - container/PTSd
+- PTSd.c
+- container/PTSd
 
 custom:
   build_script: build.sh
+  publish: true
 score: 500
 
 challenge_id: 9ce9a7b5-8d09-4b1b-87e5-d475fea26d2b

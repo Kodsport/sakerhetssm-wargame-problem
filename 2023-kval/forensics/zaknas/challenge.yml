@@ -1,16 +1,17 @@
 title: Zaknas
-description: Jag zippade ihop några bilder jag tagit, men när jag öppnar zippen så verkar en bild zaknas. Jag kan svära på att bilden fortfarande finns där inne...
+description: Jag zippade ihop några bilder jag tagit, men när jag öppnar zippen så
+  verkar en bild zaknas. Jag kan svära på att bilden fortfarande finns där inne...
 authors:
-  - Xenia Lööv
+- Xenia Lööv
 categories:
-  - forensics
+- forensics
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: zn34ky_zn34ky_b1nw4lk_l34ky
 
 downloadable_files:
-  - zaknas.zip
+- zaknas.zip
 
 score: 150
 
@@ -19,3 +20,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

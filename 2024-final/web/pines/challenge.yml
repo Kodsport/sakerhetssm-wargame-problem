@@ -1,26 +1,29 @@
 title: Skógræktin
-description: Skógræktin have made attempts to upgrade the legacy pine counting system. The new system is in a transitional phase, but Iceland still need to count their pines. Please help us exploit their website, so that we can replace all the pine trees with birch!
+description: Skógræktin have made attempts to upgrade the legacy pine counting system.
+  The new system is in a transitional phase, but Iceland still need to count their
+  pines. Please help us exploit their website, so that we can replace all the pine
+  trees with birch!
 authors:
-  - ntomsic
+- ntomsic
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: php_leg4cy_p1n3s_c0unt3d
 
 downloadable_files:
-   - container/index.js
+- container/index.js
 
 service:
-   type: website
-   image: container
-   internal_port: 3000
-   external_port: 40012
+  type: website
+  image: container
+  internal_port: 3000
+  external_port: 40012
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40012"
+- type: website
+  url: http://188.126.67.132:40012
 
 challenge_id: ed917fed-e23d-4bde-9ff6-4a5718de428c
 spec: 0.0.1
@@ -30,3 +33,5 @@ human_metadata:
 
 
 score: 250
+custom:
+  publish: true

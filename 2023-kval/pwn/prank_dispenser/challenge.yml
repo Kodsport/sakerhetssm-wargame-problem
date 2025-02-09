@@ -2,9 +2,9 @@ title: Prank dispenser
 description: |
   Den här uppgiften innehåller 0 pranks, jag lovar
 authors:
-  - Mateusz Drwal
+- Mateusz Drwal
 categories:
-  - pwn
+- pwn
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -18,16 +18,17 @@ service:
   privileged: true
 
 downloadable_files:
-  - main.c
+- main.c
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40068
+- type: tcp
+  host: 188.126.67.132
+  port: 40068
 
 custom:
   build_script: build.sh
 
+  publish: true
 score: 100
 
 challenge_id: 498b2772-0f4a-4185-9503-dc53a84e3291

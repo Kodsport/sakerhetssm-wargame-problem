@@ -1,17 +1,18 @@
 title: Pyttipanna 3
-description: Att sortera tillbaka en flagga är ännu svårare när man inte känner till den!
+description: Att sortera tillbaka en flagga är ännu svårare när man inte känner till
+  den!
 authors:
-  - Xenia Lööv
+- Xenia Lööv
 categories:
-  - reversing
+- reversing
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: n3xt-t1m3-u5e-f15her-yat35!
 
 downloadable_files:
-  - shuffle.py
-  - given.txt
+- shuffle.py
+- given.txt
 
 score: 200
 
@@ -20,3 +21,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

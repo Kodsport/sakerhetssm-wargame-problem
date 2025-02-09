@@ -1,9 +1,9 @@
 title: Pickle Clicker
 description: Click to your hearts content, but dont forget to save
 authors:
-  - Rasmus Hulthe
+- Rasmus Hulthe
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -19,8 +19,8 @@ service:
 #   - container/server.py
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40024/"
+- type: website
+  url: http://188.126.67.132:40024/
 
 score: 350
 
@@ -29,3 +29,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

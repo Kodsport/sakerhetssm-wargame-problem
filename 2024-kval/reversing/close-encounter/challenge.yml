@@ -1,10 +1,11 @@
 title: Close Encounter of the C Kind
-description: I found some 70s aliens in my netcat, help me get rid of them? I've also got a copy of their mothership's mainframe!
+description: I found some 70s aliens in my netcat, help me get rid of them? I've also
+  got a copy of their mothership's mainframe!
 authors:
-  - 4d11
+- 4d11
 categories:
-  - reversing
-  - easy
+- reversing
+- easy
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -18,12 +19,12 @@ service:
   privileged: true
 
 predefined_services:
-  - type: tcp
-    host: 188.126.67.132
-    port: 40046
+- type: tcp
+  host: 188.126.67.132
+  port: 40046
 
 downloadable_files:
-  - container/service
+- container/service
 
 score: 150
 
@@ -32,3 +33,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2024 Kval
+custom:
+  publish: true

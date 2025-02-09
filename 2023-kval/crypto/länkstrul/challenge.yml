@@ -1,29 +1,29 @@
 title: Länkstrul
 description: |
   Oj, nu har några länkar snurra till sig, kan du fixa den <span style="color: #d48600">orangea</span> delen av länken?
-  
+
   https://arkiv.sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">rmxffs</span>
   https://arkiv.sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">gtqqz</span>
   https://arkiv.sakerhetssm.se/<span style="color: #d48600; font-size: 1.5em">fqzsshr</span>
-  
+
   Ange den rätta sökvägen som flagga.
 authors:
-  - Aron Bergman
-  - Mateusz Drwal
-  - Xenia Lööv
-  - Oskar Tornevall
+- Aron Bergman
+- Mateusz Drwal
+- Xenia Lööv
+- Oskar Tornevall
 categories:
-  - crypto
+- crypto
 
 # set the flag_format_prefix to `null` to not use the flag format
-flag_format_prefix: null
+flag_format_prefix:
 flags:
-  - flag: "hurra"
-  - flag: "grattis"
-  - flag: "snyggt"
-  - flag: "SSM{hurra}"
-  - flag: "SSM{grattis}"
-  - flag: "SSM{snyggt}"
+- flag: hurra
+- flag: grattis
+- flag: snyggt
+- flag: SSM{hurra}
+- flag: SSM{grattis}
+- flag: SSM{snyggt}
 
 score: 100 # ändra inte, vi har sagt att den här är värd 100 poäng på hemsidan
 
@@ -33,3 +33,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

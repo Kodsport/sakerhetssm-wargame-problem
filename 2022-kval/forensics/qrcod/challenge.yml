@@ -1,17 +1,18 @@
 title: QR cod
-description: Onej! Vi glömde stänga av vår printers integrerade sax när vi skrev ut vår kod!
+description: Onej! Vi glömde stänga av vår printers integrerade sax när vi skrev ut
+  vår kod!
 
 authors:
-  - Mateusz Drwal
-  - Xenia Lööv
+- Mateusz Drwal
+- Xenia Lööv
 categories:
-  - forensics
+- forensics
 
 flag_format_prefix: SSM{
 flags: 1_h34rd_y0u_h473_m4rk3r5_50_1_r3m0v3d_y0ur_m4rk3r
 
 downloadable_files:
-  - qrcod.jpg
+- qrcod.jpg
 
 spec: 0.0.1
 
@@ -20,3 +21,5 @@ challenge_id: 4eb1d117-f76a-49e1-9ce0-e5c0668bc665
 score: 150
 human_metadata:
   event_name: SSM 2022 Kval
+custom:
+  publish: true

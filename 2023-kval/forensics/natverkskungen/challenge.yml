@@ -1,16 +1,17 @@
 title: Nätverkskungen — FRA
-description: Jag lyckades få till mig ett par filer, men jag har ingen aning vad de är :(. Vad ska jag göra nu?
+description: Jag lyckades få till mig ett par filer, men jag har ingen aning vad de
+  är :(. Vad ska jag göra nu?
 authors:
-  - FRA
+- FRA
 categories:
-  - forensics
+- forensics
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags: k3dj0r_4r_f4rl1g4
 
 downloadable_files:
-  - chall.pcapng
+- chall.pcapng
 
 score: 400
 
@@ -19,3 +20,5 @@ spec: 0.0.1
 
 human_metadata:
   event_name: SSM 2023 Kval
+custom:
+  publish: true

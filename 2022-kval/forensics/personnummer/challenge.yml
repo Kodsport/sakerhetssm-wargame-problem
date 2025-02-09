@@ -1,27 +1,30 @@
 title: Personnummer
 description: >
-  Organisatörerna av Personnummersäkerhets-SM fick precis in en ny ansökan till sin personnummersäkerhetsexpertposition.
-  Men för att anställningen ska kunna gå igenom behöver organisatörerna veta den ansökandes personnummer! Kan du hjälpa till att hitta Sörens personnummer?
+  Organisatörerna av Personnummersäkerhets-SM fick precis in en ny ansökan till sin
+  personnummersäkerhetsexpertposition.
+  Men för att anställningen ska kunna gå igenom behöver organisatörerna veta den ansökandes
+  personnummer! Kan du hjälpa till att hitta Sörens personnummer?
 
-  Kom ihåg att sätta SSM{} runt personnummret, samt att personnummer är 10 siffror långa och har bindesstreck i sig!
+  Kom ihåg att sätta SSM{} runt personnummret, samt att personnummer är 10 siffror
+  långa och har bindesstreck i sig!
 
 authors:
-  - Xenia Lööv
+- Xenia Lööv
 categories:
-  - forensics
-  - osint
+- forensics
+- osint
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
 flags:
-  - flag: "840604-3219"
-  - flag: "840604-3235"
-  - flag: "840604-3250"
-  - flag: "840604-3276"
-  - flag: "840604-3292"
+- flag: 840604-3219
+- flag: 840604-3235
+- flag: 840604-3250
+- flag: 840604-3276
+- flag: 840604-3292
 
 downloadable_files:
-  - cv.pdf
+- cv.pdf
 
 challenge_id: 70b1cee3-8110-4793-b390-de8662edf7d8
 spec: 0.0.1
@@ -29,3 +32,5 @@ spec: 0.0.1
 score: 200
 human_metadata:
   event_name: SSM 2022 Kval
+custom:
+  publish: true

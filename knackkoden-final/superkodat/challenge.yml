@@ -1,10 +1,15 @@
 title: Superkodat
-description: "Det kallas security by obscurity! Jag orkar inte kryptera min flagga, så jag kodar om den massa bara! NDY0NjVhN2I3YTZlNmM2ZjcyNWY2MTYyNjc1ZjY2NjI2MjVmNjY3MjcwNjg2NTcyN2Q="
+description: Det kallas security by obscurity! Jag orkar inte kryptera min flagga,
+  så jag kodar om den massa bara! NDY0NjVhN2I3YTZlNmM2ZjcyNWY2MTYyNjc1ZjY2NjI2MjVmNjY3MjcwNjg2NTcyN2Q=
 
 authors:
-  - Movitz Sunar
+- Movitz Sunar
 categories:
+<<<<<<< Updated upstream
   - crypto
+=======
+- kryptografi
+>>>>>>> Stashed changes
 
 flag_format_prefix: SSM{
 flags: maybe_not_soo_secure
@@ -21,3 +26,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

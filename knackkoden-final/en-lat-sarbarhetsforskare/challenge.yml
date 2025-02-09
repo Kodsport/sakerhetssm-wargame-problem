@@ -1,17 +1,19 @@
 title: En lat sårbarhetsforskare
 description: >
-  Öppen källkod har ofta problem, ibland identifieras de och glöms bort, nu är det din tur att återupptäcka en riktig sårbarhet!
-  
-  
-  GitHub är ett ställe där öppen källkod kan delas, du kan söka genom denna koden med grep.app eller sourcegraph (googla).
+  Öppen källkod har ofta problem, ibland identifieras de och glöms bort, nu är det
+  din tur att återupptäcka en riktig sårbarhet!
+
+
+  GitHub är ett ställe där öppen källkod kan delas, du kan söka genom denna koden
+  med grep.app eller sourcegraph (googla).
 
 
   Ge mig en sårbarhet!
 
 authors:
-  - nnewram
+- nnewram
 categories:
-  - pwn
+- pwn
 
 flag_format_prefix: SSM{
 flags: h4ck4_pl4n373n
@@ -23,8 +25,8 @@ service:
   external_port: 40965
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40965"
+- type: website
+  url: http://188.126.67.132:40965
 
 # Migrated to main namespace
 #custom:
@@ -38,3 +40,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true

@@ -1,9 +1,10 @@
 title: Osynligt bläck
-description: Flaggan finns på sidan, men du behöver kolla närmare än vanligt för att se den.
+description: Flaggan finns på sidan, men du behöver kolla närmare än vanligt för att
+  se den.
 authors:
-  - toblu
+- toblu
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -19,9 +20,11 @@ challenge_id: af0d9ea3-5146-4b65-bfbe-a14391b24c08
 spec: 0.0.1
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40040/"
+- type: website
+  url: http://188.126.67.132:40040/
 
 score: 50
 human_metadata:
   event_name: SSM 2022 Kval
+custom:
+  publish: true

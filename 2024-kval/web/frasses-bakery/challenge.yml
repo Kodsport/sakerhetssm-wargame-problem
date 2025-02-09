@@ -1,9 +1,13 @@
 title: Frasse's Bakery
-description: Frasse's bakery is absolutely tremendous, believe me. It's the best bakery you've ever seen, really. But let me tell you, folks, there's a threat looming over it. A bigly threat. We can't let anything bad happen to it, folks. We need to protect Frasse's bakery at all costs, because it's the greatest bakery in the history of bakeries. And believe me, we're going to make sure it stays that way, right?
+description: Frasse's bakery is absolutely tremendous, believe me. It's the best bakery
+  you've ever seen, really. But let me tell you, folks, there's a threat looming over
+  it. A bigly threat. We can't let anything bad happen to it, folks. We need to protect
+  Frasse's bakery at all costs, because it's the greatest bakery in the history of
+  bakeries. And believe me, we're going to make sure it stays that way, right?
 authors:
-  - ghagl
+- ghagl
 categories:
-  - web
+- web
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -16,16 +20,17 @@ service:
   external_port: 40053
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40053"
+- type: website
+  url: http://188.126.67.132:40053
 
 downloadable_files:
-  - container/main.go
+- container/main.go
 
 
 custom:
   build_script: build.sh
 
+  publish: true
 score: 150
 
 challenge_id: e63402bf-457a-41f9-90f0-bbef90d88940

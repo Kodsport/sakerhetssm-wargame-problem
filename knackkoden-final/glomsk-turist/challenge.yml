@@ -1,9 +1,11 @@
-title: Glömsk turist 
-description: Svante har varit på semester och tog ett fint foto. han blev tyvärr infekterad av ett skibidi-virus och har helt glömt bort vart fotot togs. Hjälp svante och hitta platsen!!!
+title: Glömsk turist
+description: Svante har varit på semester och tog ett fint foto. han blev tyvärr infekterad
+  av ett skibidi-virus och har helt glömt bort vart fotot togs. Hjälp svante och hitta
+  platsen!!!
 authors:
-  - LiamoOo
+- LiamoOo
 categories:
-  - osint
+- osint
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: SSM{
@@ -16,8 +18,8 @@ service:
   external_port: 40890
 
 predefined_services:
-  - type: website
-    url: "http://188.126.67.132:40890"
+- type: website
+  url: http://188.126.67.132:40890
 
 # Migrated to main namespace
 #custom:
@@ -31,3 +33,5 @@ spec: 0.0.1
 human_metadata:
   event_name: Knäck Koden 2024
 
+custom:
+  publish: true
