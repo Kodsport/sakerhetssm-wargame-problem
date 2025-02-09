@@ -1,0 +1,26 @@
+title: Uppvärmning
+description: 'Det här med ny teknologi? Min grill har 32 knappar, och hur jag än trycker
+  och skruvar verkar den inte sätta en jämn värme.
+
+  Kan du hjälpa mig läsa manualen?
+
+
+  (VARNING: Trots implikationen i namnet så är detta inte den lättaste uppgiften.)'
+authors:
+- Caspian
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: GrillenGl0mdeUseAfterZ33
+service:
+  type: tcp
+  image: docker
+  internal_port: 50011
+  external_port: 40038
+downloadable_files:
+- grill
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 3ab3f574-1c27-4344-9498-1cbdc0e1824f
+spec: 0.0.1

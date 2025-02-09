@@ -1,0 +1,41 @@
+title: Färgteori
+description: 'Till: deltagare@foi.se
+
+  Från: peter@foi.se
+
+  Hinner inte till presentation!
+
+
+  Tja!
+
+
+  Jag skulle hålla en presentation för chefen på måndag men
+
+  jag har fått förhinder. Eftersom att du behöver smöra lite
+
+  för chefen och för att du är skyldig mig en så får du köra
+
+  presenationen istället för mig. Jag har en presentation
+
+  som nästan är klar, så kika på den och lös något.
+
+
+  Ses på den tunna isen,
+
+  Peter!
+
+
+  Bifogat: dig-rep-farg.pptx'
+authors:
+- Denise
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: färgglad
+downloadable_files:
+- dig-rep-farg.pptx
+score: 350
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 1de9df73-99bf-4638-83c1-947542cd54b7
+spec: 0.0.1

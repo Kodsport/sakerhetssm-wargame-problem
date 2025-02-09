@@ -1,0 +1,15 @@
+title: Åttahundratvå punkt elva
+description: Någon försökte sälja mig en trådlös flagga för det priset.
+authors:
+- Johan
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: kanske_hade_wep_varit_ett_alternativ
+downloadable_files:
+- chall.pcapng.xz
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: fd58c01f-1be8-49f4-991e-e995397cffc0
+spec: 0.0.1

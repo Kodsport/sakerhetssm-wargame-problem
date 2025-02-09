@@ -1,0 +1,20 @@
+title: Hönan och Ägget
+description: "Har du ofta problemet att din processorkraft är för svag? Och att program\
+  \ du kompilerar tar för lång tid att kompilera?\n  Testa då vår alldeles egna kompileringstjänst!\
+  \ Flaggan återfinnes i `/flag.txt`."
+authors:
+- Caspian
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: HenMakesEggEggMakesHenHenMakesEgg
+service:
+  type: website
+  image: docker
+  internal_port: 5000
+  external_port: 40108
+score: 150
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 200929c8-3b3c-4959-88a5-43aa2a2bfbd5
+spec: 0.0.1

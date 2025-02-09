@@ -1,0 +1,19 @@
+title: AdGuard 2000
+description: Någon har använt en annonsbevakares databas för att lagra hemligheter
+  i.
+authors:
+- larshson
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: use_sql_statements_for_injections_not_bleach
+service:
+  type: website
+  image: docker
+  internal_port: 80
+  external_port: 40132
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 262bbd86-6c50-4ee1-b2ca-878a1677a6b5
+spec: 0.0.1

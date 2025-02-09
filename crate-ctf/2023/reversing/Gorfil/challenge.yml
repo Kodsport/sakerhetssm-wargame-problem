@@ -1,0 +1,18 @@
+title: (G)örfil
+description: 'Make är ett väldigt enkelt byggsystem och den här makefilen är skriven
+  med läsbarhet som absolut
+
+  högsta prioritet.'
+authors:
+- Mathias Magnusson
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: checktheflag
+downloadable_files:
+- Makefile
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: 0544f5cf-0c93-4aa2-844c-f7a3b4920497
+spec: 0.0.1

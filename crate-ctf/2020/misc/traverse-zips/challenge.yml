@@ -1,0 +1,16 @@
+title: Lager av zippar
+description: En lösenordsskyddad .zip. Lösenordet är den fyrasiffriga kod som utgör
+  filnamnet på nästa zipfil.
+authors:
+- toblu
+categories:
+- misc
+flag_format_prefix: 2020ctf{
+flags: hoppas_du_inte_gjorde_detta_manuellt
+downloadable_files:
+- 3466.zip
+score: 50
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: 29e54ffd-0232-4296-a69b-99556029d384
+spec: 0.0.1

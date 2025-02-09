@@ -1,0 +1,32 @@
+title: Min 90
+description: 'Olle "Epa-Kungen" Karlsson är tillbaka, denna gång med en multiprodukt.
+  För två och en halv hundralapp får man en låda som utöver displaysystemen kopplas
+  in som en "injektorbrygga" (wtf?) över styrboxen.
+
+
+  Vi frågade honom på snapchat hur i hela världen den kan fungera, men han svarade
+  bara "testa å kör ba vetja. haru swish?". Sagt och gjort, ta mig tusan. Billigaste
+  trimkittet på marknaden.
+
+
+  En fiffig funktion är att den bakre displayen tänds under 10 sekunder i samband
+  med att man aktiverar maxhastighet på 90km/h eller mer. Då kan man skicka ett tydligt
+  budskap till de söndagsförare man bränner förbi på rakorna.'
+authors:
+- larshson
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: vilken_forsakring_tacker_egentligen_detta
+service:
+  type: tcp
+  image: docker
+  internal_port: 5020
+  external_port: 40142
+downloadable_files:
+- traktor_2.jpg
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: fa55548b-d501-44fe-b771-4f0bcc8435bb
+spec: 0.0.1

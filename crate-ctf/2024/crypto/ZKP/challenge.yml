@@ -1,0 +1,30 @@
+title: Zebran, Koordinaterna och Piraterna
+description: 'Att innehava en Zebra är extremt värdefullt, pirat 1 påstod sig veta
+  koordinaterna till var pirat 2 kunde hitta en.
+
+  Pirat 1 visste faktiskt inte var Zebran var. Därför lyckades han komma överens om
+  att leveransen skulle komma efter att betalningen var gjord.
+
+  "Då måste du bevisa att du vet var Zebran är i förhand" utbrast pirat 2.
+
+  Pirat 1 var tvungen att bevisa att han visste var zebran var, utan att delge en
+  plats.'
+authors:
+- Caspian
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: pirat1_var_långt_från_pirat2_när_koordinaterna_levererades
+service:
+  type: tcp
+  image: docker
+  internal_port: 50008
+  external_port: 40104
+downloadable_files:
+- main.c
+- libc.so.6
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 2a166fcc-62e9-4b9d-862d-d58069134457
+spec: 0.0.1

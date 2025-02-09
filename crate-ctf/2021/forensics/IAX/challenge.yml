@@ -1,0 +1,18 @@
+title: IAX
+description: 'Vi fick ta del av lite läckt data från IAX-intrånget härom veckan.
+
+
+  Observera att alla bokstäver i flaggan är lowercase. Heja heja friskt humör!'
+authors:
+- larshson
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: heja_supporten_friskt_humor
+downloadable_files:
+- iax.pcap.xz
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: f410ab51-6050-4b6d-b64e-f446b2466487
+spec: 0.0.1

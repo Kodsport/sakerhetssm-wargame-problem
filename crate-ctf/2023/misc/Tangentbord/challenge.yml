@@ -1,0 +1,25 @@
+title: Tangentbord
+description: 'Vi hittade ett tangentbord med texten "ultimate speed" skrivet på sidan
+  och kopplade in det, men det verkar inte riktigt fungera som det ska...
+
+
+  ctf:Vhbmhkbk91o6wams'
+authors:
+- Johan
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: dvorak_gets_better_with_practice
+custom_service_types:
+  - type: ssh
+    display: ssh ctf@{host} -p {port}
+service:
+  type: ssh
+  image: docker
+  internal_port: 22
+  external_port: 40109
+score: 50
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: e75db160-254a-4833-af89-68177d42a9bc
+spec: 0.0.1

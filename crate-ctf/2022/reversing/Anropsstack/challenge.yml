@@ -1,0 +1,25 @@
+title: Så går vi ner i vår anropsstack
+description: 'Vi gjorde ett verktyg för att kontrollera så att flaggan ser ut som
+  den ska, men efter en hårddiskkrasch så har själva flaggan gått förlorad.
+
+  Men vi har en kraschdump från en tidigare körning av programmet, går det att få
+  ut flaggan från den?
+
+
+  Tips: i GDB kan kommandot `set sysroot <path>` användas för att ladda in bibliotek
+  (.so-filer) från en specifik mapp.'
+authors:
+- Johan
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: recursive_descent_whooo
+downloadable_files:
+- check_flag_format
+- check_flag_format.core.xz
+- libs.tar.xz
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: fd85e3f2-5310-4485-b7b4-0d3b8f311b05
+spec: 0.0.1

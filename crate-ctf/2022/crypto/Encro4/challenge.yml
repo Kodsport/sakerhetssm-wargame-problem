@@ -1,0 +1,28 @@
+title: Encro4
+description: 'Hackarna verkar använda en kryptotjänst för att kommunicera med varanda.
+
+  Vi har lyckats hitta följande på en Zip-drive:
+
+  ZDE1N2Y2ZDMwMmRlMTBkOGUxNjM0ZmVhOWRi
+
+  YWZlMDg5MTNkZWE2NzQxNTExZDEwNzI1Y2Ux
+
+  ZmNkMTE5ZGJiNDA0MDgwNmM0MGU3YWJhMGMz
+
+  MGQ2M2NmYjU3MDllMGVkOWZlOAo='
+authors:
+- jerry
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: samma_nyckel_utan_nonce_kan_vara_farligt
+service:
+  type: tcp
+  image: docker
+  internal_port: 31338
+  external_port: 40140
+score: 400
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 9a038c7b-4b64-4f5b-8e33-813f2b7badaa
+spec: 0.0.1

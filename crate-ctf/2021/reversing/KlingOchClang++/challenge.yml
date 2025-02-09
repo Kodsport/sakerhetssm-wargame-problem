@@ -1,0 +1,15 @@
+title: Kling och Clang++
+description: Något halvkompilerat program som nästan skriver ut en flagga.
+authors:
+- toblu
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: var_det_en_IRriterande_uppgift?
+downloadable_files:
+- main.ll
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 85cbbe2f-2f19-49fa-9c5a-f7eaf1aa1cb1
+spec: 0.0.1

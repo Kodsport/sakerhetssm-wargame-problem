@@ -1,0 +1,18 @@
+title: Xor
+description: Vår slumpbitsgenerator är lite skev, men vad gör det?
+authors:
+- toblu
+categories:
+- crypto
+flag_format_prefix: 2020ctf{
+flags: svag_slump_som_skydd_slutar_som_synd
+service:
+  type: tcp
+  image: docker
+  internal_port: 57000
+  external_port: 40147
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: b1b30059-d328-4cf9-86ec-5ba580da3492
+spec: 0.0.1

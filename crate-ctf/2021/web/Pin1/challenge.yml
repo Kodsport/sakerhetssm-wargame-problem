@@ -1,0 +1,18 @@
+title: Pin1
+description: 'Kan du hitta rätt PIN-kod?'
+authors:
+- larshson
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: easy_peasy_peaky_blinders
+service:
+  type: website
+  image: docker
+  internal_port: 8080
+  external_port: 40114
+score: 150
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 84e8ffdd-f425-4611-896f-32462f834198
+spec: 0.0.1

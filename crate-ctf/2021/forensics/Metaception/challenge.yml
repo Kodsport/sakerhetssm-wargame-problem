@@ -1,0 +1,15 @@
+title: Metaception
+description: Year of the Linux desktop?
+authors:
+- jerry
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: i_use_arch_btw
+downloadable_files:
+- linux.wav
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 7b2f695b-d088-46e9-a402-265ff068c771
+spec: 0.0.1

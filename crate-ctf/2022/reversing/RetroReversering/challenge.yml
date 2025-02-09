@@ -1,0 +1,17 @@
+title: RetroReversering
+description: 'Ett invitro för en CTF?!
+
+  Kan du knäcka knapp-kombinationen och få ut flaggan?'
+authors:
+- jerry
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: gb_4ever
+downloadable_files:
+- intro.gb
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 79e1e55c-8cbd-4b77-bb11-92cf95a7165e
+spec: 0.0.1

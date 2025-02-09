@@ -1,0 +1,18 @@
+title: Fetch
+description: Be pluto hämta flaggan, som finns i /yummy/honey/flag.txt
+authors:
+- larshson
+categories:
+- web
+flag_format_prefix: cratectf{
+flags: I_SAID_FEEEEEEETCH
+service:
+  type: website
+  image: docker
+  internal_port: 8080
+  external_port: 40134
+score: 50
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 4633743a-9fb1-46ad-8f75-4bd2d74ff79c
+spec: 0.0.1

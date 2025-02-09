@@ -50,6 +50,19 @@ authors:
   - Valter Wik
   - LiamoOo
 
+  # Crate-CTF people
+  - Caspian
+  - daneid
+  - Denise
+  - jerry
+  - Johan
+  - larshson
+  - martin
+  - Mathias Magnusson
+  - Mikael
+  - tomgus
+
+  # Sponsors
   - Säkerhets-SM
   - FRA
   - Sentor
@@ -62,7 +75,8 @@ authors:
 flag_format_prefixes:
   - SSM{
   - ssmjr{
-
+  - 2020ctf{
+  - cratectf{
 
 custom:
   container_registry: registry.sakerhetssm.se:5000/

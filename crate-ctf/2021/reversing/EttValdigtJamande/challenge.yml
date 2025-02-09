@@ -1,0 +1,15 @@
+title: Ett väldigt jamande
+description: En liten katta vill hjälpa dig att kontrollera flaggan till den här uppgiften.
+authors:
+- toblu
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: JLTScuYHpEZsMgYAV
+downloadable_files:
+- hmmmm.sb3
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2021
+challenge_id: 9957b2cc-e4c9-46f7-8a00-d4d7cafa4d01
+spec: 0.0.1

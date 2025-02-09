@@ -1,0 +1,27 @@
+title: PumpaPumpaPumpa # TODO: real name is 🎃🎃🎃 but challtools don't like it
+description: Fråga om flaggan bara.
+authors:
+  - toblu
+categories:
+  - crypto
+
+flag_format_prefix: cratectf{
+flags: den_signaturen_pumpade_du_fint
+
+service:
+  type: tcp
+  image: container
+  internal_port: 31337
+  external_port: 40014
+
+downloadable_files:
+  - container/challenge.py
+
+score: 450
+
+human_metadata:
+  event_name: Crate-CTF 2021
+
+
+challenge_id: 65a4afd3-d8bf-4111-b986-16576ae4db91
+spec: 0.0.1

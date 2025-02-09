@@ -1,0 +1,20 @@
+title: Knäckebröd
+description: Knäck 60% av lösenorden för att få en flagga!
+authors:
+- toblu
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: snyggt_gissat_bra_jobbat
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+  external_port: 40129
+downloadable_files:
+- docker/hashes
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2023
+challenge_id: d530e6bd-60f1-4f44-b3cf-511e14e35afc
+spec: 0.0.1

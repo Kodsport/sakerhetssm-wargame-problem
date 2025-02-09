@@ -1,0 +1,16 @@
+title: GammalDiskett
+description: Vi hittade en gammal diskett från 1996. Ryktet säger att det på den tiden
+  legat en flagga på den.
+authors:
+- jerry
+categories:
+- forensics
+flag_format_prefix: cratectf{
+flags: digital_tippex_torkar_langsamt
+downloadable_files:
+- floppy.img.xz
+score: 350
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 8e7490f2-45d1-4c32-9301-e70ec801e6cb
+spec: 0.0.1

@@ -1,0 +1,18 @@
+title: Dåliga odds
+description: Det här spelet verkar omöjligt att vinna, men det kanske går att fuska?
+authors:
+- Johan
+categories:
+- crypto
+flag_format_prefix: cratectf{
+flags: wow_you_must_be_really_lucky
+service:
+  type: tcp
+  image: docker
+  internal_port: 31337
+  external_port: 40141
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 4cd76687-1b86-4396-a276-848920c6a6b5
+spec: 0.0.1

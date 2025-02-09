@@ -1,0 +1,17 @@
+title: Corduroy
+description: Alla våra jackor har uppdaterats för att vara kompatibla med IEEE 802.3,
+  men i samband med detta så har de börjat ge ifrån sig någon sorts ljudsignal när
+  de torktumlas.
+authors:
+- Johan
+categories:
+- misc
+flag_format_prefix: cratectf{
+flags: transmission_received
+downloadable_files:
+- ljud.wav
+score: 500
+human_metadata:
+  event_name: Crate-CTF 2022
+challenge_id: 8fbb1744-7a87-4b40-bb27-6e5d29086313
+spec: 0.0.1

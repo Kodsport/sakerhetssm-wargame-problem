@@ -1,0 +1,22 @@
+title: Extraterrestriell Kommunikation
+description: 'Mänskligheten hade hittat liv i en annan galax, men denna civilisation
+  hade inget språk utan bara bilder.
+
+  För att etablera kommunikation så skrev de en översättare.
+
+  Nu kliade forskarna sig i huvudet eftersom de behövde skriva en översättare från
+  utomjordiska till det latinska alfabetet.'
+authors:
+- Caspian
+categories:
+- reversing
+flag_format_prefix: cratectf{
+flags: 2dimensione11mors3i1p4rallelltuniversum
+downloadable_files:
+- flag.png
+- alien.py
+score: 450
+human_metadata:
+  event_name: Crate-CTF 2024
+challenge_id: 8101cba2-07d5-4a8a-b50a-0253dab54094
+spec: 0.0.1

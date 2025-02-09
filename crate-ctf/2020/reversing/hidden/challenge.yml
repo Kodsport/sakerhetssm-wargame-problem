@@ -1,0 +1,15 @@
+title: Flaggkontrollerare
+description: Bifogar ett program som kollar om du har rätt flagga till uppgiften.
+authors:
+- toblu
+categories:
+- reversing
+flag_format_prefix: 2020ctf{
+flags: ganska_enkel_att_se_va
+downloadable_files:
+- chall
+score: 50
+human_metadata:
+  event_name: Crate-CTF 2020
+challenge_id: a533f32b-0356-4a48-ab02-2b4066823ce4
+spec: 0.0.1
