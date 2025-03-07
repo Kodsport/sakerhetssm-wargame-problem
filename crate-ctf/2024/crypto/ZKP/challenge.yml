@@ -10,7 +10,9 @@ authors:
 categories:
 - crypto
 flag_format_prefix: cratectf{
-flags: pirat1_var_långt_från_pirat2_när_koordinaterna_levererades
+flags:
+- flag: pirat1_var_långt_från_pirat2_när_koordinaterna_levererades
+- flag: pirat1_var_långt_från_pirat2_när_kon_levererades
 service:
   type: tcp
   image: docker

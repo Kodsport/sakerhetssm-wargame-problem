@@ -15,6 +15,7 @@ Most of the challenges in the "exploit" categories were placed into pwn, with th
 - `2021/reversing/FutureFlag` had a date changed from 2024 to 2124 and was recompiled.
 - `2021/crypto/PumpaPumpaPumpa` had its name changed, since `challtools` didn't work for challenges with emoji-only name
 - `2020/exploit/format_string_read` was changed to quit gracefully when receiving an EOF
+- `2024/crypto/ZKP` got an additional flag
 
 ### Removed/non-ported challenges
 The following challenges were skipped, mainly due to infrastructure requirements which we don't want to deal with right now. A few of them might be added in the future.
