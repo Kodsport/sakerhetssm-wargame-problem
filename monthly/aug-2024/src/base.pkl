@@ -1,3 +1,0 @@
-username: String(this.length >= 4, this.length <= 20, this.matches(Regex(#"^\w+$"#)))
-password: String(this.length >= 8)
-email: String(this.matches(Regex(#"^[0-z.]+@[0-z.]+$"#)))

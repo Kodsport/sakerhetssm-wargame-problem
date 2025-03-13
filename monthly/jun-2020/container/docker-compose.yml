@@ -1,7 +1,0 @@
-version: "3.8"
-services:
-  jun-2020:
-    build: .
-    ports:
-      - "8000:80"
-    command: ["/home/ctf/start.sh"]
