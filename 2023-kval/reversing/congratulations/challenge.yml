@@ -10,17 +10,17 @@ flag_format_prefix: SSM{
 flags: w0w_v1lken_overraskning!
 
 
-service:
-   type: website
-   image: .
-   internal_port: 80
-   external_port: 40091
+# service:
+#    type: website
+#    image: .
+#    internal_port: 80
+#    external_port: 40091
 
 score: 150
 
 spec: 0.0.1
 
-challenge_id: 0cb5e79d-0a48-4c18-9188-cfab7cd06253
+challenge_id: 683b8792-b578-4ae1-9b16-bf6e23c6fd46
 
 human_metadata:
   event_name: SSM 2023 Kval

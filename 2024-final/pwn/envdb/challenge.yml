@@ -13,13 +13,13 @@ service:
   type: tcp
   image: container
   internal_port: 1337
-  external_port: 51003
+  external_port: 40025
   privileged: true
 
 predefined_services:
 - type: tcp
   host: 188.126.67.132
-  port: 51003
+  port: 40025
 
 downloadable_files:
 - envdb.c

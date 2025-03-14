@@ -15,13 +15,13 @@ spec: 0.0.1
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:51001
+  url: http://188.126.67.132:40027
 
 service:
   type: website
   image: container
   internal_port: 1337
-  external_port: 51001
+  external_port: 40027
 
 downloadable_files:
 - container/av.py
