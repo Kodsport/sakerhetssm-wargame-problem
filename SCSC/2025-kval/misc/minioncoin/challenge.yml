@@ -18,9 +18,15 @@ deployment:
       services:
         - type: tcp
           internal_port: 1337
+          external_port: 40095
       extra_exposed_ports:
         - internal_port: 31337
           external_port: 31337
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40095
 
 downloadable_files:
   - container/contracts/Coin.sol
