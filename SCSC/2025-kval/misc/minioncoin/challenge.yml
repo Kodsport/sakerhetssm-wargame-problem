@@ -20,8 +20,8 @@ deployment:
           internal_port: 1337
           external_port: 40095
       extra_exposed_ports:
-        - internal_port: 31337
-          external_port: 31337
+        - internal_port: 40016
+          external_port: 40016
 
 predefined_services:
   - type: tcp

@@ -2,7 +2,7 @@ FROM gcr.io/paradigmxyz/ctf/eth-challenge:latest
 
 USER root
 ENV PORT=1337
-ENV HTTP_PORT=31337
+ENV HTTP_PORT=40016
 ENV ETH_RPC_URL=https://eth.llamarpc.com
 ENV SHARED_SECRET=skibidisecret123321hahalol123
 ENV ACCOUNT_BALANCE=100
