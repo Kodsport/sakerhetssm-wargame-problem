@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SYNTAX TERROR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+   <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #00ff9c;
+            --accent-color: #ff3b5b;
+            --border-color: #1a1a3a;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body { 
+            font-family: 'Roboto Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            max-width: 100rem; 
+            margin: 0 auto; 
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background-color: #121226;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 255, 156, 0.2);
+        }
+        
+        h1, h2 {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        #uploadForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        input[type="file"] {
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        form div {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        form div a button {
+            background-color: purple;
+            color: black;
+        }
+        
+        button {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ff5b7b;
+            transform: scale(1.05);
+        }
+        
+        #result {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            white-space: pre-wrap;
+            font-family: 'Roboto Mono', monospace;
+            color: var(--text-color);
+        }
+        
+        #result h1 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        #result pre {
+            background-color: #1a1a3a;
+            padding: 0.5rem;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow-x: auto;
+            overflow: hidden;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 1rem 0;
+        }
+
+        .undertext {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        
+        /* Prism.js overrides for dark theme */
+        pre[class*="language-"] {
+            background-color: #1a1a3a !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>TIME TO SPREAD SOME SYNTAX TERROR</h2>
+    <div class="undertext">openapi autohacker 1.0</div><hr>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="zipfile" accept=".zip" required>
+        <div>
+            <button type="submit">Upload</button>
+            <a href="/example.zip"><button type="button">Download example</button></a>
+        </div>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const resultDiv = document.getElementById('result');
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    for (line of data.message.split('\n')){
+                        if (/^curl/.test(line)){
+                            resultDiv.innerHTML += `<hr><pre><code class="language-bash">${line}</code></pre>`;
+                        }else{
+                            resultDiv.innerHTML += `${line}`;
+                        }
+                    }
+                    Prism.highlightAll();
+                } else {
+                    resultDiv.innerText = ``;
+                    resultDiv.innerHTML = `<h1>ERROR!</h1>`;
+                    for (message of data.error.messages ){
+                        if (typeof message == 'object') {
+                            message = message['message'];
+                        }
+                        message = (p=document.createElement('pre'),p.innerHTML=message,p.innerText);
+                        resultDiv.innerHTML += `<hr><pre>${message}</pre>`;
+                    }
+                }
+            } catch (error) {
+                resultDiv.innerText = `Network Error: ${error.message}`;
+            }
+        });
+    </script>
+</body>
+</html>

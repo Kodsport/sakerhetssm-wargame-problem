@@ -1,0 +1,39 @@
+title: IRPC
+description: Real hackers use IRPC.
+authors:
+  - kabanero
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: 1nt3rn3t_r3l4y_PWN_ch4t_0r_IPC?_I_dunn0
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+service:
+   type: tcp
+   image: .
+   internal_port: 1337
+   external_port: 40091
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40091
+
+challenge_id: b85bea6c-4078-4b4a-a1e5-d3583b15d601
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 500

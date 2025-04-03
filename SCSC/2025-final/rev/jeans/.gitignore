@@ -1,0 +1,9 @@
+elk.c
+elk.h
+elk.o
+elk/
+elk-*/
+elk-*.zip
+
+scripts.h
+scripts.c

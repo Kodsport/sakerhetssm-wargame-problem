@@ -1,0 +1,4 @@
+Congratulations! You have reversed the program and decrypted the message.
+This was a substitution–permutation network (https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network) implemented with x86 vector instructions.
+The flag you are looking for is: SNHT{what_vector_victor_https://www.youtube.com/watch?v=fVq4_HhBK8Y}
+I hope you enjoyed this challenge!

@@ -1,0 +1,24 @@
+title: JeanS
+description: I'm shopping for some jeans but I can't decide which ones I want. Can you help me choose?
+authors:
+  - ZetaTwo
+categories:
+  - reversing
+
+# Correct index order: 9,21,19,39,14,35,0,32,20,25,17,30,15,33,37,11,7,2,27,6,38,29,8,10,12,34,24,13,3,1,16,18,31,40,26,4,22,5,23,28,36
+
+flag_format_prefix: SNHT{
+flags: js_c_js_c_js_c_js_c_js_dot_dot_dot
+
+downloadable_files:
+  - jeans
+
+challenge_id: d9816378-0a45-42c6-aef7-d053a3a9a2db
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 500

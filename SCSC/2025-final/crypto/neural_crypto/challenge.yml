@@ -1,0 +1,40 @@
+title: Neural Crypto
+description: I heard that neural networks are the hot new things, maybe we should use them for encryption?
+authors:
+  - istlemin
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: maybe_should_have_trained_the_network_first!
+
+downloadable_files:
+   - container/chall.sage
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  external_port: 40145
+  privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40145
+
+challenge_id: d9ea04ba-30d5-45de-ac0a-0f3f8c53c84d
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 600

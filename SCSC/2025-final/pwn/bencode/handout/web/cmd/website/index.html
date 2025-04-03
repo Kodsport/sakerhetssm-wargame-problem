@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamins .torrent viewer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        * {
+            font-family: "VT323", monospace;
+            font-style: normal;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+
+        pre {
+            font-size: 0.8em;
+        }
+
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            padding-top: 10vh;
+            text-shadow: 0 0 20px greenyellow;
+            background-color: black;
+            color: greenyellow;
+        }
+
+        body::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: repeating-linear-gradient(0deg,
+                    #ffffff26,
+                    #ffffff26 1px,
+                    transparent 1px,
+                    transparent 2px);
+            pointer-events: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: transparent;
+            color: greenyellow;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-shadow: 0 0 20px greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="uploadForm" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="action" value="/">
+        <input name="torrentFile" style="display:none;" type="file" id="torrentFile" accept=".torrent">
+    </form>
+    <pre>888888b.                      d8b                        d8b                            888                                             888                  d8b                                         
+888  "88b                     Y8P                        Y8P                            888                                             888                  Y8P                                         
+888  .88P                                                                               888                                             888                                                              
+8888888K.   .d88b.  88888b.  8888  8888b.  88888b.d88b.  888 88888b.  .d8888b           888888 .d88b.  888d888 888d888 .d88b.  88888b.  888888      888  888 888  .d88b.  888  888  888  .d88b.  888d888 
+888  "Y88b d8P  Y8b 888 "88b "888     "88b 888 "888 "88b 888 888 "88b 88K               888   d88""88b 888P"   888P"  d8P  Y8b 888 "88b 888         888  888 888 d8P  Y8b 888  888  888 d8P  Y8b 888P"   
+888    888 88888888 888  888  888 .d888888 888  888  888 888 888  888 "Y8888b.          888   888  888 888     888    88888888 888  888 888         Y88  88P 888 88888888 888  888  888 88888888 888     
+888   d88P Y8b.     888  888  888 888  888 888  888  888 888 888  888      X88      d8b Y88b. Y88..88P 888     888    Y8b.     888  888 Y88b.        Y8bd8P  888 Y8b.     Y88b 888 d88P Y8b.     888     
+8888888P"   "Y8888  888  888  888 "Y888888 888  888  888 888 888  888  88888P'      Y8P  "Y888 "Y88P"  888     888     "Y8888  888  888  "Y888        Y88P   888  "Y8888   "Y8888888P"   "Y8888  888     
+                              888                                                                                                                                                                        
+                             d88P                                                                                                                                                                        
+                           888P"                                                                                                                                                                         
+
+</pre>
+<span>--------------------------------------</span>
+    <h2>Jag har grävt i .torrent filer och valt att bygga
+        en binär som kan läsa dom.
+    </h2>
+    <h2>Här har ascool hemsida för haxx0rs att läsa deras innehåll.</h2>
+
+    <span>--------------------------------------</span>
+    <button id="uploadButton">Upload .torrent file</button>
+    <script>
+        document.getElementById('uploadButton').addEventListener('click', function() {
+            document.getElementById('torrentFile').click();
+        });
+
+        document.getElementById('torrentFile').addEventListener('change', function() {
+            document.getElementById('uploadForm').submit();
+        });
+    </script>
+
+</body>
+
+</html>

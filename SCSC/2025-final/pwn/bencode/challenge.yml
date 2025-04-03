@@ -1,0 +1,39 @@
+title: Benjamin's fina kod och hemsida
+description: Benjamin har skrivit en parser som han är väldigt stolt över. Han har även skapat en hemsida där du kan ladda upp en torrent fil och få innehållet en aning formatterat.
+authors:
+  - ripSquid
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: kj3ll_k0d_4r_0cksa_3n_gr3j
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: container
+  internal_port: 8000
+  external_port: 40131
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40131
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: e28c5548-94cd-4bb7-885f-be23010c4033
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 300
