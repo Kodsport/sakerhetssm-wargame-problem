@@ -1,0 +1,39 @@
+title: Is this web?
+description: Played around with next.js and stumbled upon something interesting
+authors:
+  - ntomsic
+categories:
+  - web
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: wh0_kn3w_unus3d_s3rv3r_acti0ns_c0uld_b3_c4ll3d_l1k3_th1s
+
+downloadable_files:
+   - container.zip
+
+service:
+   type: website
+   image: container
+   internal_port: 3000
+   external_port: 40149
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40149
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: ee219f93-4592-44eb-9065-cf115ab6fdba
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 500

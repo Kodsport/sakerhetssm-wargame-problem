@@ -1,0 +1,41 @@
+title: superbasic
+description: MY super BASIC pwn challenge.
+authors:
+  - nnewram
+categories:
+  - pwn
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: n0w_y0u_c4n_s74r7_pw1ng_4dv4nc3d_7tuff
+
+downloadable_files:
+   - container/Dockerfile
+   - container/main.c
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+service:
+   type: tcp
+   image: container
+   internal_port: 1337
+   external_port: 40017
+   #privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40017
+
+challenge_id: f4ce469e-cb52-4577-9150-f374bd9fca65
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 250

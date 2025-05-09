@@ -1,0 +1,23 @@
+title: NES-Kaffe
+description: Detta är inte ett snabbt kaffe.
+authors:
+  - Aali
+categories:
+  - reversing
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: Wr1t3OnceRun4nywh3re
+
+downloadable_files:
+  - kaffe.nes
+
+challenge_id: 69d884a8-844e-4d4a-9802-7a10c2c1c871
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 500

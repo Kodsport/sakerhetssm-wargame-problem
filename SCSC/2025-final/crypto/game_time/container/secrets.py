@@ -1,0 +1,1 @@
+flag = "SNHT{c0njug4cy_1s_3asy_1n_symm3tr1c_gr0up}"

@@ -1,0 +1,40 @@
+title: Game Time
+description: Do you like to play games?s
+authors:
+  - istlemin
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: c0njug4cy_1s_3asy_1n_symm3tr1c_gr0up
+
+downloadable_files:
+   - container/chall.py
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  external_port: 40143
+  privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40143
+
+challenge_id: 1b3bac59-8280-4293-a8bd-60818628fc7e
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 600

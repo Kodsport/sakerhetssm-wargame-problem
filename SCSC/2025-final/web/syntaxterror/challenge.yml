@@ -1,0 +1,32 @@
+---
+
+title: syntaxterror
+description: Ever wanted to AUTOHACK an API? Now you can with SYNTAXTERROR v1.0!!!
+authors:
+  - avlidienbrunn
+categories:
+  - web
+
+flag_format_prefix: SNHT{
+flags: behoever_en_zip_kaffe_just_nu
+
+service:
+  type: website
+  image: ./app
+  internal_port: 3000
+  external_port: 40150
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40150
+
+challenge_id: 7b6ee450-586b-4e75-bbce-85686ab76e02
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 550

@@ -1,0 +1,34 @@
+title: Diskreta Linjer
+description: Du känner väl till räta linjen från skolan. Du vet kx + m. Här kan du få några diskreta linjer från mig.
+authors:
+  - chopingu
+categories:
+  - crypto
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: br4_j0bb4t_nu_k4n_du_l1t3_m3r_0m_d15skr3t4_l1nj3r_0ch_L4rsh_L14m_L0k3
+
+downloadable_files:
+   - src.py
+   - out.txt
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: f9b35edd-c01c-4aff-87fd-151c29e6b27e
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Final
+
+score: 600
