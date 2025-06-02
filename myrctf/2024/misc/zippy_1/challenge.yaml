@@ -1,0 +1,26 @@
+title: Zippy 1
+description: Vi har kommit över ett lösenordsskyddat zip-arkiv, och det verkar som att den
+  har några lager att ta sig igenom... Som tur är har du troligtvis stött på denna typ av
+  uppgift många gånger tidigare, så jag blir nästan lite besviken om du inte har ett färdigt
+  skript för detta redan.
+authors:
+- arch-err
+categories:
+- misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: MyrCTF{
+flags: ZippyScriptGoBrrrrrrrrrrrrrrrr
+
+downloadable_files:
+- 7640300abc5f.zip
+
+challenge_id: b833f49b-3c3f-4d4b-9992-4bd4bc9eeb26
+spec: 0.0.1
+
+human_metadata:
+  event_name: MyrCTF 2024
+
+score: 100
+custom:
+  publish: true
