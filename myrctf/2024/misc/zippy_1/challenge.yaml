@@ -6,11 +6,11 @@ description: Vi har kommit över ett lösenordsskyddat zip-arkiv, och det verkar
 authors:
 - arch-err
 categories:
-- Scripting
+- misc
 
 # set the flag_format_prefix to `null` to not use the flag format
 flag_format_prefix: MyrCTF{
-flags: MyrCTF{ZippyScriptGoBrrrrrrrrrrrrrrrr}
+flags: ZippyScriptGoBrrrrrrrrrrrrrrrr
 
 downloadable_files:
 - 7640300abc5f.zip
