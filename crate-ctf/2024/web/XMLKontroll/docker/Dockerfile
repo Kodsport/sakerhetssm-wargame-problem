@@ -1,7 +1,7 @@
 FROM python:3.12
 
 WORKDIR /app
-RUN useradd -r "cratectf{xml_xxe_xploit_xpert}"
+RUN useradd -r --badname "cratectf{xml_xxe_xploit_xpert}"
 RUN groupadd -r ctf && useradd -r -g ctf ctf
 COPY requirements.txt ./
 RUN pip install -r requirements.txt
