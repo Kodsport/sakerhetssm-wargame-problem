@@ -24,5 +24,5 @@ spec: 0.0.1
 custom:
   publish: true
 predefined_services:
-- url: http://188.126.67.132:40032
+- url: http://ssmarkiv.ctfchall.se:40032
   type: website

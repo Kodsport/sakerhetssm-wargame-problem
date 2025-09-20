@@ -15,7 +15,7 @@ spec: 0.0.1
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40027
+  url: http://ssmarkiv.ctfchall.se:40027
 
 service:
   type: website

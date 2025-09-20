@@ -20,7 +20,7 @@ custom:
   publish: true
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40039/
+  url: http://ssmarkiv.ctfchall.se:40039/
 
 challenge_id: e3d076d4-1fae-437a-bd16-60419b630af6
 spec: 0.0.1

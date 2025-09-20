@@ -32,7 +32,7 @@ service:
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40889     # xx
+  url: http://ssmarkiv.ctfchall.se:40889     # xx
 
 # Migrated to main namespace
 #custom:

@@ -20,7 +20,7 @@ service:
 
 predefined_services:
   - type: website
-    url: http://188.126.67.132:40126
+    url: http://ssmarkiv.ctfchall.se:40126
 
 challenge_id: 23fb8072-bba2-4131-a61f-c17e82f99edc
 spec: 0.0.1

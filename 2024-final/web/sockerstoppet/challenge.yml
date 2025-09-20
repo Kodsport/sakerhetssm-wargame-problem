@@ -22,7 +22,7 @@ service:
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40011
+  url: http://ssmarkiv.ctfchall.se:40011
 
 downloadable_files:
 - container.zip

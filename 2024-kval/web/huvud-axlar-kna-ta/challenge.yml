@@ -18,7 +18,7 @@ service:
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40052
+  url: http://ssmarkiv.ctfchall.se:40052
 
 score: 100
 

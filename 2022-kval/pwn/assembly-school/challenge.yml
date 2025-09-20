@@ -20,7 +20,7 @@ spec: 0.0.1
 
 predefined_services:
   - type: tcp
-    host: 188.126.67.132
+    host: ssmarkiv.ctfchall.se
     port: 40031
 
 score: 100

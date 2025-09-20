@@ -31,7 +31,7 @@ service:
 
 predefined_services:
 - type: tcp
-  host: 188.126.67.132
+  host: ssmarkiv.ctfchall.se
   port: 40006
 
 challenge_id: a8f3c493-9d73-4543-89ca-46604ab795d8

@@ -21,7 +21,7 @@ service:
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40053
+  url: http://ssmarkiv.ctfchall.se:40053
 
 downloadable_files:
 - container/main.go

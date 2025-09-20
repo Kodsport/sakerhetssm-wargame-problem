@@ -21,6 +21,6 @@ spec: 0.0.1
 custom:
   publish: true
 predefined_services:
-- host: 188.126.67.132
+- host: ssmarkiv.ctfchall.se
   port: 40116
   type: tcp

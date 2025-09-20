@@ -23,7 +23,7 @@ challenge_id: 307c9be7-757d-46bd-92c7-ae24841a27ab
 
 predefined_services:
 - type: website
-  url: http://188.126.67.132:40041/
+  url: http://ssmarkiv.ctfchall.se:40041/
 
 score: 450
 human_metadata:

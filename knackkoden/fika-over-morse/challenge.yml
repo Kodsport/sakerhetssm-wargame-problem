@@ -19,7 +19,7 @@ service:
 
 predefined_services:
   - type: website
-    url: "http://188.126.67.132:40456"
+    url: "http://ssmarkiv.ctfchall.se:40456"
 
 # Migrated to main namespace
 #custom:

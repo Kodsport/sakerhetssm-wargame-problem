@@ -18,7 +18,7 @@ service:
 
 predefined_services:
 - type: tcp
-  host: 188.126.67.132
+  host: ssmarkiv.ctfchall.se
   port: 40048
 
 downloadable_files:

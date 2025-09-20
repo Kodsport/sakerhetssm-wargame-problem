@@ -26,7 +26,7 @@ service:
 
 predefined_services: # docker-compose
   - type: website
-    url: "http://188.126.67.132:40138"
+    url: "http://ssmarkiv.ctfchall.se:40138"
 
 # Migrated to main namespace
 #custom:
