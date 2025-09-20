@@ -25,5 +25,5 @@ custom:
   publish: true
 predefined_services:
 - host: ssmarkiv.ctfchall.se
-  port: 40101
+  port: "40101"
   type: ssh
