@@ -9,11 +9,11 @@ categories:
 flag_format_prefix: SSM{
 flags: 0n5k31ist4_c0n741n5_k0b41tn37z
 
-service:
-  type: website
-  image: .
-  internal_port: 8080
-  external_port: 40022
+#service:
+#  type: website
+#  image: .
+#  internal_port: 8080
+#  external_port: 40022
 
 score: 500
 
