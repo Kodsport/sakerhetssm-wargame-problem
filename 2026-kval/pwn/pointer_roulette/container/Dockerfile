@@ -6,6 +6,7 @@ RUN mkdir -p /home/ctf/
 
 COPY chall /home/ctf/
 COPY flag.txt /home/ctf/
+RUN chmod 555 /home/ctf/chall && chmod 444 /home/ctf/flag.txt
 
 # Now setting up the actual container
 FROM ghcr.io/google/nsjail/nsjail:latest
