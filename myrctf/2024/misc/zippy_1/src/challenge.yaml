@@ -1,0 +1,20 @@
+name: Zippy 1
+author: arch-err
+message: |-
+  Vi har kommit över ett lösenordsskyddat zip-arkiv, och det verkar som att den har några lager att ta sig igenom...
+  Som tur är har du troligtvis stött på denna typ av uppgift många gånger tidigare, så jag blir nästan lite besviken om du inte har ett färdigt skript för detta redan.
+topics:
+  - Warmup
+  - Scripting
+initial_value: 50
+flag: MyrCTF{ZippyScriptGoBrrrrrrrrrrrrrrrr}
+files: <generated zip-archive>
+generate:
+  cmd: ./generate.sh
+  dependencies:
+    - zip
+    - yq
+solve:
+  cmd: ./solve.sh <archive.zip>
+  dependencies:
+    - zip
