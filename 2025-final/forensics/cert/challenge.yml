@@ -17,14 +17,17 @@ downloadable_files:
   - client/client.go
 
 service:
-   type: website
+   type: tcp
    image: client
    internal_port: 1337
    external_port: 50227
+   # nsjail needs to create namespaces
+   privileged: true
    
 predefined_services:
-- type: website
-  url: http://ssmarkiv.ctfchall.se:50227
+- type: tcp
+  host: ssmarkiv.ctfchall.se
+  port: 50227
 
 score: 500
 

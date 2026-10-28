@@ -1,2 +1,2 @@
-lief
+lief==0.15.1  # add-init.py needs the 0.15 API; newer lief writes a libkrb5support sshd can't load
 keystone-engine

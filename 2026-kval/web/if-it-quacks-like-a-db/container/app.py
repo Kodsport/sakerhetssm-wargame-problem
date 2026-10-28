@@ -11,7 +11,10 @@ FLAG = os.environ.get('FLAG', 'SSM{fake_flag_for_testing}')
 FLAG_HINT = FLAG[:10]
 FLAG2 = FLAG[10:]
 
-# Initialize DuckDB connection
+# Initialize DuckDB connection. Start from a fresh file: it survives container
+# restarts, and CREATE TABLE below fails if the tables already exist.
+if os.path.exists('data.duckdb'):
+    os.remove('data.duckdb')
 conn = duckdb.connect('data.duckdb')
 
 # Create products table with sample data
